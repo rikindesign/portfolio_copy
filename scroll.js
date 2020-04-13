@@ -1,4 +1,4 @@
-// ScrollMagic-Animation JavaScript
+// ScrollMagic-Animation JavaScript - R & Design 4.0
 
 
 // Initializer Variables

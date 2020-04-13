@@ -1,4 +1,4 @@
-// Skew-Frame-Animation JavaScript
+// Skew-Frame-Animation JavaScript - R & Design 4.0
 
 
 // Declarations
@@ -15,7 +15,7 @@ const looper = function() {
     const speedSectionSmall = diff * 0.09
     const speedSectionWide = diff * 0.09
 
-    // Animated Sections
+    // Animated Sections (must include 'will-change: transform;' in SASS)
     sectionOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
     sectionTwo.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionThree.style.transform = 'skewY(' + speedSectionWide + 'deg)';
