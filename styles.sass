@@ -1,4 +1,68 @@
-// SASS Stylesheet - R & Design 4.0
+/* SASS Stylesheet - R & Design 4.0 */
 
-body
-    background-attachment: fixed
+/* Variables & Mixins*/
+
+// Colours and gradients
+$black: #121212
+$alt-black: #272727
+$white: #FFFFFF
+$blue: #38A0FF
+$baby-blue: #90C6F9
+$gray: #546C82
+$blue-gray: #D6E0F0
+
+$black-gradient: linear-gradient(97.52deg, #272727 0%, rgba(39, 39, 39, 0.25) 100%)
+$gray-gradient: linear-gradient(97.52deg, #FFFFFF 0%, #606060 100%)
+$gray-blue-gradient: linear-gradient(97.52deg, #546C82 0%, #A9BEDD 100%)
+$white-gradient: linear-gradient(97.52deg, #FFFFFF 0%, rgba(255, 255, 255, 0.25) 100%)
+$white-blue-gradient: linear-gradient(97.52deg, #FFFFFF 0%, #E2E9F4 100%)
+
+$blue-gradient: linear-gradient(180deg, #0094FF 0%, #4EC5FD 100%)
+$purple-green-gradient: linear-gradient(97.52deg, #FFFFFF 0%, #E2E9F4 100%)
+$blue-green-gradient: linear-gradient(94.67deg, #1D85FF 0%, #1EE184 100%)
+
+// Shadows
+$shadow-regular: 0px 10px 30px #AEC3E4
+$shadow-regular-50: 0px 10px 30px rgba(174, 195, 228, 0.5)
+
+$shadow-black: 0px 10px 30px #000000
+$shadow-black-50: 0px 5px 20px rgba(0, 0, 0, 0.5)
+
+$neu-shadow-element-light: -2.5px -2.5px 7px #FFFFFF, 2.5px 2.5px 7px #AEC3E4
+$neu-shadow-body-light: -18px -18px 25px rgba(255, 255, 255, 0.75), 18px 18px 30px #D1D9E6
+
+$neu-shadow-element-dark: -2.5px -2.5px 5px #5E5E5E, 4px 4px 5px #000000
+$neu-shadow-body-dark: -10px -10px 25px rgba(94, 94, 94, 0.65), 10px 10px 30px rgba(0, 0, 0, 0.75)
+
+=box-shadow($shadow) 
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    -ms-box-shadow: $shadow
+    box-shadow: $shadow
+
+// Text
+$font: Poppins
+$style: normal
+$weight: 600
+
+$title-size: 100px
+$title-line-height: 150px
+
+$subtitle-size: 50px
+$subtitle-line-height: 75px
+
+$text-size: 37.5px
+$text-line-height: 56px
+
+$mega-size: 250px
+$mega-line-height: 375px
+
+// Asset Styling
+$radius-large: 40px
+$radius-small: 20px
+
+=border-radius($radius)
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+    border-radius: $radius
+
