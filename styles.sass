@@ -6,11 +6,14 @@
 @import footer
 
 /** Main Styling **/
+*
+    font-family: $font
+
 body
     background: $black !important
 
 section
-    height: 100vh
+    height: 75vh
     transition: transform 0.45s ease-out
     will-change: transform
 
@@ -26,6 +29,11 @@ div#card
     background: $black-gradient
     +border-radius($radius-large)
     +box-shadow($shadow-black)
+
+    #inner
+        width: 50%
+        margin: 0 auto
+
     h1
         margin-left: 4.54%
         right: 77.35%
@@ -33,10 +41,11 @@ div#card
         bottom: 72.21%
         
         font-size: $title-size
+        font-weight: $weight-medium
         line-height: $title-line-height
-        font-family: $font
         color: $white
-        text-shadow: $neu-shadow-element-dark
+        // text-shadow: $neu-shadow-element-dark
+        +text-gradient($gray-gradient)
 
     h3
         margin-left: 4.54%
@@ -45,12 +54,44 @@ div#card
         bottom: 61.18%
 
         font-size: $subtitle-size
+        font-weight: $weight-medium
         line-height: $subtitle-line-height
-        font-family: $font
-        color: $white
+        +text-gradient($blue-gradient)
 
     p
         margin-left: 4.54%
         right: 69.55%
         top: 41.03%
         bottom: 34.26%
+
+        width: 242.5px
+        height: 84px
+        color: $white
+
+    button
+        margin-left: 4.54%
+        right: 76.82%
+        top: 73.82%
+        bottom: 11.47%
+
+        width: 175px
+        height: 50px
+
+        background: $alt-black
+        border: none
+        +border-radius($radius-small)
+        +box-shadow($neu-shadow-body-dark)
+        +text-gradient($blue-gradient)
+
+    img
+        margin-left: 38.14%
+        right: 2.24%
+        top: 5.74%
+        bottom: 6.03%
+
+        width: 558px
+        +border-radius($radius-small)
+        +box-shadow($neu-shadow-body-dark)
+
+
+

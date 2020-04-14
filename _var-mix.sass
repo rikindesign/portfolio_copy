@@ -42,7 +42,9 @@ $neu-shadow-body-dark: -10px -10px 25px rgba(94, 94, 94, 0.65), 10px 10px 30px r
 // Text
 $font: 'Poppins', sans-serif
 $style: normal
-$weight: 600
+$weight-semibold: 600
+$weight-medium: 500
+$weight-regular: 400
 
 $title-size: 50px
 $title-line-height: 75px
@@ -57,10 +59,15 @@ $mega-size: 125px
 $mega-line-height: 187.5px
 
 // Asset Styling
-$radius-large: 40px
-$radius-small: 20px
+$radius-large: 20px
+$radius-small: 10px
 
 =border-radius($radius)
     -moz-border-radius: $radius
     -webkit-border-radius: $radius
     border-radius: $radius
+
+=text-gradient($gradient)
+    background: $gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
