@@ -2,5 +2,60 @@
 /** Imports **/
 /* Variables & Mixins - R & Design 4.0 */
 /** Main Styling **/
+body {
+  background: #121212 !important;
+}
+
+section {
+  height: 100vh;
+  transition: transform 0.45s ease-out;
+  will-change: transform;
+}
+section #card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#card {
+  width: 936px;
+  height: 340px;
+  background: linear-gradient(97.52deg, #272727 0%, rgba(39, 39, 39, 0.25) 100%);
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 30px #000000;
+  -moz-box-shadow: 0px 10px 30px #000000;
+  -ms-box-shadow: 0px 10px 30px #000000;
+  box-shadow: 0px 10px 30px #000000;
+}
+div#card h1 {
+  margin-left: 4.54%;
+  right: 77.35%;
+  top: 11.48%;
+  bottom: 72.21%;
+  font-size: 50px;
+  line-height: 75px;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  text-shadow: -2.5px -2.5px 5px #5E5E5E, 4px 4px 5px #000000;
+}
+div#card h3 {
+  margin-left: 4.54%;
+  right: 79.17%;
+  top: 27.79%;
+  bottom: 61.18%;
+  font-size: 25px;
+  line-height: 38.5px;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+}
+div#card p {
+  margin-left: 4.54%;
+  right: 69.55%;
+  top: 41.03%;
+  bottom: 34.26%;
+}
 
 /*# sourceMappingURL=styles.css.map */

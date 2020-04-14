@@ -1,5 +1,5 @@
 // ScrollMagic-Animation JavaScript - R & Design 4.0
-
+console.log('Scroll')
 
 // Initializer Variables
 const intro = document.querySelector('intro')

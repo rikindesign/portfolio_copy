@@ -1,8 +1,56 @@
 /* SASS Stylesheet - R & Design 4.0 */
 
 /** Imports **/
-
 @import var-mix
+@import navbar
+@import footer
 
 /** Main Styling **/
+body
+    background: $black !important
 
+section
+    height: 100vh
+    transition: transform 0.45s ease-out
+    will-change: transform
+
+    #card
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+div#card
+    width: 936px
+    height: 340px
+    background: $black-gradient
+    +border-radius($radius-large)
+    +box-shadow($shadow-black)
+    h1
+        margin-left: 4.54%
+        right: 77.35%
+        top: 11.48%
+        bottom: 72.21%
+        
+        font-size: $title-size
+        line-height: $title-line-height
+        font-family: $font
+        color: $white
+        text-shadow: $neu-shadow-element-dark
+
+    h3
+        margin-left: 4.54%
+        right: 79.17%
+        top: 27.79%
+        bottom: 61.18%
+
+        font-size: $subtitle-size
+        line-height: $subtitle-line-height
+        font-family: $font
+        color: $white
+
+    p
+        margin-left: 4.54%
+        right: 69.55%
+        top: 41.03%
+        bottom: 34.26%
