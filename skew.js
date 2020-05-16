@@ -20,8 +20,8 @@ const looper = function() {
     // Set up for-loop for dynamically adding skewing per object-type
     sectionOne.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionTwo.style.transform = 'skewY(' + speedSectionWide + 'deg)';
-    titleOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
-    titleTwo.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
+    //titleOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
+    //titleTwo.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
 
     currentPixel = newPixel
 
