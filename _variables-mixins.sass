@@ -1,0 +1,38 @@
+/* Variables & Mixins Test - R & Design 4.0 */
+
+// Colours and gradients
+$black: #000000
+$alt-black: #3a3a3a
+
+
+// Shadows
+$main-shadow: box-shadow: 0px 30px 40px rgba(174, 195, 228, 0.5)
+
+=box-shadow($shadow) 
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    -ms-box-shadow: $shadow
+    box-shadow: $shadow    
+
+    
+// Text - Insert Bodoni 72 Font
+$font: 'Poppins', sans-serif
+$style: normal
+$weight-semibold: 600
+$weight-medium: 500
+$weight-regular: 400
+
+$title-serif: 110px
+$title-sans-serif: 50px
+$subtitle: 30px
+$text: 20px
+
+
+// Asset Styling
+$radius-large: 20px
+$radius-small: 10px
+
+=border-radius($radius)
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+    border-radius: $radius
