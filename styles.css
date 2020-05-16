@@ -1,10 +1,46 @@
 /* SASS Test Stylesheet - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
+/* Cursor Styling - R & Design 4.0 */
+.cursor,
+.cursor2,
+.cursor3 {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+}
+
+.cursor {
+  background-color: #000000;
+  height: 0;
+  width: 0;
+  z-index: 99999;
+}
+
+.cursor2, .cursor3 {
+  height: 36px;
+  width: 36px;
+  z-index: 99998;
+}
+
+.cursor2 {
+  border: 2px solid #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .cursor, .cursor2, .cursor3 {
+    display: none;
+  }
+}
 /* Navbar Styling - R & Design 4.0 */
 /** Main Styling **/
 body {
-  color: #000000;
+  background-color: #000000 !important;
+  cursor: none;
 }
 
 section#one {
@@ -73,7 +109,7 @@ section#two h1 {
   transition: transform 0.1s ease-out;
   will-change: transform;
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 20;

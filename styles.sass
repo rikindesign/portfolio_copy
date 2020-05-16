@@ -2,12 +2,14 @@
 
 /** Imports **/
 @import variables-mixins
+@import cursor
 @import navbar
 @import footer
 
 /** Main Styling **/
 body
-    color: $black
+    background-color: $black !important
+    cursor: none
 
 section#one
     height: 100vh
@@ -72,7 +74,7 @@ section#two
         will-change: transform
 
         position: absolute
-        top: 20%
+        top: 16%
         left: 50%
         transform: translate(-50%, -50%) !important
         z-index: 20
