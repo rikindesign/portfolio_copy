@@ -6,92 +6,73 @@
 @import footer
 
 /** Main Styling **/
-*
-    font-family: $font
-
 body
-    background: $black !important
+    color: $black
 
-section
-    height: 75vh
+section#one
+    height: 100vh
+    width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
 
-    #card
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-
-div#card
-    width: 936px
-    height: 340px
-    background: $black-gradient
-    +border-radius($radius-large)
-    +box-shadow($shadow-black)
-
-    #inner
-        width: 50%
-        margin: 0 auto
-
     h1
-        margin-left: 4.54%
-        right: 77.35%
-        top: 11.48%
-        bottom: 72.21%
-        
-        font-size: $title-size
-        font-weight: $weight-medium
-        line-height: $title-line-height
         color: $white
-        // text-shadow: $neu-shadow-element-dark
-        +text-gradient($gray-gradient)
+        font-size: $title-serif
+        font-family: $font
+        transition: transform 0.1s ease-out
+        will-change: transform
 
-    h3
-        margin-left: 4.54%
-        right: 79.17%
-        top: 27.79%
-        bottom: 61.18%
+        position: absolute
+        top: 20%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20
 
-        font-size: $subtitle-size
-        font-weight: $weight-medium
-        line-height: $subtitle-line-height
-        +text-gradient($blue-gradient)
+    button 
+        color: $black !important
+        background-color: $white !important
+        border-color: $white !important
+        font-family: $font
+        +border-radius($radius-small !important)
+        +box-shadow($dark-shadow)
 
-    p
-        margin-left: 4.54%
-        right: 69.55%
-        top: 41.03%
-        bottom: 34.26%
+        position: absolute
+        width: 160px
+        padding: 10px !important
+        top: 80%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20
+        transition: 0.25s !important
 
-        width: 242.5px
-        height: 84px
-        color: $white
-
-    button
-        margin-left: 4.54%
-        right: 76.82%
-        top: 73.82%
-        bottom: 11.47%
-
-        width: 175px
-        height: 50px
-
-        background: $alt-black
-        border: none
-        +border-radius($radius-small)
-        +box-shadow($neu-shadow-body-dark)
-        +text-gradient($blue-gradient)
+    button:hover
+        color: $purple !important
+        margin-top: 10px !important
+        transition: 0.25s !important
 
     img
-        margin-left: 38.14%
-        right: 2.24%
-        top: 5.74%
-        bottom: 6.03%
+        position: absolute
+        height: 100vh
+        width: 100vw
+        object-fit: cover
+        z-index: 1
 
-        width: 558px
-        +border-radius($radius-small)
-        +box-shadow($neu-shadow-body-dark)
+section#two
+    background: $white
+    height: 100vh
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
 
+    h1
+        color: $alt-black
+        font-size: $title-serif
+        font-family: $font
+        transition: transform 0.1s ease-out
+        will-change: transform
 
-
+        position: absolute
+        top: 20%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20

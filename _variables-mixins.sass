@@ -2,11 +2,14 @@
 
 // Colours and gradients
 $black: #000000
-$alt-black: #3a3a3a
+$white: #ffffff
+$alt-black: #3A3A3A
+$purple: #352EB6
 
 
 // Shadows
-$main-shadow: box-shadow: 0px 30px 40px rgba(174, 195, 228, 0.5)
+$main-shadow: 0px 30px 40px rgba(174, 195, 228, 0.5)
+$dark-shadow: 0px 30px 40px rgba(10, 21, 39, 0.75)
 
 =box-shadow($shadow) 
     -webkit-box-shadow: $shadow
@@ -14,7 +17,7 @@ $main-shadow: box-shadow: 0px 30px 40px rgba(174, 195, 228, 0.5)
     -ms-box-shadow: $shadow
     box-shadow: $shadow    
 
-    
+
 // Text - Insert Bodoni 72 Font
 $font: 'Poppins', sans-serif
 $style: normal
@@ -22,10 +25,10 @@ $weight-semibold: 600
 $weight-medium: 500
 $weight-regular: 400
 
-$title-serif: 110px
-$title-sans-serif: 50px
-$subtitle: 30px
-$text: 20px
+$title-serif: min(110px, 8vw)
+$title-sans-serif: min(110px, 8vw)
+$subtitle: min(30px, 3vw)
+$text:  min(20px, 2vw)
 
 
 // Asset Styling
