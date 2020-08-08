@@ -1,42 +1,51 @@
 /* Variables & Mixins Test - R & Design 4.0 */
 
-// Colours and gradients
-$black: #000000
+// Colours
+$black: #1a1a1a
 $white: #ffffff
-$alt-black: #3A3A3A
-$purple: #352EB6
+$purple-light: #5359ea
+$blue-light: #0094FF
+$green-light: #1BA552
+$yellow-light: #C08A00
+$red-light: #D73B3B
+$gray-light: #6F7784
 
-
-// Shadows
-$main-shadow: 0px 30px 40px rgba(174, 195, 228, 0.5)
-$main-shadow-hover: 0px 30px 40px rgba(174, 195, 228, 0.8)
-$dark-shadow: 0px 30px 40px rgba(10, 21, 39, 0.75)
-
-=box-shadow($shadow) 
-    -webkit-box-shadow: $shadow
-    -moz-box-shadow: $shadow
-    -ms-box-shadow: $shadow
-    box-shadow: $shadow    
-
-
-// Text - Insert Bodoni 72 Font
-$font: 'Poppins', sans-serif
-$style: normal
-$weight-semibold: 600
-$weight-medium: 500
-$weight-regular: 400
-
-$title-serif: min(110px, 12vw)
-$title-sans-serif: min(110px, 12vw)
-$subtitle: min(30px, 3vw)
-$text:  min(20px, 2vw)
-
+// Gradients
+$gradient-purple-blue-light: linear-gradient(104.47deg, #5359EA 0%, #0094FF 100%)
+$gradient-blue-green-light: linear-gradient(104.047deg, #0094FF 0%, #1BA552 100%)
+$gradient-green-yellow-light: linear-gradient(104.047deg, #1BA552 0%, #F8C030 100%)
+$gradient-red-yellow-light: linear-gradient(104.047deg, #D73B3B 0%, #F8C030 100%)
+$gradient-red-purple-light: linear-gradient(104.047deg, #D73B3B 0%, #5359EA 100%)
+$gradient-black-gray-light: linear-gradient(104.04deg, #1A1A1A 0%, #6F7784 100%)
 
 // Asset Styling
-$radius-large: 20px
-$radius-small: 10px
+$radius-20: 20px
+$radius-16: 16px
+$radius-10: 10px
+$radius-0: 0px
 
 =border-radius($radius)
     -moz-border-radius: $radius
     -webkit-border-radius: $radius
     border-radius: $radius
+
+$spacing-xl: 72px
+$spacing-l: 32px
+$spacing-m: 24px
+$spacing-s: 12px
+$spacing-xs: 8px
+
+// Text - Insert Bodoni 72 Font
+$font:'Inter', sans-serif;
+$style: normal
+$weight-bold: 700
+$weight-semibold: 600
+$weight-medium: 500
+$weight-regular: 400
+
+$mega: min(98px, 12vw)
+$title: min(48px, 6vw)
+$subtitle: min(32px, 4vw)
+$large: min(24px, 3vw)
+$regular: min(17px, 2vw)
+$small: min(12px, 2vw)

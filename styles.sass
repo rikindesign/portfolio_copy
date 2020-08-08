@@ -4,13 +4,10 @@
 @import variables-mixins
 @import cursor
 @import navbar
+@import projects
 @import footer
 
 /** Main Styling **/
-body
-    background-color: $black !important
-    cursor: none
-
 section#one
     height: 100vh
     width: 100vw
@@ -19,7 +16,7 @@ section#one
 
     h1
         color: $white
-        font-size: $title-serif
+        font-size: $mega
         font-family: $font
         text-align: center
         transition: transform 0.1s ease-out
@@ -31,92 +28,3 @@ section#one
         left: 50%
         transform: translate(-50%, -50%) !important
         z-index: 20
-
-    button 
-        color: $black !important
-        background-color: $white !important
-        border-color: $white !important
-        font-family: $font
-        +border-radius($radius-small !important)
-        +box-shadow($dark-shadow)
-
-        position: absolute
-        width: 160px
-        padding: 10px !important
-        top: 80%
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
-        transition: 0.25s !important
-
-    button:hover
-        color: $purple !important
-        margin-top: 10px !important
-        transition: 0.25s !important
-
-    img
-        position: absolute
-        height: 100vh
-        width: 100vw
-        object-fit: cover
-        z-index: 1
-
-section#two
-    background: $white
-    width: 100vw
-    padding-bottom: 24vh
-    transition: transform 0.45s ease-out
-    will-change: transform
-
-    h1
-        color: $alt-black
-        font-size: $title-serif
-        font-family: $font
-        text-align: center
-        transition: transform 0.1s ease-out
-        will-change: transform
-
-        position: absolute
-        width: 80%
-        top: 18vh
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
-
-    #project-container-one
-        padding-top: 36vh
-
-    #project-container-two
-        padding-top: 4vh
-
-    #image-holder
-        padding: 0
-        border: none !important
-        +border-radius($radius-small !important)
-        +box-shadow($main-shadow)
-        transition: 0.25s
-
-        img
-            +border-radius($radius-small !important)
-
-    #image-holder:hover
-        +box-shadow($main-shadow-hover)
-        transition: 0.25s
-
-
-// Media Queries
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px)
-    .container
-        margin-right: 1em !important
-        margin-left: 1em !important
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
-    
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px)
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px)

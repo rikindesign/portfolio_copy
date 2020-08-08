@@ -35,32 +35,3 @@ var t = document.getElementById("cursor"),
     }
 
 })(jQuery);
-
-
-// Mouse Entering & Leaving
-var mouseEnter;
-
-function mouseEnterLeave() {
-    if (mouseEnter == true) {
-        t.style.display = 'visible';
-        e.style.display = 'visible';
-        i.style.display = 'visible';
-    }
-    if (mouseEnter == false) {
-        t.style.visibility = 'hidden';
-        e.style.visibility = 'hidden';
-        i.style.visibility = 'hidden';
-    }
-}
-
-$(document).mouseenter(function() {
-    mouseEnter = true;
-    mouseEnterLeave()
-    console.log('in', mouseEnter);
-});
-
-$(document).mouseleave(function() {
-    mouseEnter = false;
-    // mouseEnterLeave()
-    console.log('out', mouseEnter);
-});
