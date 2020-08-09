@@ -72,8 +72,8 @@ section#two, section#three {
   will-change: transform;
 }
 section#two .container, section#three .container {
-  padding-left: min(6em, 6vw);
-  padding-right: min(6em, 6vw);
+  padding-left: min(8em, 6.8vw);
+  padding-right: min(8em, 6.8vw);
 }
 section#two #test img, section#three #test img {
   width: 100%;
@@ -91,7 +91,7 @@ section#two #test .large, section#three #test .large {
   font-size: min(24px, 3vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 section#two #test .regular, section#three #test .regular {
   color: #6F7784;
@@ -99,6 +99,36 @@ section#two #test .regular, section#three #test .regular {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding-top: 24px;
+}
+section#two #test .button-group, section#three #test .button-group {
+  padding-top: 24px;
+}
+section#two #test .button-group button.primary, section#three #test .button-group button.primary {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #0094FF;
+  color: #ffffff;
+  border: 0px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  height: 48px;
+  padding-left: 38.4px;
+  padding-right: 38.4px;
+  margin-right: 8px;
+}
+section#two #test .button-group button.secondary, section#three #test .button-group button.secondary {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  color: #6F7784;
+  border: solid 2px #6F7784;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  height: 48px;
+  padding-left: 38.4px;
+  padding-right: 38.4px;
 }
 
 section#three {

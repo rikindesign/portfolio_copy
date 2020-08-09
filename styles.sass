@@ -41,8 +41,8 @@ section#two, section#three
     will-change: transform
 
     .container
-        padding-left: min(6em, 6vw)
-        padding-right: min(6em, 6vw)
+        padding-left: min(8em, 6.8vw)
+        padding-right: min(8em, 6.8vw)
     #test
         img
             width: 100%
@@ -61,13 +61,44 @@ section#two, section#three
             font-family: $font
             font-weight: $weight-medium
 
-            padding-top: $spacing-xs
+            padding-top: $spacing-none
 
         .regular
             color: $gray-light
             font-size: $regular
             font-family: $font
             font-weight: $weight-regular
+
+            padding-top: $spacing-m
+
+        .button-group
+            button.primary
+                font-family: $font
+                font-weight: $weight-regular
+
+                background-color: $blue-light
+                color: $white
+                border: 0px
+                +border-radius($radius-16)
+
+                height: 48px
+                padding-left: 1.2 * $spacing-l
+                padding-right: 1.2 * $spacing-l
+                margin-right: $spacing-xs
+                
+
+            button.secondary
+                font-family: $font
+                font-weight: $weight-regular
+
+                background-color: transparent
+                color: $gray-light
+                border: solid 2px $gray-light
+                +border-radius($radius-16)
+
+                height: 48px
+                padding-left: 1.2 * $spacing-l
+                padding-right: 1.2 * $spacing-l
 
             padding-top: $spacing-m
 
