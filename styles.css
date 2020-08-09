@@ -27,7 +27,7 @@
 }
 
 .cursor2 {
-  border: 4px solid #0094FF;
+  border: 4px solid #6F7784;
 }
 
 @media screen and (max-width: 1200px) {
@@ -141,5 +141,16 @@ section#two #test .button-group button.secondary, section#three #test .button-gr
 section#three {
   margin-top: 144px;
 }
+
+/** @media only screen and (min-width: 320px)
+ *  section#two, section#three
+ *      #test
+ *          #image-container
+ *              height: 100% **/
+/** @media only screen and (min-width: 768px)
+ *  section#two, section#three
+ *      #test
+ *          #img
+ *              height: 312px **/
 
 /*# sourceMappingURL=styles.css.map */

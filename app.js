@@ -1,6 +1,7 @@
 // Application JavaScript - R & Design 4.0
 console.log('App');
 
+// Cursor
 var t = document.getElementById("cursor"),
     e = document.getElementById("cursor2"),
     i = document.getElementById("cursor3");
@@ -35,3 +36,23 @@ var t = document.getElementById("cursor"),
     }
 
 })(jQuery);
+
+// Dynamic Images
+let imageOne = document.getElementById('image-one')
+let imageTwo = document.getElementById('image-two')
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        imageOne.src = 'assets/images/Group 17.svg'
+        imageTwo.src = 'assets/images/Group 18.svg'
+        console.log('mobile')
+    } else {
+        imageOne.src = 'assets/images/Group 15.svg'
+        imageTwo.src = 'assets/images/Group 16.svg'
+        console.log('desktop')
+    }
+}
+
+var windowElement = window.matchMedia("(max-width: 700px)")
+myFunction(windowElement) // Call listener function at run time
+windowElement.addListener(myFunction) // Attach listener function on state changes
