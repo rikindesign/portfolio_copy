@@ -27,12 +27,13 @@
 }
 
 .cursor2 {
-  border: 4px solid #6F7784;
+  border: 12px solid #0094FF;
 }
 
 @media screen and (max-width: 1200px) {
   .cursor, .cursor2, .cursor3 {
     display: none;
+    cursor: none;
   }
 }
 /* Navbar Styling - R & Design 4.0 */
