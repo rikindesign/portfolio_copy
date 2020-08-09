@@ -4,6 +4,7 @@ console.log('Skew')
 // Declarations
 const sectionOne = document.getElementById('one')
 const sectionTwo = document.getElementById('two')
+const sectionThree = document.getElementById('three')
 const titleOne = document.getElementById('title-one')
 const titleTwo = document.getElementById('title-two')
 let currentPixel = window.pageYOffset
@@ -20,6 +21,7 @@ const looper = function() {
     // Set up for-loop for dynamically adding skewing per object-type
     sectionOne.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionTwo.style.transform = 'skewY(' + speedSectionWide + 'deg)';
+    sectionThree.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     //titleOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
     //titleTwo.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
 
