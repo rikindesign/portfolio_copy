@@ -2,12 +2,15 @@
 
 /** Imports **/
 @import variables-mixins
+@import buttons
 @import cursor
 @import navbar
 @import projects
 @import footer
 
 /** Main Styling **/
+*
+    text-decoration: none !important
 body
     background-color: $black !important
     overflow-x: hidden
@@ -36,14 +39,14 @@ section#one
         transform: translate(-50%, -50%) !important
         z-index: 20
 
-section#two, section#three
+section#two, section#three, section#four, section#five
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
 
     .container
         padding-left: min(8em, 6.8vw)
-        padding-right: min(12em, 6.8vw)
+        padding-right: min(8em, 6.8vw)
     #test
         img
             // height: 240px !important **/
@@ -78,7 +81,8 @@ section#two, section#three
 
             button.primary
                 font-family: $font
-                font-weight: $weight-regular
+                font-weight: $weight-medium
+                cursor: none
 
                 background-color: $blue-light
                 color: $white
@@ -86,8 +90,8 @@ section#two, section#three
                 +border-radius($radius-16)
 
                 height: 48px
-                padding-left: 1.2 * $spacing-l
-                padding-right: 1.2 * $spacing-l
+                padding-left: $spacing-m
+                padding-right: $spacing-m
                 margin-right: $spacing-xs
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
             
@@ -95,22 +99,40 @@ section#two, section#three
                 background-color: $purple-light
                 transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
-                margin-right: $spacing-s
-
             button.secondary
                 font-family: $font
                 font-weight: $weight-regular
+                cursor: none
 
                 background-color: transparent
-                color: $gray-dark
                 border: solid 2px $gray-dark
                 +border-radius($radius-16)
 
                 height: 48px
-                padding-left: 1.2 * $spacing-l
-                padding-right: 1.2 * $spacing-l
+                padding-left: $spacing-m
+                padding-right: $spacing-m
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
 
-section#three
+                a
+                    cursor: none
+                    color: $gray-dark
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                a:hover
+                    cursor: none
+                    color: $white
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+                    
+
+            button.secondary:hover
+                color: $white
+                border: solid 2px $gray-light
+                +border-radius($radius-16)
+                transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+                margin-left: $spacing-s
+
+section#three, section#four, section#five
     margin-top: 2 * $spacing-xl
     
 
