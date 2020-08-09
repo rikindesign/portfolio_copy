@@ -74,7 +74,7 @@ section#two, section#three {
 }
 section#two .container, section#three .container {
   padding-left: min(8em, 6.8vw);
-  padding-right: min(8em, 6.8vw);
+  padding-right: min(12em, 6.8vw);
 }
 section#two #test img, section#three #test img {
   width: 100%;
