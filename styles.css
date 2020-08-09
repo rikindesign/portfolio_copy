@@ -117,6 +117,12 @@ section#two #test .button-group button.primary, section#three #test .button-grou
   padding-left: 38.4px;
   padding-right: 38.4px;
   margin-right: 8px;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#two #test .button-group button.primary:hover, section#three #test .button-group button.primary:hover {
+  background-color: #5359EA;
+  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+  margin-right: 12px;
 }
 section#two #test .button-group button.secondary, section#three #test .button-group button.secondary {
   font-family: "Inter", sans-serif;
