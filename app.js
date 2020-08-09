@@ -40,6 +40,7 @@ var t = document.getElementById("cursor"),
 // Dynamic Images
 let imageOne = document.getElementById('image-one')
 let imageTwo = document.getElementById('image-two')
+let textDescription = document.getElementById('text-description')
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
@@ -53,6 +54,6 @@ function myFunction(x) {
     }
 }
 
-var windowElement = window.matchMedia("(max-width: 700px)")
+var windowElement = window.matchMedia("(max-width: 768px)")
 myFunction(windowElement) // Call listener function at run time
 windowElement.addListener(myFunction) // Attach listener function on state changes
