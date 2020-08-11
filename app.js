@@ -46,16 +46,16 @@ let textDescription = document.getElementById('text-description')
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        imageOne.src = 'assets/images/Group 17.svg'
+        imageOne.src = 'assets/renders/Philbin - Mobile.jpg'
         imageTwo.src = 'assets/renders/Safe@Lab - Mobile.jpg'
         imageThree.src = 'assets/images/Group 20.svg'
-        imageFour.src = 'assets/images/Group 22.svg'
+        imageFour.src = 'assets/renders/Google - Mobile.jpg'
         console.log('mobile')
     } else {
-        imageOne.src = 'assets/images/Group 15.svg'
+        imageOne.src = 'assets/renders/Philbin - Desktop.jpg'
         imageTwo.src = 'assets/renders/Safe@Lab - Desktop.jpg'
         imageThree.src = 'assets/images/Group 19.svg'
-        imageFour.src = 'assets/images/Group 21.svg'
+        imageFour.src = 'assets/renders/Google - Desktop.jpg'
         console.log('desktop')
     }
 }

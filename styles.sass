@@ -14,7 +14,7 @@
 body
     background-color: $black !important
     overflow-x: hidden
-    cursor: none
+    cursor: none !important
 
     img
         +border-radius($radius-20)
@@ -135,9 +135,11 @@ section#two, section#three, section#four, section#five
 
                 margin-left: $spacing-s
 
-section#three, section#four, section#five
+section#two, section#four, section#five
     margin-top: 2 * $spacing-xl
     
+section#three
+    margin-bottom: 2 * $spacing-xl  
 
 // Media Queries
 /** @media only screen and (min-width: 320px)
