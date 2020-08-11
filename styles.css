@@ -84,6 +84,11 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+body img {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
 
 section#one {
   height: 40vh;

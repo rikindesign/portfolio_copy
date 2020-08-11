@@ -47,13 +47,13 @@ let textDescription = document.getElementById('text-description')
 function myFunction(x) {
     if (x.matches) { // If media query matches
         imageOne.src = 'assets/images/Group 17.svg'
-        imageTwo.src = 'assets/renders/Safe@Lab - Mobile.svg'
+        imageTwo.src = 'assets/renders/Safe@Lab - Mobile.jpg'
         imageThree.src = 'assets/images/Group 20.svg'
         imageFour.src = 'assets/images/Group 22.svg'
         console.log('mobile')
     } else {
         imageOne.src = 'assets/images/Group 15.svg'
-        imageTwo.src = 'assets/renders/Safe@Lab - Desktop.svg'
+        imageTwo.src = 'assets/renders/Safe@Lab - Desktop.jpg'
         imageThree.src = 'assets/images/Group 19.svg'
         imageFour.src = 'assets/images/Group 21.svg'
         console.log('desktop')
