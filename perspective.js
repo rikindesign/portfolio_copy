@@ -1,5 +1,13 @@
 // Direction-Aware-Transform-Perspective JavaScript - R & Design 4.0
-(function() {
+
+VanillaTilt.init(document.querySelectorAll(".col-sm-12"), {
+    // max: 25,
+    speed: 2000,
+    transition: true,
+    easing: "cubic-bezier(.03, .98, .52, .99)"
+});
+
+/* (function() {
     // Init
     var container = document.getElementById("container"),
         inner = document.getElementById("inner");
@@ -75,4 +83,4 @@
     container.onmouseenter = onMouseEnterHandler;
     container.onmouseleave = onMouseLeaveHandler;
     container.onmousemove = onMouseMoveHandler;
-})();
+})(); */
