@@ -50,6 +50,10 @@ section#two, section#three, section#four, section#five
     .container
         padding-left: min(8em, 6.8vw)
         padding-right: min(8em, 6.8vw)
+
+    .row
+        transition: cubic-bezier(.03,.98,.52,.99)
+
     #test
         img
             // height: 240px !important **/
@@ -134,6 +138,12 @@ section#two, section#three, section#four, section#five
                 transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
                 margin-left: $spacing-s
+
+    /** #inner  
+        transition: transform 0.16s;
+        -webkit-transition: transform 0.16s;
+        -moz-transition: transform 0.16s;
+        -o-transition: transform 0.16s; **/
 
 section#two, section#four, section#five
     margin-top: 2 * $spacing-xl

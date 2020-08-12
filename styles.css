@@ -203,6 +203,9 @@ section#two #test .button-group button.secondary:hover, section#three #test .but
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
   margin-left: 12px;
 }
+section#two #inner, section#three #inner, section#four #inner, section#five #inner {
+  transition: transform 0.25s;
+}
 
 section#two, section#four, section#five {
   margin-top: 144px;
