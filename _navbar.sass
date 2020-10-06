@@ -1,1 +1,164 @@
 /* Navbar Styling - R & Design 4.0 */
+
+/** Imports **/
+@import variables-mixins
+
+nav
+    display: flex !important
+    /** justify-content: center **/
+    justify-content: space-around
+    align-items: center
+    min-height: 6vh
+    
+    background-color: $gray-light
+
+    font-family: $font
+    font-size: $regular
+
+    .logo
+        // Custom to change
+        color: $white
+        text-transform: uppercase
+        letter-spacing: $spacing-xs / 4
+
+        h4
+            padding: 0
+            margin: 0
+
+    .nav-links
+        display: flex
+        justify-content: space-around
+        padding: 0
+        margin: 0
+        width: 32%
+
+        list-style: none
+
+        li
+            a
+                color: $white
+                cursor: none
+                vertical-align: middle
+
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+            a:hover
+                color: $gray-light
+                transition: 0.18s cubic-bezier(.3,.01,.25,1)
+    
+    .burger
+        display: none
+        cursor: pointer
+
+        div
+            width: 24px
+            height: 2px
+            margin: 4px
+
+            +border-radius($radius-10)
+            background-color: $white
+
+// Toggled Classes    
+
+@media screen and ( max-width: 1024px )
+    nav
+        min-height: 8vh
+
+    .nav-links
+        width: 52%
+
+@media screen and ( max-width: 768px )
+    body
+        overflow-x: hidden !important
+
+    nav
+        .nav-links
+            position: absolute    
+            right: 0px
+            height: 92vh
+            top: 8vh
+            background-color: $gray-light
+
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        
+            width: 50%
+            transform: translateX(100%)
+            transition: transform 0.25s ease-in
+
+            li
+                opacity: 0
+
+        .burger
+            display: block
+
+    .active-nav
+        transform: translateX(0%)
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+/** Old Navbar Code **/
+/** header
+    width: 100vw
+    padding: $spacing-l min(16em, 13.4vw)
+    vertical-align: middle
+
+    nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        li, a, ul
+            font-family: $font
+            font-weight: $weight-regular
+            font-size: $regular
+            color: $white
+
+        .nav-links
+            list-style: none
+
+            li
+                display: inline-block
+                /** margin-top: $spacing-m
+        
+                a
+                    cursor: none
+                    vertical-align: middle
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                a:hover
+                    color: $gray-light
+                    transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+        button.primary
+            font-family: $font
+            font-weight: $weight-medium
+            cursor: none
+
+            background-color: $blue-light
+            color: $white
+            border: 0px
+            +border-radius($radius-16)
+
+            height: 48px
+            padding-left: $spacing-m
+            padding-right: $spacing-m
+            transition: 0.18s cubic-bezier(.77,0,.64,1)
+            
+        button.primary:hover
+            background-color: $purple-light
+            transition: 0.18s cubic-bezier(.3,.01,.25,1) **/
+
+

@@ -1,5 +1,5 @@
 // Application JavaScript - R & Design 4.0
-console.log('App');
+console.log('App')
 
 // Cursor
 var t = document.getElementById("cursor"),
