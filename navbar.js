@@ -2,14 +2,13 @@
 console.log('Navbar');
 
 const navSlide = () => {
-    const burger = document.querySelector('.burger')
-    const nav = document.querySelector('.nav-links')
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('active-nav')
-        console.log(nav.classList.contains('active-nav'))
-    })
+        nav.classList.toggle('active-nav');
+    });
 }
 
 // App Wide Function Calls
-navSlide()
+navSlide();

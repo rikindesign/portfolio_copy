@@ -9,6 +9,9 @@ nav
     justify-content: space-around
     align-items: center
     min-height: 6vh
+
+    
+    z-index: 20000
     
     background-color: $gray-light
 
@@ -28,6 +31,7 @@ nav
     .nav-links
         display: flex
         justify-content: space-around
+        z-index: 20000
         padding: 0
         margin: 0
         width: 32%
@@ -61,6 +65,8 @@ nav
 // Toggled Classes    
 
 @media screen and ( max-width: 1024px )
+    body
+        overflow-x: hidden
     nav
         min-height: 8vh
 
@@ -91,8 +97,8 @@ nav
         .burger
             display: block
 
-    .active-nav
-        transform: translateX(0%)
+        .active-nav
+            transform: translateX(0%)
             
     
 

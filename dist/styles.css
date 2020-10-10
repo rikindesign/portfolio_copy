@@ -81,7 +81,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 6vh;
-  z-index: 20000;
   background-color: #6F7784;
   font-family: "Inter", sans-serif;
   font-size: 17px;
@@ -98,7 +97,6 @@ nav .logo h4 {
 nav .nav-links {
   display: flex;
   justify-content: space-around;
-  z-index: 20000;
   padding: 0;
   margin: 0;
   width: 32%;
@@ -129,10 +127,6 @@ nav .burger div {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-
   nav {
     min-height: 8vh;
   }
@@ -503,5 +497,3 @@ section#two, section#four, section#five {
 section#three {
   margin-bottom: 144px;
 }
-
-/*# sourceMappingURL=styles.css.map */
