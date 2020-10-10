@@ -68,6 +68,10 @@ nav .burger div {
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   nav .nav-links {
     position: absolute;
     right: 0px;
@@ -78,9 +82,9 @@ nav .burger div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 64%;
     transform: translateX(100%);
-    transition: transform 0.25s ease-in;
+    transition: transform 0.2s ease-in-out;
   }
   nav .nav-links li {
     opacity: 0;
@@ -90,6 +94,25 @@ nav .burger div {
   }
   nav .active-nav {
     transform: translateX(0%);
+  }
+  nav .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  nav .toggle .line2 {
+    opacity: 0;
+  }
+  nav .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 /** Old Navbar Code **/
