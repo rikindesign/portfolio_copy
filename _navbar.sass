@@ -5,21 +5,24 @@
 
 nav
     display: flex !important
-    /** justify-content: center **/
-    justify-content: space-around
+    justify-content: center
+    /** justify-content: space-around **/
     align-items: center
     min-height: 6vh
-
-    
     z-index: 20000
+
+    position: fixed
+    top: 0
+    width: 100%
     
-    background-color: $gray-light
+    background-color: $black
 
     font-family: $font
     font-size: $regular
 
     .logo
         // Custom to change
+        display: none
         color: $white
         text-transform: uppercase
         letter-spacing: $spacing-xs / 4
@@ -47,7 +50,7 @@ nav
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a:hover
-                color: $gray-light
+                color: $blue-light
                 transition: 0.18s cubic-bezier(.3,.01,.25,1)
     
     .burger
@@ -62,16 +65,21 @@ nav
             +border-radius($radius-10)
             background-color: $white
 
-// Toggled Classes    
+            transition: all 0.24s ease
 
+// Toggled Classes    
 @media screen and ( max-width: 1024px )
     body
         overflow-x: hidden
     nav
+        justify-content: space-around
         min-height: 8vh
 
+        .logo
+            display: block
+
     .nav-links
-        width: 52%
+        width: 24%
 
 @media screen and ( max-width: 768px )
     body
@@ -82,11 +90,11 @@ nav
             right: 0px
             height: 92vh
             top: 8vh
-            background-color: $gray-light
+            background-color: $black
 
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: space-around
             align-items: center
         
             width: 64%
@@ -98,18 +106,10 @@ nav
 
         .burger
             display: block
+            transition: all 0.24s ease
 
         .active-nav
             transform: translateX(0%)
-
-        .toggle .line1
-            transform: rotate(-45deg) translate(-5px, 6px)
-
-        .toggle .line2
-            opacity: 0
-
-        .toggle .line3
-            transform: rotate(45deg) translate(-5px, -6px)
 
 // Animations and Transforms
 @keyframes navLinkFade
@@ -119,16 +119,23 @@ nav
     to
         opacity: 1
         transform: translateX(0px)
-    
 
+@keyframes bodyFilterFade
+    from
+        filter: blur(20px)
+        transition: transform 0.2s ease-in-out
+    to
+        filter: blur(0px)
+        transition: transform 0.2s ease-in-out
+  
+.toggle div.line-one
+    transform: rotate(-45deg) translate(-5px, 3.36px)
 
+.toggle div.line-two
+    opacity: 0
 
-
-
-
-
-
-
+.toggle div.line-three
+    transform: rotate(45deg) translate(-5px, -3.36px)
 
 
 /** Old Navbar Code **/
