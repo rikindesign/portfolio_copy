@@ -136,10 +136,6 @@ nav .burger div {
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden !important;
-  }
-
   nav .nav-links {
     position: absolute;
     right: 0px;
