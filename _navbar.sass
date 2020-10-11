@@ -14,9 +14,9 @@ nav
     top: 0
     width: 100%
     
-    background-color: $black
-    //background-color: rgba(26, 26, 26, 0.8)
-    //backdrop-filter: blur(20px) contrast(.8)
+    background-color: rgba(26, 26, 26, 0.92)
+    backdrop-filter: blur(20px) contrast(.8) !important
+    -webkit-backdrop-filter: blur(20px) contrast(.8) !important
 
     font-family: $font
     font-size: $regular
@@ -94,9 +94,9 @@ navbar::before
     nav
         ul
             background-color: rgba(26, 26, 26, 0.92)
-            //+drop-shadow(0px 40px 80px 0px rgba(0,0,0,0.48))
+            backdrop-filter: blur(20px) contrast(.8) !important
+            -webkit-backdrop-filter: blur(20px) contrast(.8) !important
             z-index: 19999
-            backdrop-filter: blur(20px) contrast(.8)
 
         .nav-links
             position: absolute    
