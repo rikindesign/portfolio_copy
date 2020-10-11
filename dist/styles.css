@@ -84,8 +84,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.8);
-  backdrop-filter: blur(20px) contrast(0.8);
+  background-color: rgba(26, 26, 26, 0.92);
+  backdrop-filter: blur(20px) contrast(0.8) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
   font-size: 17px;
 }
@@ -158,13 +159,22 @@ nav .burger div {
     overflow-x: hidden;
   }
 
+  nav ul {
+    background-color: rgba(26, 26, 26, 0.92);
+    backdrop-filter: blur(20px) contrast(0.8) !important;
+    -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+    z-index: 19999;
+  }
   nav .nav-links {
     position: absolute;
     right: 0px;
     height: 52vh;
     top: 8vh;
-    background-color: rgba(26, 26, 26, 0.84);
-    border-radius: 0 0 0 16px;
+    margin-top: 16px;
+    margin-right: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -216,55 +226,6 @@ nav .burger div {
   transform: rotate(45deg) translate(-5px, -3.36px);
 }
 
-/** Old Navbar Code **/
-/** header
- *  width: 100vw
- *  padding: $spacing-l min(16em, 13.4vw)
- *  vertical-align: middle
- *
- *  nav
- *      display: flex
- *      justify-content: space-between
- *      align-items: center
- *
- *      li, a, ul
- *          font-family: $font
- *          font-weight: $weight-regular
- *          font-size: $regular
- *          color: $white
- *
- *      .nav-links
- *          list-style: none
- *
- *          li
- *              display: inline-block
- *              /** margin-top: $spacing-m
- *              a
- *                  cursor: none
- *                  vertical-align: middle
- *                  transition: 0.18s cubic-bezier(.77,0,.64,1)
- *
- *              a:hover
- *                  color: $gray-light
- *                  transition: 0.18s cubic-bezier(.3,.01,.25,1)
- *
- *      button.primary
- *          font-family: $font
- *          font-weight: $weight-medium
- *          cursor: none
- *
- *          background-color: $blue-light
- *          color: $white
- *          border: 0px
- *          +border-radius($radius-16)
- *
- *          height: 48px
- *          padding-left: $spacing-m
- *          padding-right: $spacing-m
- *          transition: 0.18s cubic-bezier(.77,0,.64,1)
- *      button.primary:hover
- *          background-color: $purple-light
- *          transition: 0.18s cubic-bezier(.3,.01,.25,1) **/
 /* Projects Styling - R & Design 4.0 */
 /* Footer Styling - R & Design 4.0 */
 /** Imports **/
@@ -416,7 +377,7 @@ body img {
   .modal {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(26, 26, 26, 0.92);
   }
 
   .warning {
