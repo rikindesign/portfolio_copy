@@ -21,6 +21,15 @@ body
 
     img
         +border-radius($radius-20)
+
+// Blur Support
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
+    .modal
+        -webkit-backdrop-filter: blur(20px)
+        backdrop-filter: blur(20px)
+        background-color: rgba(26, 26, 26, 0.8)
+    .warning
+        display: none
     
 section#one
     height: 40vh

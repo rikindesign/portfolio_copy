@@ -29,7 +29,6 @@ const navSlide = () => {
         // Burger Animations
         burger.classList.toggle('toggle')
     })
-
 }
 
 // App Wide Function Calls
