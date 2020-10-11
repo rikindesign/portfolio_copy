@@ -7,16 +7,9 @@ var navSlide = function navSlide() {
   var burger = document.querySelector('.burger');
   var nav = document.querySelector('.nav-links');
   var navLinks = document.querySelectorAll('.nav-links li');
-  var bodyElement = document.body;
   burger.addEventListener('click', function () {
     // Navigation Toggling
-    nav.classList.toggle('active-nav');
-    /* if (bodyElement.style.animation) {
-        bodyElement.style.animation = ''
-    } else {
-        bodyElement.style.animation = `bodyFilterFade 0.25s ease`
-    } */
-    // Link Animations
+    nav.classList.toggle('active-nav'); // Link Animations
 
     navLinks.forEach(function (link, index) {
       if (link.style.animation) {
