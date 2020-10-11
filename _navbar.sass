@@ -14,8 +14,9 @@ nav
     top: 0
     width: 100%
     
-    background-color: rgba(26, 26, 26, 0.8)
-    backdrop-filter: blur(20px) contrast(.8)
+    background-color: $black
+    //background-color: rgba(26, 26, 26, 0.8)
+    //backdrop-filter: blur(20px) contrast(.8)
 
     font-family: $font
     font-size: $regular
@@ -70,6 +71,9 @@ nav
 
             transition: all 0.24s ease
 
+navbar::before
+    
+
 // Toggled Classes    
 @media screen and ( max-width: 1024px )
     body
@@ -89,7 +93,9 @@ nav
         overflow-x: hidden
     nav
         ul
-            background-color: rgba(26, 26, 26, 0.8)
+            background-color: rgba(26, 26, 26, 0.92)
+            //+drop-shadow(0px 40px 80px 0px rgba(0,0,0,0.48))
+            z-index: 19999
             backdrop-filter: blur(20px) contrast(.8)
 
         .nav-links
@@ -97,7 +103,9 @@ nav
             right: 0px
             height: 52vh
             top: 8vh
-            border-radius: 0 0 0 16px
+            margin-top: 16px
+            margin-right: 20px
+            +border-radius($radius-20)
 
             display: flex
             flex-direction: column
