@@ -449,7 +449,7 @@ body .header-animation {
 }
 
 section#one {
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   transition: transform 0.45s ease-out;
   will-change: transform;
