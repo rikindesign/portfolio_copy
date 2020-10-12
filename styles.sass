@@ -23,12 +23,12 @@ body
         +border-radius($radius-20)
 
 // Blur Support
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
-    .modal
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))
+    .modal //Change this
         -webkit-backdrop-filter: blur(20px)
         backdrop-filter: blur(20px)
         background-color: rgba(26, 26, 26, 0.92)
-    .warning
+    .warning //Change this
         display: none
     
 section#one
@@ -73,7 +73,7 @@ section#one
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
   
-        animation: shine 6s linear infinite
+        animation: shine 5s linear infinite
         @keyframes shine
             to
                 background-position: 200% center

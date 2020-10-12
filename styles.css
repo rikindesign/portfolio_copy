@@ -363,7 +363,7 @@ body img {
   border-radius: 20px;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
   .modal {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -412,7 +412,7 @@ section#one .header-animation {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
+  animation: shine 5s linear infinite;
 }
 @keyframes shine {
   to {

@@ -84,7 +84,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.92);
+  background-color: rgba(26, 26, 26, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
@@ -160,7 +160,7 @@ nav .burger div {
   }
 
   nav ul {
-    background-color: rgba(26, 26, 26, 0.92);
+    background-color: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(20px) contrast(0.8) !important;
     -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
     z-index: 19999;
@@ -170,8 +170,7 @@ nav .burger div {
     right: 0px;
     height: 52vh;
     top: 8vh;
-    margin-top: 16px;
-    margin-right: 20px;
+    margin-top: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -191,6 +190,7 @@ nav .burger div {
     transition: all 0.24s ease;
   }
   nav .active-nav {
+    margin-right: 20px;
     transform: translateX(0%);
   }
 }
@@ -202,16 +202,6 @@ nav .burger div {
   to {
     opacity: 1;
     transform: translateX(0px);
-  }
-}
-@keyframes bodyFilterFade {
-  from {
-    filter: blur(20px);
-    transition: transform 0.2s ease-in-out;
-  }
-  to {
-    filter: blur(0px);
-    transition: transform 0.2s ease-in-out;
   }
 }
 .toggle div.line-one {
@@ -373,7 +363,7 @@ body img {
   border-radius: 20px;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
   .modal {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -422,7 +412,7 @@ section#one .header-animation {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
+  animation: shine 5s linear infinite;
 }
 @keyframes shine {
   to {

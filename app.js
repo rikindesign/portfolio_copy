@@ -47,15 +47,15 @@ let textDescription = document.getElementById('text-description')
 function myFunction(x) {
     if (x.matches) { // If media query matches
         imageOne.src = 'assets/renders/Philbin - Mobile.jpg'
-        imageTwo.src = 'assets/renders/Safe@Lab - Mobile.jpg'
-        imageThree.src = 'assets/images/Group 20.svg'
-        imageFour.src = 'assets/renders/Google - Mobile.jpg'
+        imageTwo.src = 'assets/images/Safe@Lab - Mobile.jpg'
+        imageThree.src = 'assets/images/ChowTime - Mobile.jpg'
+        imageFour.src = 'assets/images/Google - Mobile.jpg'
         console.log('mobile')
     } else {
         imageOne.src = 'assets/renders/Philbin - Desktop.jpg'
-        imageTwo.src = 'assets/renders/Safe@Lab - Desktop.jpg'
-        imageThree.src = 'assets/images/Group 19.svg'
-        imageFour.src = 'assets/renders/Google - Desktop.jpg'
+        imageTwo.src = 'assets/images/Safe@Lab - Desktop.jpg'
+        imageThree.src = 'assets/images/ChowTime - Desktop.jpg'
+        imageFour.src = 'assets/images/Google - Desktop.jpg'
         console.log('desktop')
     }
 }
