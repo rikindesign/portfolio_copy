@@ -17,7 +17,7 @@ const looper = function() {
     const newPixel = window.pageYOffset
     const diff = newPixel - currentPixel
     const speedSectionSmall = diff * 0.2
-    const speedSectionWide = diff * 0.064
+    const speedSectionWide = diff * 0.05
 
     // Animated Sections (must include 'will-change: transform;' in SASS)
     // Set up for-loop for dynamically adding skewing per object-type

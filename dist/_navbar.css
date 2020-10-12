@@ -3,9 +3,11 @@
 /* Variables & Mixins Test - R & Design 4.0 */
 nav {
   display: flex !important;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 6vh;
+  padding-left: min(8em, 6.8vw);
+  padding-right: min(8em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
@@ -17,12 +19,11 @@ nav {
   font-size: 17px;
 }
 nav .logo {
-  display: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  display: block !important;
+  color: #000;
 }
 nav .logo h4 {
+  font-weight: 600;
   padding: 0;
   margin: 0;
 }
@@ -72,10 +73,6 @@ nav .burger div {
     justify-content: space-around;
     min-height: 8vh;
   }
-  nav .logo {
-    display: block;
-  }
-
   .nav-links {
     width: 24%;
   }

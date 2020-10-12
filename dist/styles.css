@@ -77,9 +77,11 @@ a .animated-button .thar-three:before {
 /* Variables & Mixins Test - R & Design 4.0 */
 nav {
   display: flex !important;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 6vh;
+  padding-left: min(8em, 6.8vw);
+  padding-right: min(8em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
@@ -91,12 +93,11 @@ nav {
   font-size: 17px;
 }
 nav .logo {
-  display: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  display: block !important;
+  color: #000;
 }
 nav .logo h4 {
+  font-weight: 600;
   padding: 0;
   margin: 0;
 }
@@ -146,10 +147,6 @@ nav .burger div {
     justify-content: space-around;
     min-height: 8vh;
   }
-  nav .logo {
-    display: block;
-  }
-
   .nav-links {
     width: 24%;
   }
@@ -217,6 +214,55 @@ nav .burger div {
 }
 
 /* Projects Styling - R & Design 4.0 */
+/* Dynamic Wave Styling - R & Design 4.0 */
+/** Imports **/
+/* Variables & Mixins Test - R & Design 4.0 */
+section#one {
+  overflow: hidden;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #1A1A1A;
+}
+
+.wave {
+  filter: blur(20px);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: 198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
 /* Footer Styling - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
@@ -345,6 +391,7 @@ nav .burger div {
 /** Main Styling **/
 * {
   text-decoration: none !important;
+  outline: none;
 }
 
 html {
@@ -362,49 +409,30 @@ body img {
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-
-@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
-  .modal {
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: rgba(26, 26, 26, 0.92);
-  }
-
-  .warning {
-    display: none;
-  }
-}
-section#one {
-  height: 40vh;
-  width: 100vw;
-  transition: transform 0.45s ease-out;
-  will-change: transform;
-  margin-bottom: 72px;
-}
-section#one h1 {
-  color: #FFFFFF;
-  font-size: min(98px, 12vw);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  position: absolute;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-  z-index: 20;
-}
-section#one .large {
-  color: #FFFFFF;
-  font-size: min(24px, 4vw);
+body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  text-align: center;
-  padding-top: 0px;
+  cursor: none;
+  background-color: #0094FF;
+  color: #FFFFFF;
+  border: 0px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: 8px;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#one .header-animation {
+body button.primary button:focus {
+  outline: 0;
+}
+body button.primary:hover {
+  background-color: #5359EA;
+  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+body .header-animation {
   background: linear-gradient(0.25turn, #FFFFFF 0%, #a5a8fd 25%, #7fcef3 50%, #a5fdf1 75%, #FFFFFF 100%);
   background-size: 200% auto;
   color: #000;
@@ -412,12 +440,51 @@ section#one .header-animation {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite;
+  animation: shine 3.2s linear infinite;
 }
 @keyframes shine {
   to {
     background-position: 200% center;
   }
+}
+
+section#one {
+  height: 100vh;
+  width: 100vw;
+  transition: transform 0.45s ease-out;
+  will-change: transform;
+  background-attachment: fixed;
+  margin-bottom: 144px;
+  z-index: 19998;
+}
+section#one .container {
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
+}
+section#one h1 {
+  color: #FFFFFF;
+  font-size: min(98px, 12vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700 !important;
+  text-align: center;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  position: absolute;
+  width: 80%;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 20;
+}
+section#one #landing-description {
+  position: relative;
+  top: 42%;
+  color: #FFFFFF;
+  font-size: min(20px, 3.8vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 0px;
 }
 
 section#two, section#three, section#four, section#five {
@@ -426,8 +493,8 @@ section#two, section#three, section#four, section#five {
   will-change: transform;
 }
 section#two .container, section#three .container, section#four .container, section#five .container {
-  padding-left: min(8em, 6.8vw);
-  padding-right: min(8em, 6.8vw);
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
 }
 section#two #test img, section#three #test img, section#four #test img, section#five #test img {
   width: 100%;
@@ -457,26 +524,6 @@ section#two #test .regular, section#three #test .regular, section#four #test .re
 }
 section#two #test .button-group, section#three #test .button-group, section#four #test .button-group, section#five #test .button-group {
   padding-top: 32px;
-}
-section#two #test .button-group button.primary, section#three #test .button-group button.primary, section#four #test .button-group button.primary, section#five #test .button-group button.primary {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  cursor: none;
-  background-color: #0094FF;
-  color: #FFFFFF;
-  border: 0px;
-  -moz-border-radius: 16px;
-  -webkit-border-radius: 16px;
-  border-radius: 16px;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-right: 8px;
-  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
-}
-section#two #test .button-group button.primary:hover, section#three #test .button-group button.primary:hover, section#four #test .button-group button.primary:hover, section#five #test .button-group button.primary:hover {
-  background-color: #5359EA;
-  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
 section#two #test .button-group button.secondary, section#three #test .button-group button.secondary, section#four #test .button-group button.secondary, section#five #test .button-group button.secondary {
   font-family: "Inter", sans-serif;
@@ -518,4 +565,16 @@ section#two, section#four, section#five {
 
 section#three {
   margin-bottom: 144px;
+}
+
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+  .modal {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(26, 26, 26, 0.92);
+  }
+
+  .warning {
+    display: none;
+  }
 }

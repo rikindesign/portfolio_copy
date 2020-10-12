@@ -6,13 +6,17 @@
 @import cursor
 @import navbar
 @import projects
+@import wave
 @import footer
 
 /** Main Styling **/
 *
     text-decoration: none !important
+    outline: none
+
 html
     overflow-x: hidden !important
+
 body
     background-color: $black !important
     overflow-x: hidden !important
@@ -22,46 +26,28 @@ body
     img
         +border-radius($radius-20)
 
-// Blur Support
-@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))
-    .modal //Change this
-        -webkit-backdrop-filter: blur(20px)
-        backdrop-filter: blur(20px)
-        background-color: rgba(26, 26, 26, 0.92)
-    .warning //Change this
-        display: none
-    
-section#one
-    height: 40vh
-    width: 100vw
-    transition: transform 0.45s ease-out
-    will-change: transform
-    margin-bottom: $spacing-xl
-
-    h1
-        color: $white
-        font-size: $mega
+    button.primary
         font-family: $font
-        font-weight: $weight-bold
-        text-align: center
-        transition: transform 0.1s ease-out
-        will-change: transform
+        font-weight: $weight-medium
+        cursor: none
 
-        position: absolute
-        width: 80%
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
+        button:focus
+            outline: 0
 
-    .large
-            color: $white
-            font-size: $large
-            font-family: $font
-            font-weight: $weight-medium
-            text-align: center
+        background-color: $blue-light
+        color: $white
+        border: 0px
+        +border-radius($radius-16)
 
-            padding-top: $spacing-none
+        height: 48px
+        padding-left: $spacing-m
+        padding-right: $spacing-m
+        margin-right: $spacing-xs
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+            
+    button.primary:hover
+        background-color: $purple-light
+        transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
     .header-animation
         background: linear-gradient(0.25turn, $white 0%, rgb(165, 168, 253) 25%, rgb(127, 206, 243) 50%, rgb(165, 253, 241) 75%, $white 100%)
@@ -73,10 +59,53 @@ section#one
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
   
-        animation: shine 5s linear infinite
+        animation: shine 3.2s linear infinite
         @keyframes shine
             to
                 background-position: 200% center
+
+
+// Sections        
+section#one
+    height: 100vh
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+    background-attachment: fixed
+
+    margin-bottom: 2 * $spacing-xl 
+    z-index: 19998
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+    h1
+        color: $white
+        font-size: $mega
+        font-family: $font
+        font-weight: $weight-bold !important
+        text-align: center
+        transition: transform 0.1s ease-out
+        will-change: transform
+
+        position: absolute
+        width: 80%
+        top: 32%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20
+
+    #landing-description
+        position: relative
+        top: 42%
+        color: $white
+        font-size: $medium
+        font-family: $font
+        font-weight: $weight-regular
+        text-align: center
+
+        padding-top: $spacing-none
 
 section#two, section#three, section#four, section#five
     width: 100vw
@@ -84,12 +113,11 @@ section#two, section#three, section#four, section#five
     will-change: transform
 
     .container
-        padding-left: min(8em, 6.8vw)
-        padding-right: min(8em, 6.8vw)
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
 
     #test
         img
-            // height: 240px !important **/
             width: 100%
             vertical-align: middle
             transition: 0.18s cubic-bezier(.77,0,.64,1)
@@ -120,26 +148,6 @@ section#two, section#three, section#four, section#five
 
         .button-group
             padding-top: $spacing-l
-
-            button.primary
-                font-family: $font
-                font-weight: $weight-medium
-                cursor: none
-
-                background-color: $blue-light
-                color: $white
-                border: 0px
-                +border-radius($radius-16)
-
-                height: 48px
-                padding-left: $spacing-m
-                padding-right: $spacing-m
-                margin-right: $spacing-xs
-                transition: 0.18s cubic-bezier(.77,0,.64,1)
-            
-            button.primary:hover
-                background-color: $purple-light
-                transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
             button.secondary
                 font-family: $font
@@ -179,3 +187,17 @@ section#two, section#four, section#five
     
 section#three
     margin-bottom: 2 * $spacing-xl  
+
+
+// Media Queries
+@media screen and ( max-width: 1024px )
+ 
+
+// Blur Support
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))
+    .modal //Change this
+        -webkit-backdrop-filter: blur(20px)
+        backdrop-filter: blur(20px)
+        background-color: rgba(26, 26, 26, 0.92)
+    .warning //Change this
+        display: none
