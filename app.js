@@ -63,3 +63,14 @@ function myFunction(x) {
 var windowElement = window.matchMedia("(max-width: 768px)")
 myFunction(windowElement) // Call listener function at run time
 windowElement.addListener(myFunction) // Attach listener function on state changes
+
+// Parallax Scroll
+/* function parallax(element, distance, speed) {
+    const scrollItem = document.getElementById(element)
+    console.log(scrollItem)
+    scrollItem.transform.style = `translateY(${distance * speed}px)`
+}
+
+window.addEventListener('scroll', function() {
+    parallax('one', window.scrollY, 1)
+}) */

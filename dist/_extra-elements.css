@@ -1,0 +1,211 @@
+/* Projects Styling - R & Design 4.0 */
+/** Imports **/
+/* Variables & Mixins Test - R & Design 4.0 */
+p {
+  margin-top: 50px;
+  color: #FFFFFF;
+  animation: colorText 4.8s ease infinite, nudgeText 4.8s ease infinite;
+}
+
+.mouse {
+  background: #DEDEDE linear-gradient(transparent 0%, transparent 50%, #FFFFFF 50%, #FFFFFF 100%);
+  position: relative;
+  width: 32px;
+  height: 64px;
+  border-radius: 100px;
+  background-size: 100% 200%;
+  animation: colorSlide 4.8s linear infinite, nudgeMouse 4.8s ease infinite;
+}
+.mouse:before, .mouse:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.mouse:before {
+  width: 28px;
+  height: 60px;
+  background-color: #1A1A1A;
+  border-radius: 100px;
+}
+.mouse:after {
+  background-color: #FFFFFF;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  animation: trackBallSlide 4.8s linear infinite;
+}
+
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%;
+  }
+  20% {
+    background-position: 0% 0%;
+  }
+  21% {
+    background-color: #DEDEDE;
+  }
+  29.99% {
+    background-color: #FFFFFF;
+    background-position: 0% 0%;
+  }
+  30% {
+    background-color: #DEDEDE;
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  51% {
+    background-color: #DEDEDE;
+  }
+  59% {
+    background-color: #FFFFFF;
+    background-position: 0% 0%;
+  }
+  60% {
+    background-color: #DEDEDE;
+    background-position: 0% 100%;
+  }
+  80% {
+    background-position: 0% 0%;
+  }
+  81% {
+    background-color: #DEDEDE;
+  }
+  90%, 100% {
+    background-color: #FFFFFF;
+  }
+}
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+  6% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2px);
+  }
+  14% {
+    opacity: 0;
+    transform: scale(2) translateY(16px);
+  }
+  15%, 19% {
+    opacity: 0;
+    transform: scale(2) translateY(-8px);
+  }
+  28%, 29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+  36% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2px);
+  }
+  44% {
+    opacity: 0;
+    transform: scale(2) translateY(16px);
+  }
+  45%, 49% {
+    opacity: 0;
+    transform: scale(2) translateY(-8px);
+  }
+  58%, 59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+  66% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2px);
+  }
+  74% {
+    opacity: 0;
+    transform: scale(2) translateY(16px);
+  }
+  75%, 79% {
+    opacity: 0;
+    transform: scale(2) translateY(-8px);
+  }
+  88%, 100% {
+    opacity: 1;
+    transform: scale(1) translateY(-8px);
+  }
+}
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(2px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(2px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@keyframes colorText {
+  21% {
+    color: #DEDEDE;
+  }
+  30% {
+    color: #FFFFFF;
+  }
+  51% {
+    color: #DEDEDE;
+  }
+  60% {
+    color: #FFFFFF;
+  }
+  81% {
+    color: #DEDEDE;
+  }
+  90% {
+    color: #FFFFFF;
+  }
+}

@@ -2,7 +2,7 @@
 console.log('Scroll')
 
 // Initializer Variables
-const intro = document.querySelector('intro')
+// const intro = document.querySelector('intro')
 const nav = document.querySelector('nav');
 
 // End Section
