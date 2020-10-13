@@ -689,14 +689,14 @@ section#one h1 {
   will-change: transform;
   position: absolute;
   width: 80%;
-  top: 32%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
 section#one #landing-description {
   position: relative;
-  top: 42%;
+  top: 38%;
   color: #FFFFFF;
   font-size: min(20px, 3.8vw);
   font-family: "Inter", sans-serif;
