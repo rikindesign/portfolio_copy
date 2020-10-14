@@ -5,7 +5,6 @@
 @import buttons
 @import cursor
 @import navbar
-@import extra-elements
 @import wave
 @import footer
 
@@ -64,18 +63,20 @@ body
             to
                 background-position: 200% center
 
-// Sections 
-section#portfolio
-    height: 4vh
+// Sections        
+section#one
+    height: 80vh
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
+
+    margin-bottom: 2 * $spacing-xl
 
     .container
         padding-left: min(8em, 6.4vw)
         padding-right: min(8em, 6.4vw)
 
-    h1
+    h1#title-one
         color: $white
         font-size: $mega
         font-family: $font
@@ -86,7 +87,7 @@ section#portfolio
 
         position: absolute
         width: 80%
-        top: 28%
+        top: 40%
         left: 50%
         transform: translate(-50%, -50%) !important
         z-index: 20
@@ -97,14 +98,11 @@ section#one
     transition: transform 0.45s ease-out
     will-change: transform
 
-    margin-bottom: 1.48 * $spacing-xl 
-    z-index: -1
-
     .container
         padding-left: min(8em, 6.4vw)
         padding-right: min(8em, 6.4vw)
 
-    h1#title-one
+    h1
         color: $white
         font-size: $mega
         font-family: $font
@@ -167,7 +165,6 @@ section#two, section#three, section#four, section#five
             font-size: $regular
             font-family: $font
             font-weight: $weight-regular
-            line-height: 1.6
 
             padding-top: $spacing-m
 
