@@ -462,7 +462,6 @@ section#one {
   transition: transform 0.45s ease-out;
   will-change: transform;
   margin-bottom: 144px;
-  z-index: -1;
 }
 section#one .container {
   padding-left: min(8em, 6.4vw);
