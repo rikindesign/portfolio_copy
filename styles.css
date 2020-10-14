@@ -456,13 +456,13 @@ section#one {
   top: 198px;
   width: 6400px;
   height: 198px;
-  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 5.8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 5.8s ease -1.25s infinite;
   opacity: 1;
 }
 
@@ -652,14 +652,14 @@ body button.primary:hover {
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
 body .header-animation {
-  background: linear-gradient(0.25turn, #FFFFFF 0%, #a5a8fd 25%, #7fcef3 50%, #a5fdf1 75%, #FFFFFF 100%);
+  background: linear-gradient(0.25turn, #FFFFFF 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #FFFFFF 100%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3.2s linear infinite;
+  animation: shine 6s linear infinite;
 }
 @keyframes shine {
   to {
@@ -667,19 +667,45 @@ body .header-animation {
   }
 }
 
+section#portfolio {
+  height: 4vh;
+  width: 100vw;
+  transition: transform 0.45s ease-out;
+  will-change: transform;
+}
+section#portfolio .container {
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
+}
+section#portfolio h1 {
+  color: #FFFFFF;
+  font-size: min(98px, 12vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700 !important;
+  text-align: center;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  position: absolute;
+  width: 80%;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 20;
+}
+
 section#one {
   height: 100vh;
   width: 100vw;
   transition: transform 0.45s ease-out;
   will-change: transform;
-  margin-bottom: 144px;
+  margin-bottom: 106.56px;
   z-index: -1;
 }
 section#one .container {
   padding-left: min(8em, 6.4vw);
   padding-right: min(8em, 6.4vw);
 }
-section#one h1 {
+section#one h1#title-one {
   color: #FFFFFF;
   font-size: min(98px, 12vw);
   font-family: "Inter", sans-serif;
@@ -738,6 +764,7 @@ section#two #test .regular, section#three #test .regular, section#four #test .re
   font-size: 17px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  line-height: 1.6;
   padding-top: 24px;
 }
 section#two #test .button-group, section#three #test .button-group, section#four #test .button-group, section#five #test .button-group {
@@ -781,7 +808,7 @@ section#two, section#four, section#five {
   margin-top: 144px;
 }
 
-section#three {
+section#three, section#portfolio {
   margin-bottom: 144px;
 }
 

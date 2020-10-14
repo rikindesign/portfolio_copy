@@ -7,6 +7,7 @@ const sectionTwo = document.getElementById('two')
 const sectionThree = document.getElementById('three')
 const sectionFour = document.getElementById('four')
 const sectionFive = document.getElementById('five')
+const sectionPortfolio = document.getElementById('portfolio')
 const titleOne = document.getElementById('title-one')
 const titleTwo = document.getElementById('title-two')
 let currentPixel = window.pageYOffset
@@ -26,6 +27,7 @@ const looper = function() {
     sectionThree.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionFour.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionFive.style.transform = 'skewY(' + speedSectionWide + 'deg)';
+    sectionPortfolio.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     //titleOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
     //titleTwo.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
 
