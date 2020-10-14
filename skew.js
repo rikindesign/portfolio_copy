@@ -27,7 +27,7 @@ const looper = function() {
     sectionThree.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionFour.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     sectionFive.style.transform = 'skewY(' + speedSectionWide + 'deg)';
-    sectionPortfolio.style.transform = 'skewY(' + speedSectionWide + 'deg)';
+    //sectionPortfolio.style.transform = 'skewY(' + speedSectionWide + 'deg)';
     //titleOne.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
     //titleTwo.style.transform = 'skewY(' + speedSectionSmall + 'deg)';
 
