@@ -5,7 +5,6 @@
 @import buttons
 @import cursor
 @import navbar
-@import extra-elements
 @import wave
 @import footer
 
@@ -50,7 +49,7 @@ body
         transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
     .header-animation
-        background: linear-gradient(0.25turn, $white 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, $white 100%)
+        background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98))
         background-size: 200% auto
   
         color: #000
@@ -64,9 +63,50 @@ body
             to
                 background-position: 200% center
 
-// Sections 
+// Sections        
+section#one
+    height: 80vh
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+
+    margin-bottom: 2 * $spacing-xl 
+    z-index: -1
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+    h1#title-one
+        color: $white
+        font-size: $mega
+        font-family: $font
+        font-weight: $weight-bold !important
+        text-align: center
+        transition: transform 0.1s ease-out
+        will-change: transform
+
+        position: absolute
+        width: 80%
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%) !important
+        z-index: 20
+
+    #landing-description
+        position: relative
+        top: 52%
+        color: $white
+        font-size: $medium
+        font-family: $font
+        font-weight: $weight-regular
+        text-align: center
+
+        padding-top: $spacing-none
+
+// Inactive
 section#portfolio
-    height: 4vh
+    height: 24vh
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
@@ -91,45 +131,6 @@ section#portfolio
         transform: translate(-50%, -50%) !important
         z-index: 20
         
-section#one
-    height: 100vh
-    width: 100vw
-    transition: transform 0.45s ease-out
-    will-change: transform
-
-    margin-bottom: 1.48 * $spacing-xl 
-    z-index: -1
-
-    .container
-        padding-left: min(8em, 6.4vw)
-        padding-right: min(8em, 6.4vw)
-
-    h1#title-one
-        color: $white
-        font-size: $mega
-        font-family: $font
-        font-weight: $weight-bold !important
-        text-align: center
-        transition: transform 0.1s ease-out
-        will-change: transform
-
-        position: absolute
-        width: 80%
-        top: 28%
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
-
-    #landing-description
-        position: relative
-        top: 38%
-        color: $white
-        font-size: $medium
-        font-family: $font
-        font-weight: $weight-regular
-        text-align: center
-
-        padding-top: $spacing-none
 
 section#two, section#three, section#four, section#five
     width: 100vw
@@ -167,7 +168,6 @@ section#two, section#three, section#four, section#five
             font-size: $regular
             font-family: $font
             font-weight: $weight-regular
-            line-height: 1.6
 
             padding-top: $spacing-m
 
