@@ -652,7 +652,7 @@ body button.primary:hover {
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
 body .header-animation {
-  background: linear-gradient(0.25turn, #FFFFFF 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #FFFFFF 100%);
+  background: linear-gradient(0.25turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -694,7 +694,7 @@ section#portfolio h1 {
 }
 
 section#one {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   transition: transform 0.45s ease-out;
   will-change: transform;
@@ -715,14 +715,14 @@ section#one h1#title-one {
   will-change: transform;
   position: absolute;
   width: 80%;
-  top: 28%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
 section#one #landing-description {
   position: relative;
-  top: 38%;
+  top: 52%;
   color: #FFFFFF;
   font-size: min(20px, 3.8vw);
   font-family: "Inter", sans-serif;
