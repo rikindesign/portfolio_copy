@@ -5,7 +5,7 @@ nav {
   display: flex !important;
   justify-content: space-around;
   align-items: center;
-  min-height: 6vh;
+  height: 64px;
   padding-left: min(8em, 6.8vw);
   padding-right: min(8em, 6.8vw);
   z-index: 20000;
@@ -80,7 +80,7 @@ nav .burger div {
 
   nav {
     justify-content: space-around;
-    min-height: 8vh;
+    height: 64px;
   }
   .nav-links {
     width: 24%;
@@ -92,7 +92,7 @@ nav .burger div {
   }
 
   nav ul {
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(20px) contrast(0.8) !important;
     -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
     z-index: 19999;
