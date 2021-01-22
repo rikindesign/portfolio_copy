@@ -43,15 +43,15 @@ var textDescription = document.getElementById('text-description');
 function myFunction(x) {
   if (x.matches) {
     // If media query matches
-    imageOne.src = 'assets/renders/Philbin - Mobile.jpg';
-    imageTwo.src = 'assets/images/Safe@Lab - Mobile.jpg';
+    imageOne.src = 'assets/images/Botler - Mobile.jpg';
+    imageTwo.src = 'assets/images/ChowTime AR - Mobile.jpg';
     imageThree.src = 'assets/images/ChowTime - Mobile.jpg';
     imageFour.src = 'assets/images/Google - Mobile.jpg';
     console.log('mobile');
   } else {
-    imageOne.src = 'assets/renders/Philbin - Desktop.jpg';
-    imageTwo.src = 'assets/images/Safe@Lab - Desktop.jpg';
-    imageThree.src = 'assets/images/ChowTime - Desktop.jpg';
+    imageOne.src = 'assets/images/Botler - Desktop.jpg';
+    imageTwo.src = 'assets/images/ChowTime AR - Desktop.jpg';
+    imageThree.src = 'assets/images/Safe@Lab - Desktop.jpg';
     imageFour.src = 'assets/images/Google - Desktop.jpg';
     console.log('desktop');
   }

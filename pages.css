@@ -1,3 +1,5 @@
+/* Webpages Stylesheet - R & Design 4.0 */
+/** Imports **/
 /* SASS Stylesheet - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
@@ -86,7 +88,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(26, 26, 26, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
@@ -235,7 +237,7 @@ section#one {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #141414;
+  background: #1A1A1A;
 }
 
 .wave {
@@ -407,7 +409,7 @@ html {
 }
 
 body {
-  background-color: #141414 !important;
+  background-color: #1A1A1A !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
   cursor: none !important;
@@ -420,7 +422,6 @@ body img {
 body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #FFFFFF;
   cursor: none;
   background-color: #0094FF;
   border: 0px;
@@ -486,9 +487,9 @@ section#one h1#title-one {
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
-section#one #landing-description {
+section#one h1#title-one #landing-description {
   position: relative;
-  top: 58%;
+  top: 52%;
   color: #FFFFFF;
   font-size: min(20px, 3.8vw);
   font-family: "Inter", sans-serif;
@@ -588,3 +589,141 @@ section#three, section#portfolio {
     display: none;
   }
 }
+/** Main Styling **/
+* {
+  text-decoration: none !important;
+  outline: none;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  background-color: #1A1A1A !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+body .envelope {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 201.6px;
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
+}
+body .envelope .sidenav {
+  width: 192px;
+  top: 24%;
+  background: rgba(26, 26, 26, 0);
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 12px;
+}
+body .envelope .sidenav a {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: right;
+  text-decoration: none;
+  cursor: none;
+  display: block;
+  padding: 8px;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+body .envelope .sidenav a .active-tab {
+  color: #0094FF !important;
+}
+body .envelope .sidenav a:hover {
+  color: #0094FF;
+  padding-right: 32px;
+  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+
+section#project-one {
+  height: 100vh;
+  width: 56vw;
+}
+section#project-one #test img {
+  width: 100%;
+  vertical-align: middle;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#project-one #test .title {
+  color: #FFFFFF;
+  font-size: min(48px, 8vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding-top: 32px;
+}
+section#project-one #test .large {
+  color: #FFFFFF;
+  font-size: min(24px, 4vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding-top: 0px;
+}
+section#project-one #test .regular {
+  color: #DEDEDE;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-top: 24px;
+}
+section#project-one #test .button-group {
+  padding-top: 32px;
+}
+section#project-one #test .button-group button.secondary {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  cursor: none;
+  background-color: transparent;
+  border: solid 2px #DEDEDE;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#project-one #test .button-group button.secondary a {
+  cursor: none;
+  color: #DEDEDE;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#project-one #test .button-group button.secondary a:hover {
+  cursor: none;
+  color: #FFFFFF;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#project-one #test .button-group button.secondary:hover {
+  color: #FFFFFF;
+  border: solid 2px #6F7784;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .envelope {
+    display: block;
+  }
+  .envelope .sidenav {
+    display: none;
+  }
+  .envelope section#project-one {
+    width: 96vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#project-one {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=pages.css.map */

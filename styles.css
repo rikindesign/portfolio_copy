@@ -1,4 +1,4 @@
-/* SASS Test Stylesheet - R & Design 4.0 */
+/* SASS Stylesheet - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
 /* Buttons Styling - R & Design 4.0 */
@@ -86,7 +86,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
@@ -235,7 +235,7 @@ section#one {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #1A1A1A;
+  background: #141414;
 }
 
 .wave {
@@ -407,7 +407,7 @@ html {
 }
 
 body {
-  background-color: #1A1A1A !important;
+  background-color: #141414 !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
   cursor: none !important;
@@ -420,9 +420,9 @@ body img {
 body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  color: #FFFFFF;
   cursor: none;
   background-color: #0094FF;
-  color: #FFFFFF;
   border: 0px;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
@@ -435,6 +435,10 @@ body button.primary {
 }
 body button.primary button:focus {
   outline: 0;
+}
+body button.primary a {
+  color: #FFFFFF;
+  cursor: none;
 }
 body button.primary:hover {
   background-color: #5359EA;
@@ -482,35 +486,9 @@ section#one h1#title-one {
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
-
-section#one {
-  height: 80vh;
-  width: 100vw;
-  transition: transform 0.45s ease-out;
-  will-change: transform;
-}
-section#one .container {
-  padding-left: min(8em, 6.4vw);
-  padding-right: min(8em, 6.4vw);
-}
-section#one h1 {
-  color: #FFFFFF;
-  font-size: min(98px, 12vw);
-  font-family: "Inter", sans-serif;
-  font-weight: 700 !important;
-  text-align: center;
-  transition: transform 0.1s ease-out;
-  will-change: transform;
-  position: absolute;
-  width: 80%;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-  z-index: 20;
-}
 section#one #landing-description {
   position: relative;
-  top: 52%;
+  top: 58%;
   color: #FFFFFF;
   font-size: min(20px, 3.8vw);
   font-family: "Inter", sans-serif;

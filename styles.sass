@@ -1,4 +1,4 @@
-/* SASS Test Stylesheet - R & Design 4.0 */
+/* SASS Stylesheet - R & Design 4.0 */
 
 /** Imports **/
 @import variables-mixins
@@ -28,13 +28,13 @@ body
     button.primary
         font-family: $font
         font-weight: $weight-medium
+        color: $white
         cursor: none
 
         button:focus
             outline: 0
 
         background-color: $blue-light
-        color: $white
         border: 0px
         +border-radius($radius-16)
 
@@ -43,6 +43,10 @@ body
         padding-right: $spacing-m
         margin-right: $spacing-xs
         transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+        a
+            color: $white
+            cursor: none
             
     button.primary:hover
         background-color: $purple-light
@@ -91,36 +95,10 @@ section#one
         left: 50%
         transform: translate(-50%, -50%) !important
         z-index: 20
-        
-section#one
-    height: 80vh
-    width: 100vw
-    transition: transform 0.45s ease-out
-    will-change: transform
-
-    .container
-        padding-left: min(8em, 6.4vw)
-        padding-right: min(8em, 6.4vw)
-
-    h1
-        color: $white
-        font-size: $mega
-        font-family: $font
-        font-weight: $weight-bold !important
-        text-align: center
-        transition: transform 0.1s ease-out
-        will-change: transform
-
-        position: absolute
-        width: 80%
-        top: 40%
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
-
+    
     #landing-description
         position: relative
-        top: 52%
+        top: 58%
         color: $white
         font-size: $medium
         font-family: $font

@@ -1,0 +1,142 @@
+/* Webpages Stylesheet - R & Design 4.0 */
+
+/** Imports **/
+@import styles
+
+/** Main Styling **/
+*
+    text-decoration: none !important
+    outline: none
+
+html
+    overflow-x: hidden !important
+
+body
+    background-color: $black !important
+    overflow-x: hidden !important
+    box-sizing: border-box
+    cursor: none !important    
+
+    .envelope
+        display: flex
+        justify-content: space-around
+
+        margin-top: $spacing-xl * 2.8
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+        .sidenav
+            width: 192px
+            top: 24%
+            background: rgba(26, 26, 26, 0)
+
+            position: fixed
+            z-index: 1
+            overflow-x: hidden
+            padding: $spacing-s
+
+            a
+                color: $white
+                font-size: $regular
+                font-family: $font
+                font-weight: $weight-regular
+
+                text-align: right
+                text-decoration: none
+                cursor: none
+                display: block
+                padding: $spacing-xs
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                .active-tab
+                    color: $blue-light !important
+
+            a:hover
+                color: $blue-light
+                padding-right: $spacing-l
+                transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+section#project-one
+    height: 100vh
+    width: 56vw
+
+    #test
+        img
+            width: 100%
+            vertical-align: middle
+            transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+        .title
+            color: $white
+            font-size: $title
+            font-family: $font
+            font-weight: $weight-bold
+
+            padding-top: $spacing-l
+
+        .large
+            color: $white
+            font-size: $large
+            font-family: $font
+            font-weight: $weight-medium
+
+            padding-top: $spacing-none
+
+        .regular
+            color: $gray-dark
+            font-size: $regular
+            font-family: $font
+            font-weight: $weight-regular
+
+            padding-top: $spacing-m
+
+        .button-group
+            padding-top: $spacing-l
+
+            button.secondary
+                font-family: $font
+                font-weight: $weight-regular
+                cursor: none
+
+                background-color: transparent
+                border: solid 2px $gray-dark
+                +border-radius($radius-16)
+
+                height: 48px
+                padding-left: $spacing-m
+                padding-right: $spacing-m
+                transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                a
+                    cursor: none
+                    color: $gray-dark
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                a:hover
+                    cursor: none
+                    color: $white
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+                    
+
+            button.secondary:hover
+                color: $white
+                border: solid 2px $gray-light
+                +border-radius($radius-16)
+                transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+                margin-left: $spacing-s
+
+// Media Queries  
+@media screen and ( max-width: 1024px )
+    .envelope
+        display: block
+        
+        .sidenav
+            display: none
+
+        section#project-one
+            width: 96vw
+
+@media screen and ( max-width: 768px )
+    section#project-one
+        width: 100%
