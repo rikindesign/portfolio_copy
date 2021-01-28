@@ -23,7 +23,15 @@ body
     cursor: none !important
 
     img
-        +border-radius($radius-20)
+        width: 100vw
+        +border-radius($radius-0)
+
+    #banner-title, #banner-image
+        margin-bottom: 1.6 * $spacing-xl
+
+    #banner-text
+        padding-top: 0 !important
+        //margin-bottom: 1.6 * $spacing-xl
 
     button.primary
         font-family: $font
@@ -68,46 +76,7 @@ body
                 background-position: 200% center
 
 // Sections        
-section#one
-    height: 64vh
-    width: 100vw
-    transition: transform 0.45s ease-out
-    will-change: transform
-
-    margin-bottom: 1.2 * $spacing-xl
-
-    .container
-        padding-left: min(8em, 6.4vw)
-        padding-right: min(8em, 6.4vw)
-
-    h1#title-one
-        color: $white
-        font-size: $mega
-        font-family: $font
-        font-weight: $weight-bold !important
-        text-align: center
-        transition: transform 0.1s ease-out
-        will-change: transform
-
-        position: absolute
-        width: 80%
-        top: 40%
-        left: 50%
-        transform: translate(-50%, -50%) !important
-        z-index: 20
-    
-    #landing-description
-        position: relative
-        top: 58%
-        color: $white
-        font-size: $medium
-        font-family: $font
-        font-weight: $weight-regular
-        text-align: center
-
-        padding-top: $spacing-none
-
-section#two, section#three, section#four, section#five
+section#portion
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
@@ -116,10 +85,14 @@ section#two, section#three, section#four, section#five
         padding-left: min(8em, 6.4vw)
         padding-right: min(8em, 6.4vw)
 
-    img
-        width: 100%
-        vertical-align: middle
-        transition: 0.18s cubic-bezier(.77,0,.64,1)
+    .project-details
+        display: flex
+        justify-content: space-around
+
+        .project-info
+            width: 33.33%
+            //display: flex
+            //justify-content: space-around
 
     .title
         color: $white
@@ -136,6 +109,22 @@ section#two, section#three, section#four, section#five
         font-weight: $weight-medium
 
         padding-top: $spacing-none
+
+    .large-bold
+        color: $white
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-bold
+
+        padding-top: $spacing-none
+
+    .regular-bold
+        color: $white
+        font-size: 24px
+        font-family: $font
+        font-weight: $weight-bold
+
+        padding-top: $spacing-m
 
     .regular
         color: $gray-dark
@@ -170,8 +159,7 @@ section#two, section#three, section#four, section#five
             a:hover
                 cursor: none
                 color: $white
-                transition: 0.18s cubic-bezier(.77,0,.64,1)
-                    
+                transition: 0.18s cubic-bezier(.77,0,.64,1)                    
 
         button.secondary:hover
             color: $white
@@ -181,14 +169,18 @@ section#two, section#three, section#four, section#five
 
             margin-left: $spacing-s
 
-section#two, section#four, section#five
+section#portion
     margin-top: 2 * $spacing-xl
-    
-section#three, section#portfolio
     margin-bottom: 2 * $spacing-xl
-
+    
 // Media Queries
 @media screen and ( max-width: 1024px )
+    .project-details
+        display: flex
+        margin-top: 0 !important
+        flex-direction: column
+        .project-info
+            width: 100vw !important
  
 // Blur Support
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))

@@ -81,14 +81,14 @@ nav {
   display: flex !important;
   justify-content: space-around;
   align-items: center;
-  min-height: 6vh;
+  height: 64px;
   padding-left: min(8em, 6.8vw);
   padding-right: min(8em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
@@ -156,7 +156,7 @@ nav .burger div {
 
   nav {
     justify-content: space-around;
-    min-height: 8vh;
+    height: 64px;
   }
   .nav-links {
     width: 24%;
@@ -168,7 +168,7 @@ nav .burger div {
   }
 
   nav ul {
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(20px) contrast(0.8) !important;
     -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
     z-index: 19999;
@@ -237,7 +237,7 @@ section#one {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #1A1A1A;
+  background: #121212;
 }
 
 .wave {
@@ -409,7 +409,7 @@ html {
 }
 
 body {
-  background-color: #1A1A1A !important;
+  background-color: #121212 !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
   cursor: none !important;
@@ -422,6 +422,7 @@ body img {
 body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  color: #FFFFFF;
   cursor: none;
   background-color: #0094FF;
   border: 0px;
@@ -487,9 +488,9 @@ section#one h1#title-one {
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
-section#one h1#title-one #landing-description {
+section#one #landing-description {
   position: relative;
-  top: 52%;
+  top: 58%;
   color: #FFFFFF;
   font-size: min(20px, 3.8vw);
   font-family: "Inter", sans-serif;
@@ -600,7 +601,7 @@ html {
 }
 
 body {
-  background-color: #1A1A1A !important;
+  background-color: #121212 !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
   cursor: none !important;
