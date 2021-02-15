@@ -478,7 +478,7 @@ section#portion .large {
   padding-top: 0px;
 }
 section#portion .large-bold {
-  color: #6F7784;
+  color: #575757;
   font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -524,7 +524,7 @@ section#portion .button-group button.secondary a:hover {
 }
 section#portion .button-group button.secondary:hover {
   color: #FFFFFF;
-  border: solid 2px #6F7784;
+  border: solid 2px #575757;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
