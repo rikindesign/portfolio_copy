@@ -447,10 +447,21 @@ body button.primary:hover {
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
 
+/** section#top-background
+ *  height: 64vh
+ *  top: 0
+ *  position: relative
+ *  z-index: 1
+ *
+ *  background-image: url('assets/images/Background 3.svg')
+ *  background-repeat: no-repeat
+ *  background-position: top
+ *  background-size: 100% **/
 section#portion {
   width: 100vw;
   transition: transform 0.45s ease-out;
   will-change: transform;
+  z-index: 0;
 }
 section#portion .container {
   padding-left: min(8em, 6.4vw);

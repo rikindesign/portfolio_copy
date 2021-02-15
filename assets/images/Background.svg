@@ -12,12 +12,11 @@
 </g>
 <g filter="url(#filter1_f)">
 <circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 38.1046 747.108)" fill="#F5B91E"/>
-<circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 424.148 921.217)" fill="#9CC1FD"/>
 <circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 564.051 760.552)" fill="#E4A9B2"/>
 <circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 -134.968 545.807)" fill="#38ABEC" fill-opacity="0.65"/>
 <circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 383.121 640.118)" fill="#FBEBC3"/>
 <circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 261.894 801.726)" fill="#F8C85A"/>
-<circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 172.63 719.664)" fill="#E4A9B2"/>
+<circle r="164.653" transform="matrix(-0.999673 -0.025554 -0.025554 0.999673 172.631 719.664)" fill="#E4A9B2"/>
 </g>
 <g opacity="0.6" filter="url(#filter2_f)">
 <circle cx="1000.02" cy="541.465" r="164.653" fill="#F5B91E"/>
@@ -35,7 +34,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="162" result="effect1_foregroundBlur"/>
 </filter>
-<filter id="filter1_f" x="-527.775" y="153" width="1484.63" height="1161.02" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f" x="-527.775" y="153" width="1484.63" height="1041.53" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="112" result="effect1_foregroundBlur"/>
