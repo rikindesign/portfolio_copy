@@ -3,36 +3,41 @@
 // Application JavaScript - R & Design 4.0
 console.log('App'); // Cursor
 
-var t = document.getElementById("cursor"),
+/* var t = document.getElementById("cursor"),
     e = document.getElementById("cursor2"),
     i = document.getElementById("cursor3");
 
-(function ($) {
-  "use strict"; //Page Cursors
+(function($) {
+    "use strict";
 
-  document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
-    t.style.left = n.clientX + "px", t.style.top = n.clientY + "px", e.style.left = n.clientX + "px", e.style.top = n.clientY + "px", i.style.left = n.clientX + "px", i.style.top = n.clientY + "px";
-  });
+    //Page Cursors
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px",
+            t.style.top = n.clientY + "px",
+            e.style.left = n.clientX + "px",
+            e.style.top = n.clientY + "px",
+            i.style.left = n.clientX + "px",
+            i.style.top = n.clientY + "px"
+    });
 
-  function n(t) {
-    e.classList.add("hover"), i.classList.add("hover");
-  }
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
 
-  function s(t) {
-    e.classList.remove("hover"), i.classList.remove("hover");
-  }
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
 
-  s();
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
 
-  for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-    o(r[a]);
-  }
-
-  function o(t) {
-    t.addEventListener("mouseover", n), t.addEventListener("mouseout", s);
-  }
-})(jQuery); // Dynamic Images
-
+})(jQuery); */
+// Dynamic Images
 
 var imageOne = document.getElementById('image-one');
 var imageTwo = document.getElementById('image-two');

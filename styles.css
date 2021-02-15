@@ -37,41 +37,6 @@ a .animated-button .thar-three:before {
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-/* Cursor Styling - R & Design 4.0 */
-.cursor,
-.cursor2,
-.cursor3 {
-  position: fixed;
-  border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
-  mix-blend-mode: difference;
-}
-
-.cursor {
-  height: 0;
-  width: 0;
-  z-index: 99999;
-}
-
-.cursor2, .cursor3 {
-  height: 24px;
-  width: 24px;
-  z-index: 99998;
-}
-
-.cursor2 {
-  border: 12px solid #0094FF;
-}
-
-@media screen and (max-width: 1200px) {
-  .cursor, .cursor2, .cursor3 {
-    display: none;
-    cursor: none;
-  }
-}
 /* Navbar Styling - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
@@ -86,15 +51,15 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
 }
 nav .logo {
   display: block !important;
-  color: #FFFFFF;
+  color: #151515;
 }
 nav .logo h4 {
   font-weight: 600;
@@ -102,8 +67,7 @@ nav .logo h4 {
   margin: 0;
 }
 nav .logo h4 a {
-  color: #FFFFFF;
-  cursor: none;
+  color: #151515;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 nav .logo h4 a:hover {
@@ -120,8 +84,7 @@ nav .nav-links {
   list-style: none;
 }
 nav .nav-links li a {
-  color: #FFFFFF;
-  cursor: none;
+  color: #151515;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -143,7 +106,7 @@ nav .burger div {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #151515;
   transition: all 0.24s ease;
 }
 
@@ -166,7 +129,7 @@ nav .burger div {
   }
 
   nav ul {
-    background-color: rgba(20, 20, 20, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px) contrast(0.8) !important;
     -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
     z-index: 19999;
@@ -407,27 +370,48 @@ html {
 }
 
 body {
-  background-color: #151515 !important;
+  background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
-  cursor: none !important;
+  background-image: url("assets/images/Background.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  /** .header-animation
+  *  background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
+  *  background-size: 200% auto **/
+  *  color: #000
+  *  background-clip: text
+  *  text-fill-color: transparent
+  *  -webkit-background-clip: text
+  *  -webkit-text-fill-color: transparent
+  *  animation: shine 6s linear infinite
+  *  @keyframes shine
+  *      to
+  *          background-position: 200% center */
 }
 body img {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
+body img #background {
+  width: 100%;
+  top: 0;
+  z-index: 0;
+  background-attachment: fixed;
+}
 body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #FFFFFF;
-  cursor: none;
   background-color: #0094FF;
   border: 0px;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
   height: 48px;
+  width: 128px;
   padding-left: 24px;
   padding-right: 24px;
   margin-right: 8px;
@@ -438,26 +422,10 @@ body button.primary button:focus {
 }
 body button.primary a {
   color: #FFFFFF;
-  cursor: none;
 }
 body button.primary:hover {
   background-color: #5359EA;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
-}
-body .header-animation {
-  background: linear-gradient(0.25turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
-}
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
 }
 
 section#one {
@@ -472,15 +440,16 @@ section#one .container {
   padding-right: min(8em, 6.4vw);
 }
 section#one h1#title-one {
-  color: #FFFFFF;
+  color: #151515;
   font-size: min(98px, 12vw);
   font-family: "Inter", sans-serif;
   font-weight: 700 !important;
-  text-align: center;
+  line-height: 1.04;
+  text-align: left;
   transition: transform 0.1s ease-out;
   will-change: transform;
-  position: absolute;
-  width: 80%;
+  position: relative;
+  width: 100%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
@@ -488,12 +457,12 @@ section#one h1#title-one {
 }
 section#one #landing-description {
   position: relative;
-  top: 58%;
-  color: #FFFFFF;
-  font-size: min(20px, 3.8vw);
+  top: 38%;
+  color: #151515;
+  font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   padding-top: 0px;
 }
 
@@ -510,24 +479,25 @@ section#two img, section#three img, section#four img, section#five img {
   width: 100%;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+  box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 section#two .title, section#three .title, section#four .title, section#five .title {
-  color: #FFFFFF;
+  color: #151515;
   font-size: min(48px, 8vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 32px;
 }
 section#two .large, section#three .large, section#four .large, section#five .large {
-  color: #FFFFFF;
-  font-size: min(24px, 4vw);
+  color: #6F7784;
+  font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding-top: 0px;
 }
 section#two .regular, section#three .regular, section#four .regular, section#five .regular {
-  color: #DEDEDE;
-  font-size: 18px;
+  color: #6F7784;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding-top: 24px;
@@ -538,9 +508,8 @@ section#two .button-group, section#three .button-group, section#four .button-gro
 section#two .button-group button.secondary, section#three .button-group button.secondary, section#four .button-group button.secondary, section#five .button-group button.secondary {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  cursor: none;
   background-color: transparent;
-  border: solid 2px #DEDEDE;
+  border: solid 2px #6F7784;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
@@ -548,20 +517,18 @@ section#two .button-group button.secondary, section#three .button-group button.s
   padding-left: 24px;
   padding-right: 24px;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+  /** a:hover
+  *  //cursor: none
+  *  color: $black
+  *  transition: 0.18s cubic-bezier(.77,0,.64,1) **/
 }
 section#two .button-group button.secondary a, section#three .button-group button.secondary a, section#four .button-group button.secondary a, section#five .button-group button.secondary a {
-  cursor: none;
-  color: #DEDEDE;
-  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
-}
-section#two .button-group button.secondary a:hover, section#three .button-group button.secondary a:hover, section#four .button-group button.secondary a:hover, section#five .button-group button.secondary a:hover {
-  cursor: none;
-  color: #FFFFFF;
+  color: #6F7784;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 section#two .button-group button.secondary:hover, section#three .button-group button.secondary:hover, section#four .button-group button.secondary:hover, section#five .button-group button.secondary:hover {
   color: #FFFFFF;
-  border: solid 2px #6F7784;
+  border: solid 2px #dedede;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;

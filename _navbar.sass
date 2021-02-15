@@ -17,7 +17,8 @@ nav
     top: 0
     width: 100%
     
-    background-color: rgba(20, 20, 20, 0.8)
+    //background-color: rgba(20, 20, 20, 0.8)
+    background-color: rgba(255, 255, 255, 0.8)
     backdrop-filter: blur(20px) contrast(.8) !important
     -webkit-backdrop-filter: blur(20px) contrast(.8) !important
 
@@ -26,7 +27,7 @@ nav
 
     .logo
         display: block !important
-        color: $white //#000
+        color: $black //$white
 
         h4
             font-weight: $weight-semibold
@@ -34,8 +35,8 @@ nav
             margin: 0
 
             a
-                color: $white
-                cursor: none
+                color: $black //$white
+                //cursor: none
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a:hover
@@ -54,8 +55,8 @@ nav
 
         li
             a
-                color: $white
-                cursor: none
+                color: $black //$white
+                //cursor: none
                 vertical-align: middle
 
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
@@ -77,7 +78,7 @@ nav
             margin: 4px
 
             +border-radius($radius-10)
-            background-color: $white
+            background-color: $black //$white
 
             transition: all 0.24s ease
  
@@ -102,7 +103,7 @@ nav
         overflow-x: hidden
     nav
         ul
-            background-color: rgba(20, 20, 20, 0.8)
+            background-color: rgba(255, 255, 255, 0.8)
             backdrop-filter: blur(20px) contrast(.8) !important
             -webkit-backdrop-filter: blur(20px) contrast(.8) !important
             z-index: 19999

@@ -2,7 +2,7 @@
 console.log('App')
 
 // Cursor
-var t = document.getElementById("cursor"),
+/* var t = document.getElementById("cursor"),
     e = document.getElementById("cursor2"),
     i = document.getElementById("cursor3");
 
@@ -35,7 +35,7 @@ var t = document.getElementById("cursor"),
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
 
-})(jQuery);
+})(jQuery); */
 
 // Dynamic Images
 let imageOne = document.getElementById('image-one')

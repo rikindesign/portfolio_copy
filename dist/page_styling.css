@@ -63,7 +63,7 @@ a .animated-button .thar-three:before {
 }
 
 .cursor2 {
-  border: 12px solid #0094FF;
+  border: 12px solid #ff6b00;
 }
 
 @media screen and (max-width: 1200px) {
@@ -86,15 +86,15 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
   -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
 }
 nav .logo {
   display: block !important;
-  color: #FFFFFF;
+  color: #151515;
 }
 nav .logo h4 {
   font-weight: 600;
@@ -102,7 +102,7 @@ nav .logo h4 {
   margin: 0;
 }
 nav .logo h4 a {
-  color: #FFFFFF;
+  color: #151515;
   cursor: none;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -120,7 +120,7 @@ nav .nav-links {
   list-style: none;
 }
 nav .nav-links li a {
-  color: #FFFFFF;
+  color: #151515;
   cursor: none;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
@@ -143,7 +143,7 @@ nav .burger div {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #151515;
   transition: all 0.24s ease;
 }
 
@@ -166,7 +166,7 @@ nav .burger div {
   }
 
   nav ul {
-    background-color: rgba(20, 20, 20, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px) contrast(0.8) !important;
     -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
     z-index: 19999;
@@ -407,10 +407,9 @@ html {
 }
 
 body {
-  background-color: #151515 !important;
+  background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
-  cursor: none !important;
 }
 body img {
   width: 100vw;
@@ -428,7 +427,6 @@ body button.primary {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #FFFFFF;
-  cursor: none;
   background-color: #0094FF;
   border: 0px;
   -moz-border-radius: 16px;
@@ -445,26 +443,10 @@ body button.primary button:focus {
 }
 body button.primary a {
   color: #FFFFFF;
-  cursor: none;
 }
 body button.primary:hover {
   background-color: #5359EA;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
-}
-body .header-animation {
-  background: linear-gradient(0.25turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
-}
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
 }
 
 section#portion {
@@ -484,36 +466,36 @@ section#portion .project-details .project-info {
   width: 33.33%;
 }
 section#portion .title {
-  color: #FFFFFF;
+  color: #151515;
   font-size: min(48px, 8vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 32px;
 }
 section#portion .large {
-  color: #FFFFFF;
+  color: #151515;
   font-size: min(24px, 4vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding-top: 0px;
 }
 section#portion .large-bold {
-  color: #FFFFFF;
+  color: #6F7784;
   font-size: min(24px, 4vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 0px;
 }
 section#portion .regular-bold {
-  color: #FFFFFF;
+  color: #151515;
   font-size: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 24px;
 }
 section#portion .regular {
-  color: #DEDEDE;
-  font-size: 18px;
+  color: #151515;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding-top: 24px;
@@ -524,7 +506,6 @@ section#portion .button-group {
 section#portion .button-group button.secondary {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  cursor: none;
   background-color: transparent;
   border: solid 2px #DEDEDE;
   -moz-border-radius: 16px;
@@ -536,12 +517,10 @@ section#portion .button-group button.secondary {
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 section#portion .button-group button.secondary a {
-  cursor: none;
   color: #DEDEDE;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 section#portion .button-group button.secondary a:hover {
-  cursor: none;
   color: #FFFFFF;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }

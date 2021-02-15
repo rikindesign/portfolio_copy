@@ -17,10 +17,10 @@ html
     overflow-x: hidden !important
 
 body
-    background-color: $black !important
+    background-color: $white !important
     overflow-x: hidden !important
     box-sizing: border-box
-    cursor: none !important
+    //cursor: none !important
 
     img
         width: 100vw
@@ -37,7 +37,7 @@ body
         font-family: $font
         font-weight: $weight-medium
         color: $white
-        cursor: none
+        //cursor: none
 
         button:focus
             outline: 0
@@ -54,26 +54,11 @@ body
 
         a
             color: $white
-            cursor: none
+            //cursor: none
             
     button.primary:hover
         background-color: $purple-light
         transition: 0.18s cubic-bezier(.3,.01,.25,1)
-
-    .header-animation
-        background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
-        background-size: 200% auto
-  
-        color: #000
-        background-clip: text
-        text-fill-color: transparent
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-  
-        animation: shine 6s linear infinite
-        @keyframes shine
-            to
-                background-position: 200% center
 
 // Sections        
 section#portion
@@ -95,7 +80,7 @@ section#portion
             //justify-content: space-around
 
     .title
-        color: $white
+        color: $black //$white
         font-size: $title
         font-family: $font
         font-weight: $weight-bold
@@ -103,7 +88,7 @@ section#portion
         padding-top: $spacing-l
 
     .large
-        color: $white
+        color: $black //$white
         font-size: $large
         font-family: $font
         font-weight: $weight-medium
@@ -111,7 +96,7 @@ section#portion
         padding-top: $spacing-none
 
     .large-bold
-        color: $white
+        color: $gray-light
         font-size: $large
         font-family: $font
         font-weight: $weight-bold
@@ -119,7 +104,7 @@ section#portion
         padding-top: $spacing-none
 
     .regular-bold
-        color: $white
+        color: $black
         font-size: 24px
         font-family: $font
         font-weight: $weight-bold
@@ -127,7 +112,7 @@ section#portion
         padding-top: $spacing-m
 
     .regular
-        color: $gray-dark
+        color: $black
         font-size: $regular
         font-family: $font
         font-weight: $weight-regular
@@ -140,7 +125,7 @@ section#portion
         button.secondary
             font-family: $font
             font-weight: $weight-regular
-            cursor: none
+            //cursor: none
 
             background-color: transparent
             border: solid 2px $gray-dark
@@ -152,12 +137,12 @@ section#portion
             transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a
-                cursor: none
+                //cursor: none
                 color: $gray-dark
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a:hover
-                cursor: none
+                //cursor: none
                 color: $white
                 transition: 0.18s cubic-bezier(.77,0,.64,1)                    
 
