@@ -80,7 +80,7 @@ nav .nav-links {
   z-index: 19999;
   padding: 0;
   margin: 0;
-  width: 32%;
+  width: 24%;
   list-style: none;
 }
 nav .nav-links li a {
@@ -429,7 +429,7 @@ body button.primary:hover {
 }
 
 section#one {
-  height: 64vh;
+  height: 80vh;
   width: 100vw;
   transition: transform 0.45s ease-out;
   will-change: transform;
@@ -489,14 +489,14 @@ section#two .title, section#three .title, section#four .title, section#five .tit
   padding-top: 32px;
 }
 section#two .large, section#three .large, section#four .large, section#five .large {
-  color: #6F7784;
+  color: #151515;
   font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding-top: 0px;
 }
 section#two .regular, section#three .regular, section#four .regular, section#five .regular {
-  color: #6F7784;
+  color: #151515;
   font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -509,7 +509,7 @@ section#two .button-group button.secondary, section#three .button-group button.s
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: transparent;
-  border: solid 2px #6F7784;
+  border: solid 2px #575757;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
@@ -523,11 +523,10 @@ section#two .button-group button.secondary, section#three .button-group button.s
   *  transition: 0.18s cubic-bezier(.77,0,.64,1) **/
 }
 section#two .button-group button.secondary a, section#three .button-group button.secondary a, section#four .button-group button.secondary a, section#five .button-group button.secondary a {
-  color: #6F7784;
+  color: #575757;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 section#two .button-group button.secondary:hover, section#three .button-group button.secondary:hover, section#four .button-group button.secondary:hover, section#five .button-group button.secondary:hover {
-  color: #FFFFFF;
   border: solid 2px #dedede;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
