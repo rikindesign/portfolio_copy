@@ -45,8 +45,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 64px;
-  padding-left: min(8em, 6.8vw);
-  padding-right: min(8em, 6.8vw);
+  padding-left: min(6em, 6.8vw) !important;
+  padding-right: min(6em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
@@ -92,7 +92,7 @@ nav .nav-links {
   z-index: 19999;
   padding: 0;
   margin: 0;
-  width: 28%;
+  width: 24%;
   list-style: none;
 }
 nav .nav-links li {
