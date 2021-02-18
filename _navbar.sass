@@ -40,7 +40,22 @@ nav
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a:hover
-                color: $blue-light
+                //color: $blue-light
+                //transition: 0.18s cubic-bezier(.3,.01,.25,1)
+                background: linear-gradient(0.4turn, rgb(153, 210, 98)  0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
+                background-size: 200% auto
+  
+                color: #000s
+                background-clip: text
+                text-fill-color: transparent
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+  
+                animation: shine 1.2s linear infinite
+                @keyframes shine
+                    to
+                        background-position: 200% center
+
                 transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
     .nav-links
@@ -49,11 +64,13 @@ nav
         z-index: 19999
         padding: 0
         margin: 0
-        width: 24%
+        width: 28%
 
         list-style: none
 
         li
+            margin: auto
+
             a
                 color: $black //$white
                 //cursor: none
@@ -67,6 +84,33 @@ nav
 
             .page-active
                 background-color: $blue-light
+
+            #drop-down-menu
+                button#dropdownMenuButton
+                    font-size: $regular
+                    padding: 0
+
+                    transition: 0.18s cubic-bezier(.77,0,.64,1)
+
+                button#dropdownMenuButton:hover
+                    color: $blue-light
+                    transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+                .dropdown-menu
+                    width: 184px
+                    margin-top: 16px
+                    border: none
+                    +border-radius($radius-16)
+
+                    background-color: $white
+                    backdrop-filter: blur(20px) contrast(.8) !important
+                    -webkit-backdrop-filter: blur(20px) contrast(.8) !important
+
+                    box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+
+                    a
+                        padding-top: 12px
+                        padding-bottom: 12px
     
     .burger
         display: none
