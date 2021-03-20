@@ -45,8 +45,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 64px;
-  padding-left: min(8em, 6.8vw);
-  padding-right: min(8em, 6.8vw);
+  padding-left: min(6em, 6.8vw) !important;
+  padding-right: min(6em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
@@ -71,8 +71,20 @@ nav .logo h4 a {
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 nav .logo h4 a:hover {
-  color: #0094FF;
+  background: linear-gradient(0.4turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
+  background-size: 200% auto;
+  color: #000 s;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1.2s linear infinite;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 nav .nav-links {
   display: flex;
@@ -401,7 +413,7 @@ body {
   background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
-  background-image: url("assets/images/Background.png");
+  background-image: url("assets/images/Background.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
@@ -505,6 +517,9 @@ section#two .container, section#three .container, section#four .container, secti
 }
 section#two img, section#three img, section#four img, section#five img {
   width: 100%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
   box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);

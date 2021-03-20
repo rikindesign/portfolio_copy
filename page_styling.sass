@@ -6,7 +6,7 @@
 @import cursor
 @import navbar
 @import wave
-@import footer
+//@import footer
 
 /** Main Styling **/
 *
@@ -24,14 +24,21 @@ body
 
     img
         width: 100vw
+        margin-bottom: $spacing-xl
         +border-radius($radius-0)
 
-    #banner-title, #banner-image
+    #banner-image
         margin-bottom: 1.6 * $spacing-xl
+
+    #banner-title
+        margin-bottom: $spacing-l
 
     #banner-text
         padding-top: 0 !important
         //margin-bottom: 1.6 * $spacing-xl
+
+    .phrase
+        padding-top: $spacing-l
 
     button.primary
         font-family: $font
@@ -60,6 +67,54 @@ body
         background-color: $purple-light
         transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
+    .title
+        color: $black //$white
+        font-size: $title
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-l
+
+    .large
+        color: $black //$white
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-medium
+
+        //padding-top: $spacing-none
+
+    .large-bold
+        color: $black
+        font-size: $large
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-none
+
+    .regular-bold
+        color: $black
+        font-size: 24px
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-m
+
+    .regular
+        color: $black
+        font-size: $regular
+        font-family: $font
+        font-weight: $weight-regular
+
+        //padding-top: $spacing-m
+
+    .subtitle
+        color: $black
+        font-size: $subtitle
+        font-family: $font
+        font-weight: $weight-bold
+
+        //padding-top: $spacing-m
+
 // Sections     
 /** section#top-background
     height: 64vh
@@ -80,51 +135,49 @@ section#portion
     .project-details
         display: flex
         justify-content: space-around
+        margin-top: 1.48 * $spacing-xl
 
         .project-info
             width: 33.33%
+            padding-bottom: $spacing-l
             //display: flex
             //justify-content: space-around
 
-    .title
-        color: $black //$white
-        font-size: $title
-        font-family: $font
-        font-weight: $weight-bold
 
-        padding-top: $spacing-l
+section#portion-case-study
+    width: 100vw
+    margin-top: $spacing-xl
+    margin-bottom: $spacing-xl
+    transition: transform 0.45s ease-out
+    will-change: transform
+    z-index: 0
 
-    .large
-        color: $black //$white
-        font-size: $large
-        font-family: $font
-        font-weight: $weight-medium
+    .container
+        //padding-left: min(16em, 10.2vw)
+        //padding-right: min(16em, 10.2vw)
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
 
-        padding-top: $spacing-none
+    #case-study-container
+        display: flex
+        justify-content: space-around
 
-    .large-bold
-        color: $gray-light
-        font-size: $large
-        font-family: $font
-        font-weight: $weight-bold
+        .case-study-title
+            width: 30%
 
-        padding-top: $spacing-none
+        .case-study-content
+            width: 70%
 
-    .regular-bold
-        color: $black
-        font-size: 24px
-        font-family: $font
-        font-weight: $weight-bold
+    img
+        width: 100%
+        vertical-align: middle
+        margin-top: $spacing-l
+        margin-bottom: $spacing-xl
+        +border-radius($radius-16)
 
-        padding-top: $spacing-m
-
-    .regular
-        color: $black
-        font-size: $regular
-        font-family: $font
-        font-weight: $weight-regular
-
-        padding-top: $spacing-m
+        transition: 0.18s cubic-bezier(.77,0,.64,1)
+        //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+            
 
     .button-group
         padding-top: $spacing-l
@@ -173,6 +226,13 @@ section#portion
         flex-direction: column
         .project-info
             width: 100vw !important
+
+    #case-study-container
+        display: flex
+        margin-top: 0 !important
+        flex-direction: column
+        .case-study-title, .case-study-content
+            width: 100% !important
  
 // Blur Support
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))

@@ -85,6 +85,7 @@ nav {
   z-index: 20000;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid rgba(222, 222, 222, 0.8);
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px) contrast(0.8) !important;
@@ -309,131 +310,6 @@ section#one {
     transform: translate3d(0, 5px, 0);
   }
 }
-/* Footer Styling - R & Design 4.0 */
-/** Imports **/
-/* Variables & Mixins Test - R & Design 4.0 */
-.site-footer {
-  background-color: #26272b;
-  padding: 45px 0 20px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #737373;
-}
-
-.site-footer hr {
-  border-top-color: #bbb;
-  opacity: 0.5;
-}
-
-.site-footer hr.small {
-  margin: 20px 0;
-}
-
-.site-footer h6 {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 5px;
-  letter-spacing: 2px;
-}
-.site-footer a {
-  color: #737373;
-}
-
-.site-footer a:hover {
-  color: #3366cc;
-}
-.footer-links {
-  padding-left: 0;
-}
-.footer-links a {
-  color: #737373;
-}
-
-.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-  color: #3366cc;
-}
-.site-footer .social-icons a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
-}
-
-.copyright-text {
-  margin: 0;
-}
-
-@media (max-width: 991px) {
-  .site-footer [class^=col-] {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .site-footer {
-    padding-bottom: 0;
-  }
-
-  .social-icons {
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  .social-icons li {
-    margin-bottom: 4px;
-  }
-  .social-icons li.title {
-    margin-right: 15px;
-    color: #96a2b2;
-    font-weight: 700;
-    font-size: 13px;
-  }
-  .social-icons a {
-    background-color: #eceeef;
-    color: #818a91;
-    font-size: 16px;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    margin-right: 8px;
-    border-radius: 100%;
-  }
-}
-.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
-}
-
-.social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
-}
-
-.social-icons a.facebook:hover {
-  background-color: #3b5998;
-}
-
-.social-icons a.twitter:hover {
-  background-color: #00aced;
-}
-
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-
-@media (max-width: 767px) {
-  .social-icons li.title {
-    margin-right: 0;
-    font-weight: 600;
-  }
-}
 /** Main Styling **/
 * {
   text-decoration: none !important;
@@ -451,15 +327,22 @@ body {
 }
 body img {
   width: 100vw;
+  margin-bottom: 72px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-body #banner-title, body #banner-image {
+body #banner-image {
   margin-bottom: 115.2px;
+}
+body #banner-title {
+  margin-bottom: 32px;
 }
 body #banner-text {
   padding-top: 0 !important;
+}
+body .phrase {
+  padding-top: 32px;
 }
 body button.primary {
   font-family: "Inter", sans-serif;
@@ -486,17 +369,48 @@ body button.primary:hover {
   background-color: #5359EA;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
+body .title {
+  color: #151515;
+  font-size: min(48px, 8vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+body .large {
+  color: #151515;
+  font-size: min(24px, 5vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+body .large-bold {
+  color: #151515;
+  font-size: min(24px, 5vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+body .regular-bold {
+  color: #151515;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+body .regular {
+  color: #151515;
+  font-size: 19px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+body .subtitle {
+  color: #151515;
+  font-size: min(32px, 6vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
 
 /** section#top-background
  *  height: 64vh
  *  top: 0
  *  position: relative
- *  z-index: 1
- *
- *  background-image: url('assets/images/Background 3.svg')
- *  background-repeat: no-repeat
- *  background-position: top
- *  background-size: 100% **/
+ *  z-index: 1 **/
 section#portion {
   width: 100vw;
   transition: transform 0.45s ease-out;
@@ -510,49 +424,49 @@ section#portion .container {
 section#portion .project-details {
   display: flex;
   justify-content: space-around;
+  margin-top: 106.56px;
 }
 section#portion .project-details .project-info {
   width: 33.33%;
+  padding-bottom: 32px;
 }
-section#portion .title {
-  color: #151515;
-  font-size: min(48px, 8vw);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
+
+section#portion-case-study {
+  width: 100vw;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  transition: transform 0.45s ease-out;
+  will-change: transform;
+  z-index: 0;
+}
+section#portion-case-study .container {
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
+}
+section#portion-case-study #case-study-container {
+  display: flex;
+  justify-content: space-around;
+}
+section#portion-case-study #case-study-container .case-study-title {
+  width: 30%;
+}
+section#portion-case-study #case-study-container .case-study-content {
+  width: 70%;
+}
+section#portion-case-study img {
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 32px;
+  margin-bottom: 72px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+section#portion-case-study .button-group {
   padding-top: 32px;
 }
-section#portion .large {
-  color: #151515;
-  font-size: min(24px, 5vw);
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  padding-top: 0px;
-}
-section#portion .large-bold {
-  color: #575757;
-  font-size: min(24px, 5vw);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  padding-top: 0px;
-}
-section#portion .regular-bold {
-  color: #151515;
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  padding-top: 24px;
-}
-section#portion .regular {
-  color: #151515;
-  font-size: 19px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  padding-top: 24px;
-}
-section#portion .button-group {
-  padding-top: 32px;
-}
-section#portion .button-group button.secondary {
+section#portion-case-study .button-group button.secondary {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: transparent;
@@ -565,15 +479,15 @@ section#portion .button-group button.secondary {
   padding-right: 24px;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#portion .button-group button.secondary a {
+section#portion-case-study .button-group button.secondary a {
   color: #DEDEDE;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#portion .button-group button.secondary a:hover {
+section#portion-case-study .button-group button.secondary a:hover {
   color: #FFFFFF;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#portion .button-group button.secondary:hover {
+section#portion-case-study .button-group button.secondary:hover {
   color: #FFFFFF;
   border: solid 2px #575757;
   -moz-border-radius: 16px;
@@ -596,6 +510,15 @@ section#portion {
   }
   .project-details .project-info {
     width: 100vw !important;
+  }
+
+  #case-study-container {
+    display: flex;
+    margin-top: 0 !important;
+    flex-direction: column;
+  }
+  #case-study-container .case-study-title, #case-study-container .case-study-content {
+    width: 100% !important;
   }
 }
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
