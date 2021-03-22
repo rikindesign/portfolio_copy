@@ -28,14 +28,17 @@ body
     background-size: 100%
     //cursor: none !important
 
+    .spacer
+        height: $spacing-s
+
     img
         +border-radius($radius-20)
         //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
 
         #background
             width: 100%
-            top: 0
-            z-index: 0
+            top: $spacing-none
+            z-index: $spacing-none
             //display: block
             //margin-left: auto
             //margin-right: auto
@@ -90,6 +93,7 @@ section#one
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
+    //transition: skew 0.5s
 
     margin-bottom: 1.2 * $spacing-xl
 
@@ -129,6 +133,7 @@ section#two, section#three, section#four, section#five
     width: 100vw
     transition: transform 0.45s ease-out
     will-change: transform
+    //transition: skew 0.5s
 
     .container
         padding-left: min(8em, 6.4vw)

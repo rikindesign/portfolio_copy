@@ -18,7 +18,8 @@ var looper = function looper() {
   var newPixel = window.pageYOffset;
   var diff = newPixel - currentPixel;
   var speedSectionSmall = diff * 0.2;
-  var speedSectionWide = diff * 0.05; // Animated Sections (must include 'will-change: transform;' in SASS)
+  var speedSectionWide = diff * 0.05; //diff * 0.05
+  // Animated Sections (must include 'will-change: transform;' in SASS)
   // Set up for-loop for dynamically adding skewing per object-type
 
   sectionOne.style.transform = 'skewY(' + speedSectionWide + 'deg)';

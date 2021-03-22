@@ -109,7 +109,7 @@ nav .logo h4 a {
 nav .logo h4 a:hover {
   background: linear-gradient(0.4turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
   background-size: 200% auto;
-  color: #000 s;
+  color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -158,6 +158,8 @@ nav .nav-links li #drop-down-menu button#dropdownMenuButton:hover {
 nav .nav-links li #drop-down-menu .dropdown-menu {
   width: 184px;
   margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
@@ -168,7 +170,7 @@ nav .nav-links li #drop-down-menu .dropdown-menu {
   box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 nav .nav-links li #drop-down-menu .dropdown-menu a {
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 12px;
 }
 nav .burger {
@@ -327,7 +329,6 @@ body {
 }
 body img {
   width: 100vw;
-  margin-bottom: 72px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -339,7 +340,7 @@ body #banner-title {
   margin-bottom: 32px;
 }
 body #banner-text {
-  padding-top: 0 !important;
+  padding-top: 0px !important;
 }
 body .phrase {
   padding-top: 32px;
@@ -385,7 +386,8 @@ body .large-bold {
   color: #151515;
   font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+  padding-bottom: 12px;
 }
 body .regular-bold {
   color: #151515;
@@ -434,7 +436,7 @@ section#portion .project-details .project-info {
 section#portion-case-study {
   width: 100vw;
   margin-top: 72px;
-  margin-bottom: 72px;
+  margin-bottom: 144px;
   transition: transform 0.45s ease-out;
   will-change: transform;
   z-index: 0;
@@ -448,16 +450,15 @@ section#portion-case-study #case-study-container {
   justify-content: space-around;
 }
 section#portion-case-study #case-study-container .case-study-title {
-  width: 30%;
+  width: 28%;
 }
 section#portion-case-study #case-study-container .case-study-content {
-  width: 70%;
+  width: 72%;
 }
 section#portion-case-study img {
   width: 100%;
   vertical-align: middle;
   margin-top: 32px;
-  margin-bottom: 72px;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
@@ -503,6 +504,16 @@ section#portion {
 }
 
 @media screen and (max-width: 1024px) {
+  body img {
+    margin-bottom: 0px;
+  }
+
+  section#portion-case-study {
+    width: 100vw;
+    margin-top: 36px;
+    margin-bottom: 72px;
+  }
+
   .project-details {
     display: flex;
     margin-top: 0 !important;

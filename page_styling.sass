@@ -24,7 +24,7 @@ body
 
     img
         width: 100vw
-        margin-bottom: $spacing-xl
+        //margin-bottom: $spacing-xl
         +border-radius($radius-0)
 
     #banner-image
@@ -34,7 +34,7 @@ body
         margin-bottom: $spacing-l
 
     #banner-text
-        padding-top: 0 !important
+        padding-top: $spacing-none !important
         //margin-bottom: 1.6 * $spacing-xl
 
     .phrase
@@ -80,15 +80,14 @@ body
         font-size: $large
         font-family: $font
         font-weight: $weight-medium
-
         //padding-top: $spacing-none
 
     .large-bold
         color: $black
         font-size: $large
         font-family: $font
-        font-weight: $weight-bold
-
+        font-weight: $weight-semibold
+        padding-bottom: $spacing-s
         //padding-top: $spacing-none
 
     .regular-bold
@@ -104,7 +103,6 @@ body
         font-size: $regular
         font-family: $font
         font-weight: $weight-regular
-
         //padding-top: $spacing-m
 
     .subtitle
@@ -147,7 +145,7 @@ section#portion
 section#portion-case-study
     width: 100vw
     margin-top: $spacing-xl
-    margin-bottom: $spacing-xl
+    margin-bottom: 2 * $spacing-xl
     transition: transform 0.45s ease-out
     will-change: transform
     z-index: 0
@@ -163,16 +161,16 @@ section#portion-case-study
         justify-content: space-around
 
         .case-study-title
-            width: 30%
+            width: 28%
 
         .case-study-content
-            width: 70%
+            width: 72%
 
     img
         width: 100%
         vertical-align: middle
         margin-top: $spacing-l
-        margin-bottom: $spacing-xl
+        //margin-bottom: $spacing-xl
         +border-radius($radius-16)
 
         transition: 0.18s cubic-bezier(.77,0,.64,1)
@@ -220,6 +218,15 @@ section#portion
     
 // Media Queries
 @media screen and ( max-width: 1024px )
+    body
+        img
+            margin-bottom: $spacing-none
+
+    section#portion-case-study
+        width: 100vw
+        margin-top: $spacing-xl / 2
+        margin-bottom: $spacing-xl
+
     .project-details
         display: flex
         margin-top: 0 !important
