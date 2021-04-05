@@ -46,15 +46,14 @@ nav {
   align-items: center;
   height: 64px;
   padding-left: min(6em, 6.8vw) !important;
-  padding-right: min(6em, 6.8vw);
+  padding-right: min(6em, 6.8vw) !important;
   z-index: 20000;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid rgba(222, 222, 222, 0.8);
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   font-family: "Inter", sans-serif;
   font-size: 19px;
 }
@@ -89,7 +88,7 @@ nav .logo h4 a:hover {
 }
 nav .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 19999;
   padding: 0;
   margin: 0;
@@ -166,15 +165,15 @@ nav .burger div {
     width: 24%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
 
   nav ul {
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px) contrast(0.8) !important;
-    -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+    backdrop-filter: blur(20px) contrast(1) !important;
+    -webkit-backdrop-filter: blur(20px) contrast(1) !important;
     z-index: 19999;
   }
   nav .nav-links {
@@ -418,7 +417,6 @@ body {
   box-sizing: border-box;
   background-image: url("assets/images/Background.jpg");
   background-repeat: no-repeat;
-  background-position: top;
   background-size: 100%;
   /** .header-animation
   *  background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)

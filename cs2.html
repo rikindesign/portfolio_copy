@@ -29,17 +29,18 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <!-- .header-animation -->
             <h4> <a href="index.html">Rikin Patel</a> </h4>
         </div>
         <ul class="nav-links">
             <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
                 <a href="#"> About </a>
             </li>
-            <li class="page-active">
+            <li>
                 <a href="#"> Resume </a>
             </li>
-            <!-- <li> <a href="#"> Art </a> </li> -->
             <li>
                 <div class="dropdown" id="drop-down-menu">
                     <button class="btn dropdown-toggle secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,10 +60,11 @@
             <div class="line-two"></div>
             <div class="line-three"></div>
         </div>
+        </div>
     </nav>
 
     <!-- Sections -->
-    <div class="envelope">
+    <div class="envelope" data-aos="fade-up" data-aos-duration="1200">
         <section id="portion">
             <div class="container">
                 <div class="title phrase" id="banner-title">
@@ -90,7 +92,7 @@
                             Tools
                         </div>
                         <div class="regular" id="banner-text">
-                            Figma, React, Drupal, DialogFlow
+                            Figma, React, Drupal, Dialogflow
                         </div>
                     </div>
                 </div>
@@ -98,16 +100,549 @@
         </section>
         <img src="assets/images/cs2/cs2.jpg" alt="Botler - Case Study Image" id="banner">
 
-        <section id="portion">
-            <div class="container">
-                <div class="title" id="banner-title">
-                    Coming soon.
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Context
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        In the beginning of my Winter 2021 term at WSIB Innovation Lab, the Lab's first project was to research, design, and implement a fully functioning chatbot proof of concept (POC) for visitors to the WSIB website.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        This concept was proposed to us by internal WSIB as a means of connecting users to information regarding claims, insurance billing, and other key information. Our team came up with the concept Botler, which focused on quick interactions and accessibility.
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- <section id="three"></section> -->
 
-    </div>
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Problem <br> Space
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Before we analyzed key metrics about the WSIB website, we needed to consider the following constraints when building out this chatbot. </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Works with Drupal (interfaces with the current WSIB Drupal modules)</li>
+                            <li>Retrainable model (to ensure the chatbot is smart)</li>
+                            <li>Relevant for WSIB's website (providing user benefit to target groups)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 1.jpg" alt="Problem Space">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Assumptions
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        The following assumptions needed validating on the stakeholders' behalf.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>A chatbot would help users find claims related information</li>
+                            <li>Our users are businesses, injured workers, and health care workers</li>
+                            <li>Users want a more personal interaction</li>
+                        </ol>
+                    </div>
+                    <div class="regular">
+                        These assumptions were to help steer the beginning of our research. In the end, they would help us understand if a chatbot was the right solution for our users and if it significantly improved their experience.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Goal
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        With the above considerations, I wanted to build a chatbot POC for users looking to submit the following types of claims.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ol>
+                            <li>Workplace Related Injury/Illness</li>
+                            <li>Threat/Security</li>
+                            <li>Insurance Billing Information</li>
+                        </ol>
+                    </div>
+                    <div class="regular">
+                        In addition, these key learnings provided great insight for the Innovation Lab for future chatbot related projects.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 2.jpg" alt="Goal">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Approach
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Based on all of the above information, I formulated an outline of the research required for this project. This included research on chatbots and understanding user navigation to the WSIB website. We then needed to see how the current website architecture
+                        could be translated into something chatbot friendly.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Step 1 — Research chatbots.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Step 2 — Breakdown common searches for WSIB.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Step 3 — Group common pathways and create a chatbot architecture.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Step 4 — Validate the efficacy of using a chatbot.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        The first and obvious question I asked myself was "what are chatbots"?
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Chatbots
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        What are chatbots?
+                    </div>
+                    <div class="regular">
+                        Chatbots are <em>"A computer program designed to simulate conversation with human users, especially over the Internet"</em> — <a href="https://medium.com/swlh/what-is-a-chatbot-and-how-to-use-it-for-your-business-976ec2e0a99f"> Anadea Software </a>
+                    </div>
+                    <br>
+                    <div class="regular">
+                        <ul>
+                            <li>They are an assistant that communicates through text messages</li>
+                            <li>A virtual companion that integrates into websites</li>
+                            <li>Automated system of communication with users</li>
+                            <li>An app or instant messenger to help a product or service to get closer to customers</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        Why chatbots?
+                    </div>
+                    <div class="regular">
+                        Saved time and effort — Providing answers to FAQs and simple questions while reducing search time.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Collected information — Using available data, user patterns, or surveys.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Improved customer service — No waiting or holds (no operator), eliminating small searches likes FAQs, and provides quick and unique feedback depending on situation and context.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Balanced tone of voice — Chatbots are an imitation of a social interaction and can enhance digital interactions by giving bots "personality cards"
+                    </div>
+                    <br>
+                    <br>
+                    <div class="large-bold">
+                        Types of chatbots?
+                    </div>
+                    <div class="regular">
+                        In general, chatbots come in 3 different varieties. Rule-based chatbots are rigid for quick responses, Intelligent chatbots are dynamic and can learn based on context, and AI-powered chatbots which can combine both of the above properties tend to have
+                        a working memory.
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Chatbot <br> Intention
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        As noted by <a href="https://medium.com/swlh/what-is-a-chatbot-and-how-to-use-it-for-your-business-976ec2e0a99f"> Anadea Software</a>, chatbots are extremely useful in certain areas. When the design phase starts, these ideas will
+                        be critical in designing a streamlined chatbot experience. In general, the ideal chatbot experience comprises of quick and personable interactions.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 3.jpg" alt="Chatbot Intention">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Research
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Search Tracking
+                    </div>
+                    <div class="regular">
+                        I did some investigating into the most commonly asked questions about WSIB. I used Google's "People also ask" recommendations for initial searches, and dug deeper into the searches being made on the WSIB website using Google Analytics' search tracking
+                        for 3 days.
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        The most commonly asked questions
+                    </div>
+                    <div class="regular">
+                        <ul>
+                            <li>Can I pay WSIB claims online?</li>
+                            <li>How do I check my WSIB claim?</li>
+                            <li>What do WSIB claims cover?</li>
+                            <li>Does WSIB force me back to work?</li>
+                            <li>What happens when I make a WSIB claim?</li>
+                            <li>What forms do I need to fill out if I'm an employer?</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        Comparing WSIB first options
+                    </div>
+                    <div class="regular">
+                        The current WSIB website does an excellent job at presenting key claims related information, whether that be for injured workers, businesses, and health care providers. However, from the most common questions users seem to be concerned with the claims
+                        process and want to know the intricacies and stipulations involved with a claim. Below are the key navigation options provided.
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        Takeaways
+                    </div>
+                    <div class="regular">
+                        Users often had more personal questions which lead to them being redirected to FAQ pages or dead-ends more often. WSIB current website doesn't hold up as well for users who aren't businesses, injured workers, or healthcare providers.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 4.jpg" alt="WSIB First Options">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    WSIB's <br> Website
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Navigation heirarchy
+                    </div>
+                    <div class="regular">
+                        I explored the website first hand to understand what navigation methods were like on the WSIB website. At the highest level, every option is ordered by 3 targeted user categories which are Business, Injured Workers, and Health Care Providers. There seem
+                        to be many nested menues on the lower levels of the architecture, and lot's of links. This may prove to be cumbersome for the user.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 5.jpg" alt="WSIB - Online Services Page">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 6.jpg" alt="WSIB - Dropdown Menus">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 6.1.jpg" alt="WSIB - Nuanced Search">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Research Summary
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Website problem areas
+                    </div>
+                    <div class="regular">
+                        The current website has very specific routes which a user may take to find information on business registrations, form submissions, and more. However, more nuanced and specific searches will take a long time navigating through their current website.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Chatbot research learnings
+                    </div>
+                    <div class="regular">
+                        <ol>
+                            <li>Chatbots follow specific use cases and principles</li>
+                            <li>The WSIB website is rich with information but can be hard to find</li>
+                            <li>Users often asked very complex questions, which may be hard to answer without a human present</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Is a chatbot viable?
+                    </div>
+                    <div class="regular"> Yes — A a chatbot can be effective to guide users to key information through quick interactions (removing in-between search steps). </div>
+                    <br>
+                    <div class="regular"> A chatbot can present the user with external resources (links to claims forms, articles, FAQ questions, a WSIB representative etc). </div>
+                    <br>
+                    <div class="regular">A chatbot can provide that missing layer of personality between the user and the WSIB website. </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 7.jpg" alt="WSIB Website's Affect on UX">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Building <br> the chatbot
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Information architecture
+                    </div>
+                    <div class="regular">
+                        After determine the value of the chatbot, I collaborated with the development and communications teams to break down the current WSIB website structure and translate into one that is chatbot friendly.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        This condensed information architecture diagram consists of the 3 pathways WSIB caters towards (business, employees, and health care providers) and the claim submission and information finding options related to each pathways. Each tree node represents
+                        the possible navigation options, and each leaf on the tree is either a dead-end, or a link redirect.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 8.jpg" alt="Information Architecture">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 9.jpg" alt="Information Architecture Zoomed">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Realignment
+                </div>
+                <div class="case-study-content">
+                    <div class="regular">
+                        We presented our research and findings with the rest of the team. After connecting with the developers, we did the following.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        The development team determine their toolset they were going to use (React, Drupal, Diagflow). The tree structure of the information architecture would be useful to implement within Dialogflow's intents and objectives feature. We set future direction
+                        to design a chatbot based on the tree diagram and planned wireframe presentation and hi-fi handoff dates.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Wireframing
+                </div>
+                <br>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Screen 1 — Chatbot placement
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Screen 2 — Introduction and first steps
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Screen 3 — Mid-conversation
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 10.jpg" alt="Chatbot Placement">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 11.jpg" alt="Introduction and First Steps">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 12.jpg" alt="Mid-Conversation">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Hi-Fi <br> Support
+                </div>
+                <br>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Screen 1 — Style Sheet
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Screen 2 — Components
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 13.jpg" alt="Style Sheet">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 13.1.jpg" alt="Components">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Hi-Fi <br> Versioning
+                </div>
+                <br>
+                <div class="case-study-content">
+                    <div class="regular">
+                        Screen 1 — Full view of every scenario
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Screen 2 — UX decisions in iteration 1
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Screen 3 — UX decisions in iteration 2
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 14.jpg" alt="Hi-Fi Scenarios">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 15.jpg" alt="Hi-Fi Iteration 1">
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 16.jpg" alt="Hi-Fi Iteration 2">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Live Demo
+                </div>
+                <br>
+                <div class="case-study-content">
+                    <div class="regular">
+                        The following demo was done by one of our developers. The final version was made fully as a Drupal module and is fully connected to Dialogflow.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 18.jpg" alt="Live Demo">
+            </div>
+        </section>
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Solution
+                </div>
+                <br>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Overview
+                    </div>
+                    <div class="regular">
+                        Botler is an AI-powered chatbot powered by DialogFlow and Drupal. DialogFlow is AI-powered since they provide dynamic responses not pre-recorded when a user makes a mistake or wants to ask a question. Inputting customer responses based on the “questions-and-answers”
+                        tree created for suggested responses is rule-based.
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        How it addresses the problems
+                    </div>
+                    <div class="regular">
+                        <ul>
+                            <li> Direct — Establishes the user group right away by splitting the initial interactions into the different possible search pathways in a decision tree </li>
+                            <br>
+                            <li>Fast — Puts a focus on accessibility and quick interactions with either quick responses or typed responses </li>
+                            <br>
+                            <li>Accessible — Voice input and readable by screen reader</li>
+                            <br>
+                            <li>Personable — Dynamic responses from Dialogflow allow chatbot to be friendly at all times</li>
+                            <br>
+                            <li>Helpful — Botler provides direct responses to complex questions in addition to only key links from the WSIB website and provides a back button to return to the previous question or response</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+        <section id="portion-case-study">
+            <div class="container" id="case-study-container">
+                <div class="subtitle case-study-title" id="banner-title">
+                    Reflection
+                </div>
+                <div class="case-study-content">
+                    <div class="large-bold">
+                        Learnings
+                    </div>
+                    <div class="regular">
+                        The timeline for this product was only 2 weeks. In that 2 weeks, we researched, validated, designed, iterated, and developed a real chatbot.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        Designing for a chatbot was something I had never done before. It was awesome to see the intricacies on how to design for chatbots, when they are used etc.
+                    </div>
+                    <br>
+                    <div class="regular">
+                        I had to get really creative with my research. Since we didn't have full access to WSIB data pipelines to track website metrics, tracing commonly asked questions through Google and Google Analytics helped us quantify results.
+                    </div>
+                    <br>
+                    <div class="large-bold">
+                        Next Steps
+                    </div>
+                    <div class="regular">
+                        <ul>
+                            <li>Get qualitative feedback for our concept through usability testing</li>
+                        </ul>
+                        <ul>
+                            <li>Get the project in a state where we can hand it off to internal WSIB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="assets/images/cs2/Image 17.jpg" alt="Reflection">
+            </div>
+        </section>
 </body>
 
 <!-- Cursor Views -->

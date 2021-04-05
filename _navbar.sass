@@ -5,7 +5,7 @@
 
 nav
     display: flex !important
-    justify-content: space-around
+    justify-content: center
     align-items: center
     //min-height: 6vh
     height: 64px
@@ -20,14 +20,14 @@ nav
     
     //background-color: rgba(20, 20, 20, 0.8)
     background-color: rgba(255, 255, 255, 0.8)
-    backdrop-filter: blur(20px) contrast(.8) !important
-    -webkit-backdrop-filter: blur(20px) contrast(.8) !important
+    backdrop-filter: blur(20px) contrast(1) !important
+    -webkit-backdrop-filter: blur(20px) contrast(1) !important
 
     font-family: $font
     font-size: $regular
 
     .logo
-        display: block !important
+        display: none !important
         color: $black //$white
 
         h4
@@ -65,7 +65,7 @@ nav
         z-index: 19999
         padding: 0
         margin: 0
-        width: 28%
+        width: 42%
 
         list-style: none
 
@@ -73,14 +73,21 @@ nav
             margin: auto
 
             a
+                font-size: $regular
                 color: $black //$white
+                padding: 8px 24px
+                //font-weight: $weight-medium
                 //cursor: none
+                
+                //+border-radius($radius-10)
                 vertical-align: middle
 
                 transition: 0.18s cubic-bezier(.77,0,.64,1)
 
             a:hover
+                //font-size: $small + 2
                 color: $blue-light
+                //background-color: #EBEBEB //$blue-lightest
                 transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
             .page-active
@@ -89,6 +96,8 @@ nav
             #drop-down-menu
                 button#dropdownMenuButton
                     font-size: $regular
+                    color: $black //$white
+                    //font-weight: $weight-medium
                     padding: 0
 
                     transition: 0.18s cubic-bezier(.77,0,.64,1)
@@ -98,6 +107,8 @@ nav
                     transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
                 .dropdown-menu
+                    //font-size: $regular - 2
+
                     width: 184px
                     margin-top: 16px
                     padding-top: 16px
@@ -106,8 +117,8 @@ nav
                     +border-radius($radius-16)
 
                     background-color: $white
-                    backdrop-filter: blur(20px) contrast(.8) !important
-                    -webkit-backdrop-filter: blur(20px) contrast(.8) !important
+                    backdrop-filter: blur(20px) contrast(1) !important
+                    -webkit-backdrop-filter: blur(20px) contrast(1) !important
 
                     box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
 
@@ -143,16 +154,20 @@ nav
             // display: block
 
     .nav-links
-        width: 24%
+        width: 52%
 
 @media screen and ( max-width: 768px )
     body
         overflow-x: hidden
     nav
+        .logo
+            display: block !important
+            color: $black //$white
+
         ul
             background-color: rgba(255, 255, 255, 0.8)
-            backdrop-filter: blur(20px) contrast(.8) !important
-            -webkit-backdrop-filter: blur(20px) contrast(.8) !important
+            backdrop-filter: blur(20px) contrast(1) !important
+            -webkit-backdrop-filter: blur(20px) contrast(1) !important
             z-index: 19999
 
         .nav-links

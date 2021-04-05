@@ -42,7 +42,8 @@ console.log('App'); // Cursor
 var imageOne = document.getElementById('image-one');
 var imageTwo = document.getElementById('image-two');
 var imageThree = document.getElementById('image-three');
-var imageFour = document.getElementById('image-four');
+var imageFour = document.getElementById('image-four'); //let background = document.getElementsByTagName('body')[0]
+
 var textDescription = document.getElementById('text-description');
 
 function myFunction(x) {
@@ -57,7 +58,8 @@ function myFunction(x) {
     imageOne.src = 'assets/images/Botler - Desktop.jpg';
     imageTwo.src = 'assets/images/ChowTime AR - Desktop.jpg';
     imageThree.src = 'assets/images/Google - Desktop.jpg';
-    imageFour.src = 'assets/images/Safe@Lab - Desktop.jpg';
+    imageFour.src = 'assets/images/Safe@Lab - Desktop.jpg'; //background.backgroundImage = 'assets/images/Background.jpg'
+
     console.log('desktop');
   }
 }

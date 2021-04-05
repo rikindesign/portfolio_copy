@@ -3,7 +3,7 @@
 /* Variables & Mixins Test - R & Design 4.0 */
 nav {
   display: flex !important;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 64px;
   padding-left: min(6em, 6.8vw) !important;
@@ -14,13 +14,13 @@ nav {
   border-bottom: 1px solid rgba(222, 222, 222, 0.8);
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   font-family: "Inter", sans-serif;
   font-size: 19px;
 }
 nav .logo {
-  display: block !important;
+  display: none !important;
   color: #151515;
 }
 nav .logo h4 {
@@ -54,14 +54,16 @@ nav .nav-links {
   z-index: 19999;
   padding: 0;
   margin: 0;
-  width: 28%;
+  width: 42%;
   list-style: none;
 }
 nav .nav-links li {
   margin: auto;
 }
 nav .nav-links li a {
+  font-size: 19px;
   color: #151515;
+  padding: 8px 24px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -74,6 +76,7 @@ nav .nav-links li .page-active {
 }
 nav .nav-links li #drop-down-menu button#dropdownMenuButton {
   font-size: 19px;
+  color: #151515;
   padding: 0;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -91,8 +94,8 @@ nav .nav-links li #drop-down-menu .dropdown-menu {
   -webkit-border-radius: 16px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 nav .nav-links li #drop-down-menu .dropdown-menu a {
@@ -124,7 +127,7 @@ nav .burger div {
     height: 64px;
   }
   .nav-links {
-    width: 24%;
+    width: 52%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -132,10 +135,14 @@ nav .burger div {
     overflow-x: hidden;
   }
 
+  nav .logo {
+    display: block !important;
+    color: #151515;
+  }
   nav ul {
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px) contrast(0.8) !important;
-    -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+    backdrop-filter: blur(20px) contrast(1) !important;
+    -webkit-backdrop-filter: blur(20px) contrast(1) !important;
     z-index: 19999;
   }
   nav .nav-links {
