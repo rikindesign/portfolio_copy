@@ -22,9 +22,9 @@ body
     overflow-x: hidden !important
     box-sizing: border-box
 
-    background-image: url('assets/images/Background.jpg')
-    background-repeat: no-repeat
-    background-size: 100%
+    //background-image: url('assets/images/Background.jpg')
+    //background-repeat: no-repeat
+    //background-size: 100%
     //background-color: $black
     //cursor: none !important
 
@@ -89,14 +89,17 @@ body
 
 // Sections        
 section#one
-    height: 80vh
-    width: 100vw
+    height: 100vh
+    width: 100%
     transition: transform 0.45s ease-out
     will-change: transform
 
+    background-image: url('assets/images/Background.jpg')
+    background-repeat: no-repeat
+    background-size: cover
     //transition: skew 0.5s
 
-    margin-bottom: 1.2 * $spacing-xl
+    margin-bottom: 2 * $spacing-xl
 
     .container
         padding-left: min(8em, 6.4vw)
@@ -104,31 +107,52 @@ section#one
 
     h1#title-one
         color: $black //$white
-        font-size: $mega
         font-family: $font
         font-weight: $weight-bold !important
         line-height: 1.04
-        text-align: left
+        text-align: center //left
         transition: transform 0.1s ease-out
         will-change: transform
 
         position: relative
         width: 100%
-        top: 40%
+
+        //top: 40%
         left: 50%
         transform: translate(-50%, -50%) !important
         z-index: 20
     
     #landing-description
         position: relative
-        top: 38%
         color: $black //$white
         font-size: $large
         font-family: $font
         font-weight: $weight-regular
-        text-align: left
+        text-align: center //left
         
-        padding-top: $spacing-none
+        //padding-top: $spacing-none
+
+        /** h4
+            font-size: $large
+            color: $orange-light
+            margin-top: 38% **/
+
+        img
+            height: 32%
+            //width: 200px
+            margin-top: 32%
+            margin-bottom: 0
+
+        h1
+            font-size: $mega
+            margin-top: $spacing-xl
+        
+        p
+            font-weight: $weight-medium
+            font-size: $medium
+
+
+
 
 section#two, section#three, section#four, section#five
     width: 100vw
@@ -213,6 +237,36 @@ section#three, section#portfolio
 
 // Media Queries
 @media screen and ( max-width: 1024px )
+    section#one
+        height: 72vh
+
+        #landing-description
+            img
+                margin-top: 28%
+
+            h1
+                font-size: $mega
+                margin-top: $spacing-xl
+        
+            p
+                font-size: $medium
+                margin-top: -12px
+
+@media screen and ( max-width: 767px )
+    section#one
+        height: 64vh
+
+        #landing-description
+            img
+                margin-top: 42%
+
+            h1
+                font-size: $mega
+                margin-top: $spacing-xl
+        
+            p
+                font-size: $medium
+                margin-top: -12px
  
 // Blur Support
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))

@@ -423,9 +423,6 @@ body {
   background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
-  background-image: url("assets/images/Background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
   /** .header-animation
   *  background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
   *  background-size: 200% auto **/
@@ -481,11 +478,14 @@ body button.primary:hover {
 }
 
 section#one {
-  height: 80vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   transition: transform 0.45s ease-out;
   will-change: transform;
-  margin-bottom: 86.4px;
+  background-image: url("assets/images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 144px;
 }
 section#one .container {
   padding-left: min(8em, 6.4vw);
@@ -493,29 +493,42 @@ section#one .container {
 }
 section#one h1#title-one {
   color: #151515;
-  font-size: min(98px, 12vw);
   font-family: "Inter", sans-serif;
   font-weight: 700 !important;
   line-height: 1.04;
-  text-align: left;
+  text-align: center;
   transition: transform 0.1s ease-out;
   will-change: transform;
   position: relative;
   width: 100%;
-  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
 section#one #landing-description {
   position: relative;
-  top: 38%;
   color: #151515;
   font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  text-align: left;
-  padding-top: 0px;
+  text-align: center;
+  /** h4
+  *  font-size: $large
+  *  color: $orange-light
+  *  margin-top: 38% **/
+}
+section#one #landing-description img {
+  height: 32%;
+  margin-top: 32%;
+  margin-bottom: 0;
+}
+section#one #landing-description h1 {
+  font-size: min(106px, 12vw);
+  margin-top: 72px;
+}
+section#one #landing-description p {
+  font-weight: 500;
+  font-size: min(20px, 3.8vw);
 }
 
 section#two, section#three, section#four, section#five {
@@ -598,6 +611,38 @@ section#three, section#portfolio {
   margin-bottom: 144px;
 }
 
+@media screen and (max-width: 1024px) {
+  section#one {
+    height: 72vh;
+  }
+  section#one #landing-description img {
+    margin-top: 28%;
+  }
+  section#one #landing-description h1 {
+    font-size: min(106px, 12vw);
+    margin-top: 72px;
+  }
+  section#one #landing-description p {
+    font-size: min(20px, 3.8vw);
+    margin-top: -12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section#one {
+    height: 64vh;
+  }
+  section#one #landing-description img {
+    margin-top: 42%;
+  }
+  section#one #landing-description h1 {
+    font-size: min(106px, 12vw);
+    margin-top: 72px;
+  }
+  section#one #landing-description p {
+    font-size: min(20px, 3.8vw);
+    margin-top: -12px;
+  }
+}
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
   .modal {
     -webkit-backdrop-filter: blur(20px);
