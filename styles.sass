@@ -46,6 +46,7 @@ body
 
     button.primary
         font-family: $font
+        font-size: $regular - 1
         font-weight: $weight-medium
         color: $white
         //cursor: none
@@ -169,7 +170,7 @@ section#two, section#three, section#four, section#five
         +border-radius($radius-20)
         vertical-align: middle
         transition: 0.18s cubic-bezier(.77,0,.64,1)
-        box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
+        //box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16)
 
     .title
         color: $black //$white
@@ -187,6 +188,14 @@ section#two, section#three, section#four, section#five
 
         padding-top: $spacing-none
 
+    .large-thin
+        color: $black //$gray-light $white
+        font-size: $regular + 1
+        font-family: $font
+        font-weight: $weight-regular
+
+        padding-top: $spacing-none
+
     .regular
         color: $black //$gray-light
         font-size: $regular
@@ -200,6 +209,7 @@ section#two, section#three, section#four, section#five
 
         button.secondary
             font-family: $font
+            font-size: $regular - 1
             font-weight: $weight-regular
             //cursor: none
 
@@ -238,7 +248,7 @@ section#three, section#portfolio
 // Media Queries
 @media screen and ( max-width: 1024px )
     section#one
-        height: 72vh
+        //height: 84vh
 
         #landing-description
             img
@@ -254,8 +264,7 @@ section#three, section#portfolio
 
 @media screen and ( max-width: 767px )
     section#one
-        height: 64vh
-
+        height: 84vh
         #landing-description
             img
                 margin-top: 42%

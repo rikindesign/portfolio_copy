@@ -452,6 +452,7 @@ body img #background {
 }
 body button.primary {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   color: #FFFFFF;
   background-color: #0094FF;
@@ -547,7 +548,6 @@ section#two img, section#three img, section#four img, section#five img {
   border-radius: 20px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
-  box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 section#two .title, section#three .title, section#four .title, section#five .title {
   color: #151515;
@@ -563,6 +563,13 @@ section#two .large, section#three .large, section#four .large, section#five .lar
   font-weight: 500;
   padding-top: 0px;
 }
+section#two .large-thin, section#three .large-thin, section#four .large-thin, section#five .large-thin {
+  color: #151515;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-top: 0px;
+}
 section#two .regular, section#three .regular, section#four .regular, section#five .regular {
   color: #151515;
   font-size: 19px;
@@ -575,6 +582,7 @@ section#two .button-group, section#three .button-group, section#four .button-gro
 }
 section#two .button-group button.secondary, section#three .button-group button.secondary, section#four .button-group button.secondary, section#five .button-group button.secondary {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-weight: 400;
   background-color: transparent;
   border: solid 2px #575757;
@@ -612,9 +620,6 @@ section#three, section#portfolio {
 }
 
 @media screen and (max-width: 1024px) {
-  section#one {
-    height: 72vh;
-  }
   section#one #landing-description img {
     margin-top: 28%;
   }
@@ -629,7 +634,7 @@ section#three, section#portfolio {
 }
 @media screen and (max-width: 767px) {
   section#one {
-    height: 64vh;
+    height: 84vh;
   }
   section#one #landing-description img {
     margin-top: 42%;
