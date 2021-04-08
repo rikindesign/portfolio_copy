@@ -642,6 +642,12 @@ section#three, section#portfolio {
     font-size: min(20px, 3.8vw);
     margin-top: -12px;
   }
+
+  section#two .title svg, section#three .title svg, section#four .title svg, section#five .title svg {
+    display: inline-flex;
+    align-self: center;
+    padding-bottom: 4px;
+  }
 }
 @media screen and (max-width: 767px) {
   section#one {
