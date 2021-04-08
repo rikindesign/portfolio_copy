@@ -165,6 +165,11 @@ section#two, section#three, section#four, section#five
         padding-left: min(8em, 6.4vw)
         padding-right: min(8em, 6.4vw)
 
+        /** #cs1
+            background: -webkit-linear-gradient(1turn,#3C9D82 0%, #BCE26F 42%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent **/
+
     img
         width: 100%
         +border-radius($radius-20)
@@ -179,6 +184,14 @@ section#two, section#three, section#four, section#five
         font-weight: $weight-bold
 
         padding-top: $spacing-l
+
+        svg
+            display: inline-flex
+            align-self: center
+            padding-bottom: 10px
+
+            height: 1em
+            width: 1em
 
     .large
         color: $black //$gray-light $white

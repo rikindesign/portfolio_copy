@@ -540,6 +540,10 @@ section#two, section#three, section#four, section#five {
 section#two .container, section#three .container, section#four .container, section#five .container {
   padding-left: min(8em, 6.4vw);
   padding-right: min(8em, 6.4vw);
+  /** #cs1
+  *  background: -webkit-linear-gradient(1turn,#3C9D82 0%, #BCE26F 42%)
+  *  -webkit-background-clip: text
+  *  -webkit-text-fill-color: transparent **/
 }
 section#two img, section#three img, section#four img, section#five img {
   width: 100%;
@@ -555,6 +559,13 @@ section#two .title, section#three .title, section#four .title, section#five .tit
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 32px;
+}
+section#two .title svg, section#three .title svg, section#four .title svg, section#five .title svg {
+  display: inline-flex;
+  align-self: center;
+  padding-bottom: 10px;
+  height: 1em;
+  width: 1em;
 }
 section#two .large, section#three .large, section#four .large, section#five .large {
   color: #151515;
