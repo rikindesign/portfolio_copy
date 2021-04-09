@@ -27,8 +27,8 @@ body
         //margin-bottom: $spacing-xl
         +border-radius($radius-0)
 
-    #banner-image
-        margin-bottom: 1.6 * $spacing-xl
+    /** #banner-image
+        margin-bottom: 1.6 * $spacing-xl **/
 
     #banner-title
         margin-bottom: $spacing-l
@@ -37,8 +37,8 @@ body
         padding-top: $spacing-none !important
         //margin-bottom: 1.6 * $spacing-xl
 
-    .phrase
-        padding-top: $spacing-l
+    /** .phrase
+        padding-top: $spacing-l **/
 
     button.primary
         font-family: $font
@@ -66,6 +66,12 @@ body
     button.primary:hover
         background-color: $purple-light
         transition: 0.18s cubic-bezier(.3,.01,.25,1)
+
+    .mega
+        color: $black //$white
+        font-size: $mega
+        font-family: $font
+        font-weight: $weight-bold
 
     .title
         color: $black //$white
@@ -126,9 +132,67 @@ section#portion
     will-change: transform
     z-index: 0
 
+    margin-top: 2 * $spacing-xl
+    margin-bottom: 2 * $spacing-xl
+
     .container
         padding-left: min(8em, 6.4vw)
         padding-right: min(8em, 6.4vw)
+
+    .project-details
+        display: flex
+        justify-content: space-around
+        margin-top: 1.48 * $spacing-xl
+
+        .project-info
+            width: 33.33%
+            padding-bottom: $spacing-l
+            //display: flex
+            //justify-content: space-around
+
+section#portion-alt
+    height: 312px
+    width: 100vw
+    transition: transform 0.45s ease-out
+    will-change: transform
+    z-index: 0
+
+    margin-top: 2 * $spacing-xl
+
+    .top-section
+        margin-top: 0px
+        //margin-bottom: $spacing-xl
+
+    .container
+        padding-left: min(8em, 6.4vw)
+        padding-right: min(8em, 6.4vw)
+
+        #banner-title
+            //margin-top: 10vh
+            text-align: center
+        
+        .highlight-1
+            background: -webkit-linear-gradient(1turn,#E46E2B 0%, #DAAF20 72%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+        .highlight-2
+            color: $blue-alt-light
+            
+            //background: -webkit-linear-gradient(1turn,#5359EA 0%, #0094FF 72%)
+            //-webkit-background-clip: text
+            //-webkit-text-fill-color: transparent
+
+        .highlight-3
+            color: $blue-alt-light
+            //background: -webkit-linear-gradient(1turn,#24BC8E 0%, #87be18 48%)
+            //-webkit-background-clip: text
+            //-webkit-text-fill-color: transparent
+
+        .highlight-4
+            background: -webkit-linear-gradient(1turn,#E46E2B 0%, #DAAF20 72%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
 
     .project-details
         display: flex
@@ -211,10 +275,6 @@ section#portion-case-study
             transition: 0.18s cubic-bezier(.3,.01,.25,1)
 
             margin-left: $spacing-s
-
-section#portion
-    margin-top: 2 * $spacing-xl
-    margin-bottom: 2 * $spacing-xl
     
 // Media Queries
 @media screen and ( max-width: 1024px )

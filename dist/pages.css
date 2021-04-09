@@ -39,64 +39,30 @@ a .animated-button .thar-three:before {
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-/* Cursor Styling - R & Design 4.0 */
-.cursor,
-.cursor2,
-.cursor3 {
-  position: fixed;
-  border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
-  mix-blend-mode: difference;
-}
-
-.cursor {
-  height: 0;
-  width: 0;
-  z-index: 99999;
-}
-
-.cursor2, .cursor3 {
-  height: 24px;
-  width: 24px;
-  z-index: 99998;
-}
-
-.cursor2 {
-  border: 12px solid #0094FF;
-}
-
-@media screen and (max-width: 1200px) {
-  .cursor, .cursor2, .cursor3 {
-    display: none;
-    cursor: none;
-  }
-}
 /* Navbar Styling - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
 nav {
   display: flex !important;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 64px;
-  padding-left: min(8em, 6.8vw);
-  padding-right: min(8em, 6.8vw);
+  padding-left: min(6em, 6.8vw) !important;
+  padding-right: min(6em, 6.8vw);
   z-index: 20000;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid rgba(222, 222, 222, 0.8);
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   font-family: "Inter", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
 }
 nav .logo {
-  display: block !important;
-  color: #FFFFFF;
+  display: none !important;
+  color: #151515;
 }
 nav .logo h4 {
   font-weight: 600;
@@ -104,13 +70,24 @@ nav .logo h4 {
   margin: 0;
 }
 nav .logo h4 a {
-  color: #FFFFFF;
-  cursor: none;
+  color: #151515;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
 nav .logo h4 a:hover {
-  color: #0094FF;
+  background: linear-gradient(0.4turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1.2s linear infinite;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 nav .nav-links {
   display: flex;
@@ -118,12 +95,16 @@ nav .nav-links {
   z-index: 19999;
   padding: 0;
   margin: 0;
-  width: 32%;
+  width: 42%;
   list-style: none;
 }
+nav .nav-links li {
+  margin: auto;
+}
 nav .nav-links li a {
-  color: #FFFFFF;
-  cursor: none;
+  font-size: 19px;
+  color: #151515;
+  padding: 8px 24px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -133,6 +114,34 @@ nav .nav-links li a:hover {
 }
 nav .nav-links li .page-active {
   background-color: #0094FF;
+}
+nav .nav-links li #drop-down-menu button#dropdownMenuButton {
+  font-size: 19px;
+  color: #151515;
+  padding: 0;
+  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+}
+nav .nav-links li #drop-down-menu button#dropdownMenuButton:hover {
+  color: #0094FF;
+  transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+nav .nav-links li #drop-down-menu .dropdown-menu {
+  width: 184px;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
+  box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
+}
+nav .nav-links li #drop-down-menu .dropdown-menu a {
+  padding-top: 8px;
+  padding-bottom: 12px;
 }
 nav .burger {
   display: none;
@@ -145,7 +154,7 @@ nav .burger div {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #151515;
   transition: all 0.24s ease;
 }
 
@@ -159,7 +168,7 @@ nav .burger div {
     height: 64px;
   }
   .nav-links {
-    width: 24%;
+    width: 52%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -167,10 +176,14 @@ nav .burger div {
     overflow-x: hidden;
   }
 
+  nav .logo {
+    display: block !important;
+    color: #151515;
+  }
   nav ul {
-    background-color: rgba(20, 20, 20, 0.8);
-    backdrop-filter: blur(20px) contrast(0.8) !important;
-    -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px) contrast(1) !important;
+    -webkit-backdrop-filter: blur(20px) contrast(1) !important;
     z-index: 19999;
   }
   nav .nav-links {
@@ -237,7 +250,7 @@ section#one {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #121212;
+  background: #151515;
 }
 
 .wave {
@@ -409,27 +422,48 @@ html {
 }
 
 body {
-  background-color: #121212 !important;
+  background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
-  cursor: none !important;
+  /** .header-animation
+  *  background: linear-gradient(0.25turn, rgb(153, 210, 98) 0%, rgb(61, 160, 220) 20%, rgb(133, 57, 222) 40%, rgb(193, 19, 192) 60%, rgb(229, 111, 100) 80%, rgb(153, 210, 98) 100%)
+  *  background-size: 200% auto **/
+  *  color: #000
+  *  background-clip: text
+  *  text-fill-color: transparent
+  *  -webkit-background-clip: text
+  *  -webkit-text-fill-color: transparent
+  *  animation: shine 6s linear infinite
+  *  @keyframes shine
+  *      to
+  *          background-position: 200% center */
+}
+body .spacer {
+  height: 12px;
 }
 body img {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
+body img #background {
+  width: 100%;
+  top: 0px;
+  z-index: 0px;
+  background-attachment: fixed;
+}
 body button.primary {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   color: #FFFFFF;
-  cursor: none;
   background-color: #0094FF;
   border: 0px;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
   height: 48px;
+  width: 128px;
   padding-left: 24px;
   padding-right: 24px;
   margin-right: 8px;
@@ -440,63 +474,64 @@ body button.primary button:focus {
 }
 body button.primary a {
   color: #FFFFFF;
-  cursor: none;
 }
 body button.primary:hover {
   background-color: #5359EA;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
 }
-body .header-animation {
-  background: linear-gradient(0.25turn, #99d262 0%, #3da0dc 20%, #8539de 40%, #c113c0 60%, #e56f64 80%, #99d262 100%);
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 6s linear infinite;
-}
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
 
 section#one {
-  height: 64vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   transition: transform 0.45s ease-out;
   will-change: transform;
-  margin-bottom: 86.4px;
+  background-image: url("assets/images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 144px;
 }
 section#one .container {
   padding-left: min(8em, 6.4vw);
   padding-right: min(8em, 6.4vw);
 }
 section#one h1#title-one {
-  color: #FFFFFF;
-  font-size: min(98px, 12vw);
+  color: #151515;
   font-family: "Inter", sans-serif;
   font-weight: 700 !important;
+  line-height: 1.04;
   text-align: center;
   transition: transform 0.1s ease-out;
   will-change: transform;
-  position: absolute;
-  width: 80%;
-  top: 40%;
+  position: relative;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 20;
 }
 section#one #landing-description {
   position: relative;
-  top: 58%;
-  color: #FFFFFF;
-  font-size: min(20px, 3.8vw);
+  color: #151515;
+  font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   text-align: center;
-  padding-top: 0px;
+  /** h4
+  *  font-size: $large
+  *  color: $orange-light
+  *  margin-top: 38% **/
+}
+section#one #landing-description img {
+  height: 32%;
+  margin-top: 32%;
+  margin-bottom: 0;
+}
+section#one #landing-description h1 {
+  font-size: min(106px, 12vw);
+  margin-top: 72px;
+}
+section#one #landing-description p {
+  font-weight: 500;
+  font-size: min(20px, 3.8vw);
 }
 
 section#two, section#three, section#four, section#five {
@@ -507,42 +542,63 @@ section#two, section#three, section#four, section#five {
 section#two .container, section#three .container, section#four .container, section#five .container {
   padding-left: min(8em, 6.4vw);
   padding-right: min(8em, 6.4vw);
+  /** #cs1
+  *  background: -webkit-linear-gradient(1turn,#3C9D82 0%, #BCE26F 42%)
+  *  -webkit-background-clip: text
+  *  -webkit-text-fill-color: transparent **/
 }
-section#two #test img, section#three #test img, section#four #test img, section#five #test img {
+section#two img, section#three img, section#four img, section#five img {
   width: 100%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#two #test .title, section#three #test .title, section#four #test .title, section#five #test .title {
-  color: #FFFFFF;
+section#two .title, section#three .title, section#four .title, section#five .title {
+  color: #151515;
   font-size: min(48px, 8vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
   padding-top: 32px;
 }
-section#two #test .large, section#three #test .large, section#four #test .large, section#five #test .large {
-  color: #FFFFFF;
-  font-size: min(24px, 4vw);
+section#two .title svg, section#three .title svg, section#four .title svg, section#five .title svg {
+  display: inline-flex;
+  align-self: center;
+  padding-bottom: 10px;
+  height: 1em;
+  width: 1em;
+}
+section#two .large, section#three .large, section#four .large, section#five .large {
+  color: #151515;
+  font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding-top: 0px;
 }
-section#two #test .regular, section#three #test .regular, section#four #test .regular, section#five #test .regular {
-  color: #DEDEDE;
-  font-size: 17px;
+section#two .large-thin, section#three .large-thin, section#four .large-thin, section#five .large-thin {
+  color: #151515;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-top: 0px;
+}
+section#two .regular, section#three .regular, section#four .regular, section#five .regular {
+  color: #151515;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding-top: 24px;
 }
-section#two #test .button-group, section#three #test .button-group, section#four #test .button-group, section#five #test .button-group {
+section#two .button-group, section#three .button-group, section#four .button-group, section#five .button-group {
   padding-top: 32px;
 }
-section#two #test .button-group button.secondary, section#three #test .button-group button.secondary, section#four #test .button-group button.secondary, section#five #test .button-group button.secondary {
+section#two .button-group button.secondary, section#three .button-group button.secondary, section#four .button-group button.secondary, section#five .button-group button.secondary {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  cursor: none;
   background-color: transparent;
-  border: solid 2px #DEDEDE;
+  border: solid 2px #575757;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
@@ -550,20 +606,17 @@ section#two #test .button-group button.secondary, section#three #test .button-gr
   padding-left: 24px;
   padding-right: 24px;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
+  /** a:hover
+  *  //cursor: none
+  *  color: $black
+  *  transition: 0.18s cubic-bezier(.77,0,.64,1) **/
 }
-section#two #test .button-group button.secondary a, section#three #test .button-group button.secondary a, section#four #test .button-group button.secondary a, section#five #test .button-group button.secondary a {
-  cursor: none;
-  color: #DEDEDE;
+section#two .button-group button.secondary a, section#three .button-group button.secondary a, section#four .button-group button.secondary a, section#five .button-group button.secondary a {
+  color: #575757;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
-section#two #test .button-group button.secondary a:hover, section#three #test .button-group button.secondary a:hover, section#four #test .button-group button.secondary a:hover, section#five #test .button-group button.secondary a:hover {
-  cursor: none;
-  color: #FFFFFF;
-  transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
-}
-section#two #test .button-group button.secondary:hover, section#three #test .button-group button.secondary:hover, section#four #test .button-group button.secondary:hover, section#five #test .button-group button.secondary:hover {
-  color: #FFFFFF;
-  border: solid 2px #6F7784;
+section#two .button-group button.secondary:hover, section#three .button-group button.secondary:hover, section#four .button-group button.secondary:hover, section#five .button-group button.secondary:hover {
+  border: solid 2px #dedede;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
@@ -579,6 +632,41 @@ section#three, section#portfolio {
   margin-bottom: 144px;
 }
 
+@media screen and (max-width: 1024px) {
+  section#one #landing-description img {
+    margin-top: 28%;
+  }
+  section#one #landing-description h1 {
+    font-size: min(106px, 12vw);
+    margin-top: 72px;
+  }
+  section#one #landing-description p {
+    font-size: min(20px, 3.8vw);
+    margin-top: -12px;
+  }
+
+  section#two .title svg, section#three .title svg, section#four .title svg, section#five .title svg {
+    display: inline-flex;
+    align-self: center;
+    padding-bottom: 4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section#one {
+    height: 84vh;
+  }
+  section#one #landing-description img {
+    margin-top: 42%;
+  }
+  section#one #landing-description h1 {
+    font-size: min(106px, 12vw);
+    margin-top: 72px;
+  }
+  section#one #landing-description p {
+    font-size: min(20px, 3.8vw);
+    margin-top: -12px;
+  }
+}
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
   .modal {
     -webkit-backdrop-filter: blur(20px);
@@ -601,7 +689,7 @@ html {
 }
 
 body {
-  background-color: #121212 !important;
+  background-color: #151515 !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
   cursor: none !important;
@@ -624,7 +712,7 @@ body .envelope .sidenav {
 }
 body .envelope .sidenav a {
   color: #FFFFFF;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   text-align: right;
@@ -661,14 +749,14 @@ section#project-one #test .title {
 }
 section#project-one #test .large {
   color: #FFFFFF;
-  font-size: min(24px, 4vw);
+  font-size: min(24px, 5vw);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding-top: 0px;
 }
 section#project-one #test .regular {
   color: #DEDEDE;
-  font-size: 17px;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding-top: 24px;
@@ -702,7 +790,7 @@ section#project-one #test .button-group button.secondary a:hover {
 }
 section#project-one #test .button-group button.secondary:hover {
   color: #FFFFFF;
-  border: solid 2px #6F7784;
+  border: solid 2px #575757;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;

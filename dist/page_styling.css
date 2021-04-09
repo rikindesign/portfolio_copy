@@ -77,7 +77,7 @@ a .animated-button .thar-three:before {
 /* Variables & Mixins Test - R & Design 4.0 */
 nav {
   display: flex !important;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 64px;
   padding-left: min(6em, 6.8vw) !important;
@@ -88,13 +88,13 @@ nav {
   border-bottom: 1px solid rgba(222, 222, 222, 0.8);
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   font-family: "Inter", sans-serif;
   font-size: 19px;
 }
 nav .logo {
-  display: block !important;
+  display: none !important;
   color: #151515;
 }
 nav .logo h4 {
@@ -128,14 +128,16 @@ nav .nav-links {
   z-index: 19999;
   padding: 0;
   margin: 0;
-  width: 28%;
+  width: 42%;
   list-style: none;
 }
 nav .nav-links li {
   margin: auto;
 }
 nav .nav-links li a {
+  font-size: 19px;
   color: #151515;
+  padding: 8px 24px;
   vertical-align: middle;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -148,6 +150,7 @@ nav .nav-links li .page-active {
 }
 nav .nav-links li #drop-down-menu button#dropdownMenuButton {
   font-size: 19px;
+  color: #151515;
   padding: 0;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }
@@ -165,8 +168,8 @@ nav .nav-links li #drop-down-menu .dropdown-menu {
   -webkit-border-radius: 16px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  backdrop-filter: blur(20px) contrast(0.8) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+  backdrop-filter: blur(20px) contrast(1) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
   box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 nav .nav-links li #drop-down-menu .dropdown-menu a {
@@ -198,7 +201,7 @@ nav .burger div {
     height: 64px;
   }
   .nav-links {
-    width: 24%;
+    width: 52%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -206,10 +209,14 @@ nav .burger div {
     overflow-x: hidden;
   }
 
+  nav .logo {
+    display: block !important;
+    color: #151515;
+  }
   nav ul {
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px) contrast(0.8) !important;
-    -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
+    backdrop-filter: blur(20px) contrast(1) !important;
+    -webkit-backdrop-filter: blur(20px) contrast(1) !important;
     z-index: 19999;
   }
   nav .nav-links {
@@ -326,6 +333,10 @@ body {
   background-color: #FFFFFF !important;
   overflow-x: hidden !important;
   box-sizing: border-box;
+  /** #banner-image
+  *  margin-bottom: 1.6 * $spacing-xl **/
+  /** .phrase
+  *  padding-top: $spacing-l **/
 }
 body img {
   width: 100vw;
@@ -333,17 +344,11 @@ body img {
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-body #banner-image {
-  margin-bottom: 115.2px;
-}
 body #banner-title {
   margin-bottom: 32px;
 }
 body #banner-text {
   padding-top: 0px !important;
-}
-body .phrase {
-  padding-top: 32px;
 }
 body button.primary {
   font-family: "Inter", sans-serif;
@@ -369,6 +374,12 @@ body button.primary a {
 body button.primary:hover {
   background-color: #5359EA;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
+}
+body .mega {
+  color: #151515;
+  font-size: min(106px, 12vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 body .title {
   color: #151515;
@@ -418,6 +429,8 @@ section#portion {
   transition: transform 0.45s ease-out;
   will-change: transform;
   z-index: 0;
+  margin-top: 144px;
+  margin-bottom: 144px;
 }
 section#portion .container {
   padding-left: min(8em, 6.4vw);
@@ -429,6 +442,50 @@ section#portion .project-details {
   margin-top: 106.56px;
 }
 section#portion .project-details .project-info {
+  width: 33.33%;
+  padding-bottom: 32px;
+}
+
+section#portion-alt {
+  height: 312px;
+  width: 100vw;
+  transition: transform 0.45s ease-out;
+  will-change: transform;
+  z-index: 0;
+  margin-top: 144px;
+}
+section#portion-alt .top-section {
+  margin-top: 0px;
+}
+section#portion-alt .container {
+  padding-left: min(8em, 6.4vw);
+  padding-right: min(8em, 6.4vw);
+}
+section#portion-alt .container #banner-title {
+  text-align: center;
+}
+section#portion-alt .container .highlight-1 {
+  background: -webkit-linear-gradient(1turn, #E46E2B 0%, #DAAF20 72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section#portion-alt .container .highlight-2 {
+  color: #0066E0;
+}
+section#portion-alt .container .highlight-3 {
+  color: #0066E0;
+}
+section#portion-alt .container .highlight-4 {
+  background: -webkit-linear-gradient(1turn, #E46E2B 0%, #DAAF20 72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section#portion-alt .project-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 106.56px;
+}
+section#portion-alt .project-details .project-info {
   width: 33.33%;
   padding-bottom: 32px;
 }
@@ -496,11 +553,6 @@ section#portion-case-study .button-group button.secondary:hover {
   border-radius: 16px;
   transition: 0.18s cubic-bezier(0.3, 0.01, 0.25, 1);
   margin-left: 12px;
-}
-
-section#portion {
-  margin-top: 144px;
-  margin-bottom: 144px;
 }
 
 @media screen and (max-width: 1024px) {
