@@ -436,6 +436,13 @@ section#portion .container {
   padding-left: min(8em, 6.4vw);
   padding-right: min(8em, 6.4vw);
 }
+section#portion .container #container-one, section#portion .container #container-two {
+  display: flex;
+  justify-content: space-around;
+}
+section#portion .about-links {
+  height: 50vh !important;
+}
 section#portion .project-details {
   display: flex;
   justify-content: space-around;
@@ -443,7 +450,22 @@ section#portion .project-details {
 }
 section#portion .project-details .project-info {
   width: 33.33%;
-  padding-bottom: 32px;
+}
+section#portion .about-details {
+  display: flex;
+  justify-content: center !important;
+}
+section#portion .about-details .about-info {
+  width: 50%;
+  padding-bottom: 12px;
+  /** .about-link
+  *  transition: 0.18s cubic-bezier(.77,0,.64,1) **/
+  /** .about-link-1:hover
+  *  border: 2px #0A66C2 solid
+  *  transition: 0.18s cubic-bezier(.3,.01,.25,1) **/
+}
+section#portion .about-details .about-info svg {
+  width: 100%;
 }
 
 section#portion-alt {
@@ -465,9 +487,7 @@ section#portion-alt .container #banner-title {
   text-align: center;
 }
 section#portion-alt .container .highlight-1 {
-  background: -webkit-linear-gradient(1turn, #E46E2B 0%, #DAAF20 72%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #E46B2B;
 }
 section#portion-alt .container .highlight-2 {
   color: #0066E0;
@@ -479,15 +499,6 @@ section#portion-alt .container .highlight-4 {
   background: -webkit-linear-gradient(1turn, #E46E2B 0%, #DAAF20 72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-section#portion-alt .project-details {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 106.56px;
-}
-section#portion-alt .project-details .project-info {
-  width: 33.33%;
-  padding-bottom: 32px;
 }
 
 section#portion-case-study {
@@ -573,6 +584,18 @@ section#portion-case-study .button-group button.secondary:hover {
   }
   .project-details .project-info {
     width: 100vw !important;
+  }
+
+  .about-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-details .about-info {
+    width: 100% !important;
+    padding-bottom: 12px !important;
+  }
+  .about-details .about-info svg {
+    width: 100%;
   }
 
   #case-study-container {
