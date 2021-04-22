@@ -338,7 +338,7 @@ body {
   /** .phrase
   *  padding-top: $spacing-l **/
 }
-body img {
+body img.cover {
   width: 100vw;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -386,6 +386,7 @@ body .title {
   font-size: min(48px, 8vw);
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  padding-top: 32px;
 }
 body .large {
   color: #151515;
@@ -510,8 +511,16 @@ section#portion-case-study {
   z-index: 0;
 }
 section#portion-case-study .container {
-  padding-left: min(8em, 6.4vw);
-  padding-right: min(8em, 6.4vw);
+  padding-left: min(4em, 2.4vw);
+  padding-right: min(4em, 2.4vw);
+}
+section#portion-case-study .container .centered {
+  text-align: center;
+}
+section#portion-case-study #container-text {
+  padding-left: 12.8%;
+  padding-right: 12.8%;
+  margin-bottom: 32px;
 }
 section#portion-case-study #case-study-container {
   display: flex;
@@ -584,6 +593,8 @@ section#portion-case-study .button-group button.secondary:hover {
   }
   .project-details .project-info {
     width: 100vw !important;
+    margin-top: 32px;
+    margin-bottom: 24px;
   }
 
   .about-details {

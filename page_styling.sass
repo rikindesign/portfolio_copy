@@ -22,7 +22,7 @@ body
     box-sizing: border-box
     //cursor: none !important
 
-    img
+    img.cover
         width: 100vw
         //margin-bottom: $spacing-xl
         +border-radius($radius-0)
@@ -79,7 +79,7 @@ body
         font-family: $font
         font-weight: $weight-bold
 
-        //padding-top: $spacing-l
+        padding-top: $spacing-l
 
     .large
         color: $black //$white
@@ -233,10 +233,18 @@ section#portion-case-study
     z-index: 0
 
     .container
-        //padding-left: min(16em, 10.2vw)
-        //padding-right: min(16em, 10.2vw)
-        padding-left: min(8em, 6.4vw)
-        padding-right: min(8em, 6.4vw)
+        padding-left: min(4em, 2.4vw)
+        padding-right: min(4em, 2.4vw)
+        //padding-left: min(8em, 6.4vw)
+        //padding-right: min(8em, 6.4vw)
+
+        .centered
+            text-align: center
+    
+    #container-text
+        padding-left: 12.8%
+        padding-right: 12.8%
+        margin-bottom: $spacing-l
 
     #case-study-container
         display: flex
@@ -309,8 +317,11 @@ section#portion-case-study
         display: flex
         margin-top: 0 !important
         flex-direction: column
+
         .project-info
             width: 100vw !important
+            margin-top: $spacing-l
+            margin-bottom: $spacing-m
 
     .about-details
         display: flex
