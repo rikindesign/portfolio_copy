@@ -645,7 +645,7 @@ section#three, section#portfolio {
 @media screen and (max-width: 767px) {
   section#one {
     height: 100vh;
-    padding-top: 26%;
+    padding-top: 24%;
     background-image: url("assets/images/Background Mobile.jpg");
   }
   section#one #landing-description img {
