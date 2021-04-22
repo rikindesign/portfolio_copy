@@ -42,9 +42,8 @@ console.log('App'); // Cursor
 var imageOne = document.getElementById('image-one');
 var imageTwo = document.getElementById('image-two');
 var imageThree = document.getElementById('image-three');
-var imageFour = document.getElementById('image-four'); //let background = document.getElementsByTagName('body')[0]
-
-var textDescription = document.getElementById('text-description');
+var imageFour = document.getElementById('image-four'); //let imageBackground = document.querySelector('one')
+//let textDescription = document.getElementById('text-description')
 
 function myFunction(x) {
   if (x.matches) {
@@ -52,13 +51,14 @@ function myFunction(x) {
     imageOne.src = 'assets/images/Botler - Mobile.jpg';
     imageTwo.src = 'assets/images/ChowTime AR - Mobile.jpg';
     imageThree.src = 'assets/images/Google - Mobile.jpg';
-    imageFour.src = 'assets/images/Safe@Lab - Mobile.jpg';
+    imageFour.src = 'assets/images/Safe@Lab - Mobile.jpg'; //imageBackground = 'assets/images/Background Mobile.jpg'
+
     console.log('mobile');
   } else {
     imageOne.src = 'assets/images/Botler - Desktop.jpg';
     imageTwo.src = 'assets/images/ChowTime AR - Desktop.jpg';
     imageThree.src = 'assets/images/Google - Desktop.jpg';
-    imageFour.src = 'assets/images/Safe@Lab - Desktop.jpg'; //background.backgroundImage = 'assets/images/Background.jpg'
+    imageFour.src = 'assets/images/Safe@Lab - Desktop.jpg'; //imageBackground = 'assets/images/Background.jpg'
 
     console.log('desktop');
   }

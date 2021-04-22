@@ -42,8 +42,8 @@ let imageOne = document.getElementById('image-one')
 let imageTwo = document.getElementById('image-two')
 let imageThree = document.getElementById('image-three')
 let imageFour = document.getElementById('image-four')
-    //let background = document.getElementsByTagName('body')[0]
-let textDescription = document.getElementById('text-description')
+    //let imageBackground = document.querySelector('one')
+    //let textDescription = document.getElementById('text-description')
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
@@ -51,13 +51,14 @@ function myFunction(x) {
         imageTwo.src = 'assets/images/ChowTime AR - Mobile.jpg'
         imageThree.src = 'assets/images/Google - Mobile.jpg'
         imageFour.src = 'assets/images/Safe@Lab - Mobile.jpg'
+            //imageBackground = 'assets/images/Background Mobile.jpg'
         console.log('mobile')
     } else {
         imageOne.src = 'assets/images/Botler - Desktop.jpg'
         imageTwo.src = 'assets/images/ChowTime AR - Desktop.jpg'
         imageThree.src = 'assets/images/Google - Desktop.jpg'
         imageFour.src = 'assets/images/Safe@Lab - Desktop.jpg'
-            //background.backgroundImage = 'assets/images/Background.jpg'
+            //imageBackground = 'assets/images/Background.jpg'
         console.log('desktop')
     }
 }
