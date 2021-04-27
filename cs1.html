@@ -143,7 +143,8 @@
                     </div>
                     <br>
                     <div class="regular">
-                        Built in React Native, ChowTime works by taking a picture of your fridge or single ingredients and produces recipes based on the type and quantity of ingredients. We wanted to revamp the ingredient adding and recipe viewing experiences.
+                        Built in React Native, the old ChowTime worked by taking a picture of ingredients to produce recipes based on the type and quantity of ingredients. We wanted to revamp the ingredient adding and recipe viewing experiences, and made ChowTime AR which uses
+                        a live AR view to quickly add ingredients to generate recipes.
                     </div>
                 </div>
             </div>
@@ -198,7 +199,7 @@
                             <div class="spacer"></div>
                             <li>Cumbersome ingredient scanning process (lot's of back and forth)</li>
                             <div class="spacer"></div>
-                            <li>Incorrect ingredients were added often</li>
+                            <li>Incorrect ingredients being added often</li>
                         </ol>
                     </div>
                 </div>
@@ -212,7 +213,8 @@
                 </div>
                 <div class="case-study-content">
                     <div class="regular">
-                        I wanted to explore how Augmented Reality (AR) technology could ease the 3 pain points mentioned above. Since I had never designed for AR experiences, there was a lot to research and many things to explore.
+                        Ingredient scanning with a live camera view was an idea we had from the beginning but never implemented. With this in mind, I wanted to explore how Augmented Reality (AR) technology could ease the 3 pain points mentioned above. Since I had never designed
+                        for AR experiences, there was a lot to research and many things to explore.
                     </div>
                 </div>
             </div>
@@ -231,14 +233,14 @@
                         User Needs
                     </div>
                     <div class="regular">
-                        These key features were real sentences spoken by the users based on their pain points. Our team needs to consider how we can address some of these wishes using AR.
+                        These key feature wishes were real sentences spoken by the users based on their pain points. Our team needed to consider how we could address some of these wishes using AR.
                     </div>
                     <br>
                     <div class="regular">
                         <ol>
                             <li>"I want my phone to identify ingredients for me"</li>
                             <li>"I want to avoid taking pictures of food objects"</li>
-                            <li>"I want to add many ingredients in one step instead of many"</li>
+                            <li>"I want to add many ingredients in one step instead of just one"</li>
                             <li>"I want precise control over ingredient quantity"</li>
                         </ol>
                     </div>
@@ -248,7 +250,7 @@
                         Design Focus
                     </div>
                     <div class="regular">
-                        I wanted to realign myself and the team on some key goals for version 2 of ChowTime. This direction was determined based on user feedback and team motivation. We wanted a greater focus on AR and its possibilities within ChowTime.
+                        I then realigned myself and the team on key goals for version 2 of ChowTime. This direction was determined based on user feedback and team motivation. We wanted a greater focus on AR and its possibilities within ChowTime.
                     </div>
                 </div>
             </div>
@@ -267,11 +269,11 @@
                         Principles
                     </div>
                     <div class="regular">
-                        I wanted to be mindful of best practices when designing for AR and decided to follow these key principles. We needed consider the following.
+                        I wanted to be mindful of best practices when designing for AR and decided to follow these key principles. We consider the following. Designing for AR means
                     </div>
                     <br>
                     <div class="regular">
-                        <em>"Design for digital elements to appear over real-world views, sometimes with limited interactivity between them."</em> — <a href="https://www.interaction-design.org/literature/topics/augmented-reality"> Interaction Design Foundation </a>
+                        <em>"... designing for digital elements to appear over real-world views, sometimes with limited interactivity between them."</em> — <a href="https://www.interaction-design.org/literature/topics/augmented-reality"> Interaction Design Foundation </a>
                     </div>
                     <br>
                     <div class="regular">
@@ -279,7 +281,7 @@
                             <li>Safety — We don't want to distract or mislead a user into danger.</li>
                             <li>Overkill — We don't want the user to experience cognitive overload.</li>
                             <li>Environment — We need to design a dynamic experience.</li>
-                            <li>Comfort — Make comfortable designs to prevent physical strains.</li>
+                            <li>Comfort — We make comfortable designs to prevent physical strains.</li>
                             <li>Security — We must ensure that camera permissions are considered</li>
                         </ol>
                     </div>
@@ -298,7 +300,8 @@
                     </div>
                     <br>
                     <div class="regular">
-                        All of the designs and applications I had explored had a minimal amount of controls on screen with tutorials on how to use key features. In addition, interactions with onscreen items were very fast and simple.
+                        All of the designs and applications I had explored had a minimal amount of controls on screen with tutorials on how to use key features. In addition, interactions with onscreen items were very fast and simple. Onboarding was essential since we need a
+                        way to transition current and new users.
                     </div>
                 </div>
             </div>
@@ -314,7 +317,7 @@
                 </div>
                 <div class="case-study-content">
                     <div class="regular">
-                        With the research and key learnings found, I hope to have the following goals when implementing these AR features. These also take into account the 4 ideas mentioned in the brief.
+                        With the research and key learnings found, I had the following goals in mind when implementing these AR features. These also take into account the 4 ideas mentioned in the brief.
                     </div>
                     <br>
                     <div class="regular">
@@ -388,8 +391,8 @@
                 </div>
                 <div class="case-study-content">
                     <div class="regular">
-                        I created a <em>style guide</em> and <em>component sheet</em> to support the creation of the high-fidelity designs for consistency and scalability. These became incredibly handy when creating designs that were modular. Building
-                        ChowTime AR out this way also eased developer hand-off, since they could make components and CSS variables quickly.
+                        I created a style guide and component sheet to support the creation of the high-fidelity designs for consistency and scalability. These became incredibly handy when creating designs that were modular. Building ChowTime AR out this way also eased developer
+                        hand-off, since they could make components and CSS variables quickly.
                     </div>
                 </div>
             </div>
@@ -412,11 +415,11 @@
                     </div>
                     <br>
                     <div class="regular">
-                        Homescreen — View generated recipes and recommendations.
+                        Homescreen — Viewing generated recipes and recommendations.
                     </div>
                     <br>
                     <div class="regular">
-                        Starred Recipes — Important recipes starred to view for later.
+                        Starred Recipes — Starring important recipes for you to view for later.
                     </div>
                     <br>
                     <div class="regular">
@@ -449,18 +452,18 @@
                         User Thoughts
                     </div>
                     <div class="regular">
-                        We tested the current prototype as a Figma prototype with the 4 previous users, we realized the users used our application in a different way then intended. Users ...
+                        We tested the current prototype as a Figma prototype with the 4 previous users and realized the users used our application in a different way then intended. Users ...
                     </div>
                     <br>
                     <div class="regular">
                         <ol>
-                            <li>Appreciated the tutorial process</li>
-                            <li>Almost always added 1 ingredient at a time</li>
-                            <li>Were always close up to the ingredient</li>
+                            <li>Appreciated the tutorial process ✅</li>
+                            <li>Almost always added 1 ingredient at a time❗️</li>
+                            <li>Were always close up to the ingredient❗️</li>
                         </ol>
                     </div>
                     <div class="regular">
-                        In general, users found the two step adding process annoying after adding many ingredients. Many added ingredients on accident just to test the system and wanted to remove them without having to click finish.
+                        In general, users found the two step adding process annoying after adding many ingredients. Many added ingredients were added on accident just to test the system and wanted to remove them without having to click finish.
                     </div>
                     <br>
                     <hr>
@@ -468,13 +471,13 @@
                         Takeaways
                     </div>
                     <div class="regular">
-                        Our tag system needs to be changed. Users require full control of adding, dropping, and viewing ingredients. To fix these issues, I wanted to add ...
+                        Our tag system needs to be changed. Users require full control of adding, dropping, and viewing ingredients. To fix these issues, I wanted to ...
                     </div>
                     <br>
                     <div class="regular">
                         <ol>
-                            <li>Auto add ingredients as they are scanned</li>
-                            <li>Make a tray to showcase current ingredients added</li>
+                            <li>Adding ingredients as they are scanned (automatically)</li>
+                            <li>Make an item tray to showcase current ingredients added</li>
                             <li>Rethink the tag system and reduce it to something less busy</li>
                         </ol>
                     </div>
