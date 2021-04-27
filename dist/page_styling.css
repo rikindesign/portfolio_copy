@@ -587,9 +587,10 @@ section#portion-case-study .button-group button.secondary:hover {
     /** .container
     *  padding-left: min(8em, 6.4vw)
     *  padding-right: min(8em, 6.4vw) **/
-    /** #container-text
-    *  padding-left: 4.8%
-    *  padding-right: 4.8% **/
+  }
+  section#portion-case-study #container-text {
+    padding-left: min(8em, 6.4vw);
+    padding-right: min(8em, 6.4vw);
   }
 
   .project-details {
