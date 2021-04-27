@@ -517,6 +517,11 @@ section#portion-case-study .container {
 section#portion-case-study .container .centered {
   text-align: center;
 }
+section#portion-case-study .container video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 section#portion-case-study #container-text {
   padding-left: 12.8%;
   padding-right: 12.8%;
