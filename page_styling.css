@@ -575,6 +575,12 @@ section#portion-case-study .button-group button.secondary:hover {
   margin-left: 12px;
 }
 
+section#portion-end .container {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 42%;
+}
+
 @media screen and (max-width: 1024px) {
   body img {
     margin-bottom: 0px;

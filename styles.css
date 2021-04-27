@@ -618,6 +618,12 @@ section#three, section#portfolio {
   margin-bottom: 144px;
 }
 
+section#portion-end .container {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 42%;
+}
+
 @media screen and (max-width: 1024px) {
   section#one {
     height: 100vh;
