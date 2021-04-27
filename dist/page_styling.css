@@ -584,6 +584,12 @@ section#portion-case-study .button-group button.secondary:hover {
     width: 100vw;
     margin-top: 36px;
     margin-bottom: 72px;
+    /** .container
+    *  padding-left: min(8em, 6.4vw)
+    *  padding-right: min(8em, 6.4vw) **/
+    /** #container-text
+    *  padding-left: 4.8%
+    *  padding-right: 4.8% **/
   }
 
   .project-details {
