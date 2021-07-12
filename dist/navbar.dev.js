@@ -21,7 +21,20 @@ var navSlide = function navSlide() {
 
     burger.classList.toggle('toggle');
   });
-}; // App Wide Function Calls
+}; //Disappear on Scroll
+
+/* var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    console.log('Disappear on Scroll')
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-48px";
+    }
+    prevScrollpos = currentScrollPos;
+} */
+// App Wide Function Calls
 
 
 navSlide();
