@@ -26,6 +26,7 @@ nav .logo h4 {
   margin: 0;
 }
 nav .logo h4 a {
+  font-family: "GT Walsheim Pro", sans-serif;
   color: #FCFCFC;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
 }

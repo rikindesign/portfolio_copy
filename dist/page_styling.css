@@ -83,6 +83,15 @@ a .animated-button .thar-three:before {
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("assets/font-final/GTWalsheimPro-Thin.ttf") format("truetype");
+  src-url: "assets/font-final/GTWalsheimPro-Thin.woff2" format("woff2");
+  src-url: "assets/font-final/GTWalsheimPro-Thin.woff" format("woff");
+  src-url: "assets/font-final/GTWalsheimPro-Thin.eot" format("eot");
+  font-weight: 200;
+  font-style: normal;
+}
 /* Navbar Styling - R & Design 4.0 */
 /** Imports **/
 /* Variables & Mixins Test - R & Design 4.0 */
@@ -90,7 +99,7 @@ nav {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 64px;
+  height: 48px;
   padding-left: min(6em, 6.8vw) !important;
   padding-right: min(6em, 6.8vw);
   z-index: 20000;
@@ -100,15 +109,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(20px) contrast(1) !important;
   -webkit-backdrop-filter: blur(20px) contrast(1) !important;
-  font-family: "GT Walsheim Pro", sans-serif;
-  font-size: 19px;
 }
 nav .logo {
   display: none !important;
   color: #FCFCFC;
 }
 nav .logo h4 {
-  font-weight: 600;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
@@ -146,8 +153,8 @@ nav .nav-links li {
 }
 nav .nav-links li a {
   font-family: "GT Walsheim Pro", sans-serif;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   color: #FCFCFC;
   padding: 8px 24px;
   vertical-align: middle;
@@ -162,8 +169,8 @@ nav .nav-links li .page-active {
 }
 nav .nav-links li #drop-down-menu button#dropdownMenuButton {
   font-family: "GT Walsheim Pro", sans-serif;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   color: #FCFCFC;
   padding: 0;
   transition: 0.18s cubic-bezier(0.77, 0, 0.64, 1);
@@ -181,14 +188,17 @@ nav .nav-links li #drop-down-menu .dropdown-menu {
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
   border-radius: 16px;
-  background-color: #FFFFFF;
-  backdrop-filter: blur(20px) contrast(1) !important;
-  -webkit-backdrop-filter: blur(20px) contrast(1) !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px) contrast(0.8) !important;
+  -webkit-backdrop-filter: blur(20px) contrast(0.8) !important;
   box-shadow: 0px 8px 96px rgba(0, 0, 0, 0.16);
 }
 nav .nav-links li #drop-down-menu .dropdown-menu a {
   padding-top: 8px;
   padding-bottom: 12px;
+}
+nav .nav-links li #drop-down-menu .dropdown-menu a:hover {
+  background-color: transparent;
 }
 nav .burger {
   display: none;
@@ -474,8 +484,6 @@ body {
   box-sizing: border-box;
   /** #banner-image
   *  margin-bottom: 1.6 * $spacing-xl **/
-  /** .phrase
-  *  padding-top: $spacing-l **/
 }
 body img.cover {
   width: 100vw;
@@ -630,10 +638,10 @@ section#portion-alt .container .highlight-1 {
   color: #E46B2B;
 }
 section#portion-alt .container .highlight-2 {
-  color: #0066E0;
+  color: #0653C7;
 }
 section#portion-alt .container .highlight-3 {
-  color: #0066E0;
+  color: #0653C7;
 }
 section#portion-alt .container .highlight-4 {
   background: -webkit-linear-gradient(1turn, #E46E2B 0%, #DAAF20 72%);

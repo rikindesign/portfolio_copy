@@ -484,8 +484,6 @@ body {
   box-sizing: border-box;
   /** #banner-image
   *  margin-bottom: 1.6 * $spacing-xl **/
-  /** .phrase
-  *  padding-top: $spacing-l **/
 }
 body img.cover {
   width: 100vw;
